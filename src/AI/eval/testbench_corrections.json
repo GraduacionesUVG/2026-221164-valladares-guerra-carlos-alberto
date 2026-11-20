@@ -1,0 +1,318 @@
+[
+  {
+    "id": "tb-004",
+    "motivo": "articulo",
+    "antes": {
+      "expected_article": "reglamento:33",
+      "chunk_id": "reglamento-art33-0",
+      "reference": "Reglamento de Tránsito, Artículo 33"
+    },
+    "despues": {
+      "expected_article": "reglamento:25",
+      "chunk_id": "reglamento-art25-0",
+      "reference": "Reglamento de Tránsito, Artículo 25"
+    }
+  },
+  {
+    "id": "tb-011",
+    "motivo": "articulo",
+    "antes": {
+      "expected_article": "ley:25",
+      "chunk_id": "ley-art25-0",
+      "reference": "Ley de Tránsito, Artículo 25"
+    },
+    "despues": {
+      "expected_article": "reglamento:82",
+      "chunk_id": "reglamento-art82-0",
+      "reference": "Reglamento de Tránsito, Artículo 82"
+    }
+  },
+  {
+    "id": "tb-039",
+    "motivo": "articulo",
+    "antes": {
+      "expected_article": "reglamento:42",
+      "chunk_id": "reglamento-art42-0",
+      "reference": "Reglamento de Tránsito, Artículo 42"
+    },
+    "despues": {
+      "expected_article": "reglamento:44",
+      "chunk_id": "reglamento-art44-0",
+      "reference": "Reglamento de Tránsito, Artículo 44"
+    }
+  },
+  {
+    "id": "tb-048",
+    "motivo": "articulo",
+    "antes": {
+      "expected_article": "reglamento:143",
+      "chunk_id": "reglamento-art143-0",
+      "reference": "Reglamento de Tránsito, Artículo 143"
+    },
+    "despues": {
+      "expected_article": "reglamento:144",
+      "chunk_id": "reglamento-art144-0",
+      "reference": "Reglamento de Tránsito, Artículo 144"
+    }
+  },
+  {
+    "id": "tb-052",
+    "motivo": "articulo",
+    "antes": {
+      "expected_article": "reglamento:99",
+      "chunk_id": "reglamento-art99-0",
+      "reference": "Reglamento de Tránsito, Artículo 99"
+    },
+    "despues": {
+      "expected_article": "reglamento:7",
+      "chunk_id": "reglamento-art7-2",
+      "reference": "Reglamento de Tránsito, Artículo 7"
+    }
+  },
+  {
+    "id": "tb-078",
+    "motivo": "articulo",
+    "antes": {
+      "expected_article": "ley:2",
+      "chunk_id": "ley-art2-0",
+      "reference": "Ley de Tránsito, Artículo 2"
+    },
+    "despues": {
+      "expected_article": "reglamento:62",
+      "chunk_id": "reglamento-art62-0",
+      "reference": "Reglamento de Tránsito, Artículo 62"
+    }
+  },
+  {
+    "id": "tb-088",
+    "motivo": "articulo",
+    "antes": {
+      "expected_article": "reglamento:56",
+      "chunk_id": "reglamento-art56-0",
+      "reference": "Reglamento de Tránsito, Artículo 56"
+    },
+    "despues": {
+      "expected_article": "reglamento:82",
+      "chunk_id": "reglamento-art82-0",
+      "reference": "Reglamento de Tránsito, Artículo 82"
+    }
+  },
+  {
+    "id": "tb-098",
+    "motivo": "articulo",
+    "antes": {
+      "expected_article": "reglamento:106",
+      "chunk_id": "reglamento-art106-0",
+      "reference": "Reglamento de Tránsito, Artículo 106"
+    },
+    "despues": {
+      "expected_article": "reglamento:100",
+      "chunk_id": "reglamento-art100-0",
+      "reference": "Reglamento de Tránsito, Artículo 100"
+    }
+  },
+  {
+    "id": "tb-042",
+    "motivo": "reescrita",
+    "antes": {
+      "question": "¿Si estoy esperando un semáforo en rojo y otro auto está en la calle principal, ¿tengo que parar completamente hasta que se vea que el otro auto no va a cambiar de carril?"
+    },
+    "despues": {
+      "question": "Si tengo que ceder el paso para entrar a una calle principal, ¿cuándo puedo arrancar?"
+    }
+  },
+  {
+    "id": "tb-063",
+    "motivo": "reescrita",
+    "antes": {
+      "question": "¿Quién tiene la autoridad para hacer cambios en las reglas de tránsito en Guatemala?",
+      "category": "licencias"
+    },
+    "despues": {
+      "question": "¿Quién se encarga de hacer el reglamento de la Ley de Tránsito?",
+      "category": "circulacion_general"
+    }
+  },
+  {
+    "id": "tb-012",
+    "motivo": "ambigua",
+    "antes": {
+      "question": "¿Si no hay carriles especiales para autobuses, dónde debo conducir?"
+    },
+    "despues": {
+      "question": "Si manejo un bus de transporte público y no hay carril exclusivo, ¿por qué carril tengo que ir?"
+    }
+  },
+  {
+    "id": "tb-018",
+    "motivo": "ambigua",
+    "antes": {
+      "question": "¿Puedo ir rápido por aquí si no hay niños cerca?"
+    },
+    "despues": {
+      "question": "¿Puedo ir rápido en una zona escolar si no hay niños cerca?"
+    }
+  },
+  {
+    "id": "tb-040",
+    "motivo": "ambigua",
+    "antes": {
+      "question": "¿Y si no hay señal que diga que tengo que ir por la derecha al doblar?"
+    },
+    "despues": {
+      "question": "Si no hay ninguna señal, ¿igual tengo que ir por la derecha en una curva?"
+    }
+  },
+  {
+    "id": "tb-077",
+    "motivo": "ambigua",
+    "antes": {
+      "question": "¿Puedo dejar bajar a mis pasajeros en la calle si es rápido?"
+    },
+    "despues": {
+      "question": "Si manejo un taxi, ¿puedo parar en la calle para que se bajen mis pasajeros si es rápido?"
+    }
+  },
+  {
+    "id": "tb-002",
+    "motivo": "redaccion",
+    "antes": {
+      "question": "¿Puedo estacion mi coche donde quiera en la calle si la municipalidad lo permite?"
+    },
+    "despues": {
+      "question": "¿Puedo estacionar mi coche donde quiera en la calle si la municipalidad lo permite?"
+    }
+  },
+  {
+    "id": "tb-067",
+    "motivo": "redaccion",
+    "antes": {
+      "question": "¿Si el gobierno contrata a otra empresa para que haga trabajo que normalmente hace el Ministerio de Transporte, ¿sigue teniendo que cumplir con todas las reglas de tránsito?"
+    },
+    "despues": {
+      "question": "Si el Ministerio de Gobernación contrata a una empresa para hacer funciones del Departamento de Tránsito, ¿esa empresa tiene que cumplir con las leyes de tránsito?"
+    }
+  },
+  {
+    "id": "tb-085",
+    "motivo": "redaccion",
+    "antes": {
+      "question": "¿Puedo que varias alcaldías trabajen juntas para controlar el tráfico en sus ciudades?"
+    },
+    "despues": {
+      "question": "¿Pueden varias municipalidades trabajar juntas para controlar el tránsito en sus ciudades?"
+    }
+  },
+  {
+    "id": "tb-089",
+    "motivo": "redaccion",
+    "antes": {
+      "question": "¿Si me lesionó el instructor en mi curso de manejo, ¿yo y él seríamos responsables de los gastos?",
+      "category": "multas"
+    },
+    "despues": {
+      "question": "Si choco mientras aprendo a manejar con un instructor, ¿quién responde por los daños?",
+      "category": "accidentes"
+    }
+  },
+  {
+    "id": "tb-001",
+    "motivo": "categoria",
+    "antes": {
+      "category": "seguros"
+    },
+    "despues": {
+      "category": "circulacion_general"
+    }
+  },
+  {
+    "id": "tb-010",
+    "motivo": "categoria",
+    "antes": {
+      "category": "licencias"
+    },
+    "despues": {
+      "category": "circulacion_general"
+    }
+  },
+  {
+    "id": "tb-066",
+    "motivo": "categoria",
+    "antes": {
+      "category": "licencias"
+    },
+    "despues": {
+      "category": "circulacion_general"
+    }
+  },
+  {
+    "id": "tb-075",
+    "motivo": "categoria",
+    "antes": {
+      "category": "licencias"
+    },
+    "despues": {
+      "category": "circulacion_general"
+    }
+  },
+  {
+    "id": "tb-079",
+    "motivo": "categoria",
+    "antes": {
+      "category": "licencias"
+    },
+    "despues": {
+      "category": "circulacion_general"
+    }
+  },
+  {
+    "id": "tb-026",
+    "motivo": "redaccion",
+    "antes": {
+      "question": "¿Si estoy caminando en la calle y un coche se acerca girando, ¿tengo derecho a cruzar aunque no haya un paso de peatones?"
+    },
+    "despues": {
+      "question": "Si estoy caminando en la calle y un coche se acerca girando, ¿tengo derecho a cruzar aunque no haya un paso de peatones?"
+    }
+  },
+  {
+    "id": "tb-032",
+    "motivo": "redaccion",
+    "antes": {
+      "question": "¿Si me suspendieron mi licencia de conducir y después de dos años la recupero, ¿puedo volver a tomar la licencia inmediatamente o necesito pasar por algo más?"
+    },
+    "despues": {
+      "question": "Si me suspendieron mi licencia de conducir y después de dos años la recupero, ¿puedo volver a tomar la licencia inmediatamente o necesito pasar por algo más?"
+    }
+  },
+  {
+    "id": "tb-034",
+    "motivo": "redaccion",
+    "antes": {
+      "question": "¿Si estoy en una calle con carriles para bicicletas y un camión quiere pasarme, ¿tengo que ceder el paso al camión o puedo seguir usando mi carril?"
+    },
+    "despues": {
+      "question": "Si estoy en una calle con carriles para bicicletas y un camión quiere pasarme, ¿tengo que ceder el paso al camión o puedo seguir usando mi carril?"
+    }
+  },
+  {
+    "id": "tb-087",
+    "motivo": "redaccion",
+    "antes": {
+      "question": "¿Si me multan varias veces en un año, ¿pueden quitarme mi licencia?"
+    },
+    "despues": {
+      "question": "Si me multan varias veces en un año, ¿pueden quitarme mi licencia?"
+    }
+  },
+  {
+    "id": "tb-092",
+    "motivo": "redaccion",
+    "antes": {
+      "question": "¿Si me quitan el permiso de aprendizaje por no seguir las reglas, ¿puedo volver a obtenerlo después de un año?"
+    },
+    "despues": {
+      "question": "Si me quitan el permiso de aprendizaje por no seguir las reglas, ¿puedo volver a obtenerlo después de un año?"
+    }
+  }
+]

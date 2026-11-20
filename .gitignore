@@ -1,0 +1,40 @@
+# Dependencias
+node_modules/
+vendor/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Variables de entorno (nunca se suben; solo src/.env.example)
+.env
+.env.local
+.env.*.local
+.env.production
+.env.test
+src/Backend/config/local.php
+.credenciales-produccion.txt
+
+# Modelos entrenados y base vectorial (pesados: se publican en Hugging Face)
+src/AI/models/
+src/AI/data/chroma/
+*.gguf
+*.safetensors
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Build y temporales
+dist/
+build/
+*.log
+logs/
+tmp/
+temp/

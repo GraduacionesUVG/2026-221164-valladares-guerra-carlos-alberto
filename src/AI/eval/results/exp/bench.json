@@ -1,0 +1,57 @@
+{
+  "config": {
+    "top_k": 7,
+    "reranker": "bge-m3",
+    "num_ctx": 8192,
+    "retrieval_mode": "dense"
+  },
+  "latencia_por_etapa_ms": {
+    "classification": {
+      "mediana": 23,
+      "p95": 46
+    },
+    "retrieval": {
+      "mediana": 1860,
+      "p95": 1986
+    },
+    "generation": {
+      "mediana": 933,
+      "p95": 1559
+    },
+    "total": {
+      "mediana": 2812,
+      "p95": 3396
+    },
+    "n": 50
+  },
+  "carga": [
+    {
+      "concurrencia": 1,
+      "consultas": 8,
+      "throughput_consultas_min": 20.4,
+      "latencia_mediana_ms": 2918,
+      "latencia_p95_ms": 3848
+    },
+    {
+      "concurrencia": 2,
+      "consultas": 8,
+      "throughput_consultas_min": 24.8,
+      "latencia_mediana_ms": 4853,
+      "latencia_p95_ms": 6916
+    },
+    {
+      "concurrencia": 4,
+      "consultas": 8,
+      "throughput_consultas_min": 25.2,
+      "latencia_mediana_ms": 8790,
+      "latencia_p95_ms": 14003
+    },
+    {
+      "concurrencia": 8,
+      "consultas": 16,
+      "throughput_consultas_min": 25.8,
+      "latencia_mediana_ms": 17596,
+      "latencia_p95_ms": 30249
+    }
+  ]
+}

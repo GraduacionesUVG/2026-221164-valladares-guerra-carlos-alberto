@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Motor de IA de VialBot en el anfitrión. Instalar con:
+     deploy/vialbot.sh install-ai   (copia a ~/Library/LaunchAgents y lo carga) -->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>gt.vialbot.ai</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>__PROTOTIPO__/deploy/ai-native.sh</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>__PROTOTIPO__/AI/logs/ai-native.log</string>
+    <key>StandardErrorPath</key>
+    <string>__PROTOTIPO__/AI/logs/ai-native.log</string>
+</dict>
+</plist>

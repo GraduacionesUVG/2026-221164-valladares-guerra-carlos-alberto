@@ -1,0 +1,20 @@
+{
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "train_pairs": 944,
+  "val_pairs": 104,
+  "epochs": 4,
+  "batch_size": 32,
+  "learning_rate": 3e-05,
+  "validation_before": {
+    "val_cosine_accuracy@1": 0.25,
+    "val_cosine_accuracy@3": 0.4135,
+    "val_cosine_accuracy@5": 0.4712,
+    "val_cosine_mrr@10": 0.3529
+  },
+  "validation_after": {
+    "val_cosine_accuracy@1": 0.5385,
+    "val_cosine_accuracy@3": 0.7596,
+    "val_cosine_accuracy@5": 0.8462,
+    "val_cosine_mrr@10": 0.6603
+  }
+}

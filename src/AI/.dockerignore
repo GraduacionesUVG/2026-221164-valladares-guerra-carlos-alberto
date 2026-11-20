@@ -1,0 +1,7 @@
+.venv
+logs
+models
+data/chroma
+data/dataset
+eval
+**/__pycache__

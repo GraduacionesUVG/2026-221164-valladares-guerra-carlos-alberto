@@ -1,0 +1,18 @@
+# Imagen de producción: el frontend compilado en la raíz y la API PHP en
+# /Backend, con la misma estructura que usa el despliegue en CloudPanel.
+FROM node:22-alpine AS frontend
+WORKDIR /app
+COPY Frontend/package*.json ./
+RUN npm ci
+COPY Frontend/ .
+RUN npm run build
+
+FROM php:8.2-apache
+RUN docker-php-ext-install pdo pdo_mysql && a2enmod rewrite
+COPY deploy/apache.conf /etc/apache2/conf-enabled/vialbot.conf
+COPY Backend/ /var/www/html/Backend/
+COPY --from=frontend /app/dist/ /var/www/html/
+RUN echo "expose_php = Off" > /usr/local/etc/php/conf.d/produccion.ini \
+    && rm -f /var/www/html/Backend/Dockerfile /var/www/html/Backend/README.md /var/www/html/Backend/config/local.php \
+    && chown -R www-data:www-data /var/www/html
+EXPOSE 80

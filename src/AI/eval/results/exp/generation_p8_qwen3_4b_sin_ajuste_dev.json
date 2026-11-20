@@ -1,0 +1,1274 @@
+{
+  "n": 50,
+  "split": "dev",
+  "judge": "qwen2.5:7b",
+  "config": {
+    "top_k": 7,
+    "retrieval_mode": "dense",
+    "reranker": "bge-m3",
+    "num_ctx": 8192,
+    "generator": "qwen3:4b"
+  },
+  "summary": {
+    "vialbot": {
+      "fidelidad": 3.64,
+      "relevancia": 5,
+      "claridad": 4.28,
+      "cita_correcta": 0.28,
+      "alucinacion_grave": 0.04,
+      "latencia_ms_mediana": 23812
+    }
+  },
+  "rows": [
+    {
+      "id": "tb-004",
+      "question": "¿Qué necesito para empezar a sacar mi licencia de manejo?",
+      "expected_article": "reglamento:25",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The user is asking what they need to start getting their driving license in Guatemala. I need to check the provided context to find the relevant articles.\n\nFirst, looking at the context, there are several articles from the Ley de Tránsito and Reglamento de Tránsito. The user wants to know the requirements for starting the process, which probably means getting the first license.\n\nIn the context, [1] is Reglamento de Tránsito, Artículo 25. Primera Licencia. That's about the first license. Let me read that part.\n\nIt says for the first license, you need to:\na) Fill out the application.\nb) Be of age (with some exceptions in Article 26), and for type A licenses, 23 years old with at least 3 years of type B or C license before. For type B, 21 years old.\nc) Present vision exam certification.\nd) Be able to read and write in the official language. If illiterate, special tests can be done.\ne) Pay the fee.\nf) Pass theoretical and practical exams.\ng) Provide photos.\n\nAlso, [3] is about obtaining a learner's permit, which requires meeting the first license requirements except the practical exam. But the user is asking about starting to get their license, so maybe they need the learner's permit first.\n\nWait, the question is \"¿Qué necesito para empezar a sacar mi licencia de manejo?\" which translates to \"What do I need to start getting my driving license?\" So they might be starting from scratch, so the first steps.\n\nIn Guatemala, to get a driving license, you first need to get a learner's permit (permiso de aprendizaje), which is covered in [3]. The requirements for that are the same as first license but without the practical exam.\n\nSo the answer should be based on Article 25 for first license, but since they're starting, maybe they need the learner's permit first. Wait, the user says \"empezar a sacar mi licencia\", so starting the process.\n\nLooking at [3]: Para obtener permiso de aprendizaje, se requiere: a) Reunir los requisitos establecidos para obtener primera licencia, excepto el examen práctico. So the learner's permit requires the same as first license but without the practical",
+          "sources": [
+            "reglamento:25",
+            "reglamento:29",
+            "reglamento:33",
+            "reglamento:27",
+            "ley:14",
+            "ley:41",
+            "reglamento:24"
+          ],
+          "latency_ms": 27466,
+          "cita_correcta": true,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero no menciona explícitamente que el primer paso es obtener un permiso de aprendizaje, lo cual es correcto según el artículo oficial."
+        }
+      }
+    },
+    {
+      "id": "tb-006",
+      "question": "¿Y si hay alguna regla que no esté escrita y no sé qué hacer?",
+      "expected_article": "reglamento:195",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The citizen is asking, \"¿Y si hay alguna regla que no esté escrita y no sé qué hacer?\" which translates to \"What if there's a rule that isn't written down and I don't know what to do?\"\n\nFirst, I need to check the provided context to see if there's any relevant information. The context includes several articles from the Guatemalan Traffic Law (Ley de Tránsito) and its Regulation (Reglamento de Tránsito).\n\nLooking at the context, article [2] says: \"Reglamento de Tránsito, Artículo 195. Casos no Previstos. Los casos no previstos en et presente Reglamento, serán resueltos por el Ministro de Gobernación en su calidad de autoridad superior de tránsito.\" So, this translates to: \"Cases not covered by this Regulation will be resolved by the Minister of Governance in his capacity as the superior authority of traffic.\"\n\nThe citizen is asking about rules that aren't written down. The context mentions that if there's a case not covered by the regulation (Artículo 195), it's handled by the Minister of Governance. So, the answer should point out that for cases not specified in the regulations, the Minister of Governance is the authority to resolve them.\n\nI need to make sure I'm not inventing anything. The context does have Artículo 195, which addresses cases not covered. So the answer is based on that.\n\nAlso, the response should be in Spanish, as the query is in Spanish. The user wants a cordial, clear, and brief answer for a citizen without legal knowledge.\n\nSo, the answer would be: If there's a rule not written down and you don't know what to do, the cases not covered by the regulation will be resolved by the Minister of Governance. Cite Artículo 195 of the Traffic Regulation.\n\nCheck if there's any other context that might be relevant. The other articles don't seem to address this specific question. Article 7 mentions the regulation period, but that's not relevant here.\n\nSo, the correct response is to reference Artículo 195 (Reglamento de Tránsito) as per the context.\n</think>\n\nSi hay una situación que no esté especificada en las normas escritas y no sabes cómo actuar",
+          "sources": [
+            "reglamento:83",
+            "reglamento:195",
+            "ley:27",
+            "reglamento:187",
+            "reglamento:81",
+            "reglamento:197",
+            "ley:48"
+          ],
+          "latency_ms": 21718,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa, relevante y clara, citando directamente Artículo 195 del Reglamento de Tránsito de Guatemala."
+        }
+      }
+    },
+    {
+      "id": "tb-010",
+      "question": "¿Quiénes conforman el Departamento de Tránsito?",
+      "expected_article": "reglamento:1",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The user is asking, \"¿Quiénes conforman el Departamento de Tránsito?\" which translates to \"Who constitutes the Department of Traffic?\" \n\nFirst, I need to check the provided context to find the relevant articles. The context has several sections from the Ley de Tránsito and Reglamento de Tránsito.\n\nLooking at the context:\n\n- [1] Reglamento de Tránsito, Artículo 1: Talks about the organization of the Department of Traffic, mentioning Jefatura, Subjefatura, Secretarla General, Secciones, Divisiones, Unidades Ejecutivas, and Delegaciones Departamentales.\n\n- [2] Ley de Tránsito, Artículo 6: Mentions that the Department of Traffic is organized by the Ministry of Gobernación through a gubernative agreement, directed by a head and deputy appointed by the head of the ministry, with dependencies and delegations needed.\n\n- [3] Reglamento de Tránsito, Artículo 3: States that the Head and Deputy of the Department of Traffic are appointed by the Minister of Gobernación based on the proposal from the Director General of the Police National Civil. The rest of the personnel is appointed or contracted by the Head of the Department.\n\nSo, the question is about who makes up the Department of Traffic. The answer should list the components as per the regulations.\n\nFrom [1], the Department of Traffic is organized with Jefatura, Subjefatura, Secretarla General, Secciones, Divisiones, Unidades Ejecutivas, and Delegaciones Departamentales.\n\nBut [3] says the Head and Deputy are appointed by the Minister, and the rest of the personnel is handled by the Head.\n\nWait, the user is asking who \"conforman\" the Department, so the structure. The answer should be based on the articles provided.\n\nThe most direct reference is [1], which lists the organizational structure: Jefatura, Subjefatura, Secretarla General, Secciones, Divisiones, Unidades Ejecutivas y Delegaciones Departamentales de Tránsito.\n\nBut [3] mentions that the Head and Deputy are appointed by the Minister, so maybe the answer should include that the Department is headed by the Jefe and Subjefe, and the rest of the structure as per [1",
+          "sources": [
+            "reglamento:1",
+            "ley:6",
+            "reglamento:3",
+            "ley:11",
+            "ley:5",
+            "ley:36",
+            "ley:4"
+          ],
+          "latency_ms": 22513,
+          "cita_correcta": true,
+          "fidelidad": 4,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es correcta y relevante, pero no incluye la información sobre la designación del Jefe y Subjefe por el Ministerio de Gobernación, lo cual podría haber sido más preciso."
+        }
+      }
+    },
+    {
+      "id": "tb-011",
+      "question": "¿Si hay obras en la carretera, qué debo hacer para no ponerme en peligro?",
+      "expected_article": "reglamento:82",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The citizen is asking what they should do to avoid danger if there are works on the road. I need to check the provided context to find the relevant articles.\n\nFirst, looking at the context fragments. The user mentioned \"obras en la carretera\" which translates to road works. Let me scan through the articles.\n\nIn [1] Ley de Tránsito, Artículo 25: It talks about works in the public way requiring permission, signs, and restoring the road. But the citizen is asking what they should do, so maybe this is about the obligations of the workers, not the public.\n\nThen [3] Reglamento de Tránsito, Artículo 85: This is about signaling of works. It says that public or private works that hinder circulation must be signaled both day and night, with nighttime lighting. The responsible person can get advice from the Department or Municipality. So this seems relevant because it's about how works are signaled, which the public should follow.\n\nAlso, [4] Reglamento de Tránsito, Artículo 40: Obligations of drivers to be careful, avoid danger, etc. But the specific question is about works on the road, so maybe [85] is more direct.\n\nWait, the user is asking what they (the citizen) should do. The answer would be to follow the signaling, like looking for signs, using the signals provided, maybe avoiding areas where works are happening. \n\nIn [3] it says that works that hinder circulation must be signaled, both day and night, and the responsible person can request assistance from the Department or Municipality. So the citizen should look for the signals (señales visibles) that are placed by the works, follow the directions, and be cautious as per the regulations.\n\nAlso, [4] says users must behave so their conduct doesn't impede circulation or cause danger. So the citizen should be cautious and follow the signals.\n\nWait, the answer should be based on the context. Let me check again.\n\nThe citizen's question: \"¿Si hay obras en la carretera, qué debo hacer para no ponerme en peligro?\"\n\nThe relevant articles here are [3] (Artículo 85) which talks about signaling of works, and [4] (Artículo 40) which is about driver obligations. But the main point here is the signaling",
+          "sources": [
+            "ley:25",
+            "reglamento:40",
+            "reglamento:85",
+            "reglamento:39",
+            "reglamento:41",
+            "reglamento:115",
+            "reglamento:95"
+          ],
+          "latency_ms": 24075,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta no es completamente fidedigna ya que no menciona específicamente el Artículo 85 del Reglamento de Tránsito, que habla sobre la señalización de obras. Sin embargo, la respuesta es relevante y clara en general, proporcionando orientación sobre cómo actuar en presencia de obras en la carretera."
+        }
+      }
+    },
+    {
+      "id": "tb-019",
+      "question": "¿Qué hago si no estoy de acuerdo con una multa que me dieron por una infracción de tránsito?",
+      "expected_article": "ley:47",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The user is asking what they should do if they don't agree with a traffic fine they received in Guatemala. I need to check the provided context to find the relevant articles.\n\nFirst, looking at the context fragments. The user mentioned \"no estoy de acuerdo con una multa\" so it's about contesting a fine. Let me scan through the articles.\n\nIn fragment [1], Article 186 of the Reglamento de Tránsito talks about the procedure for infringement. It says that if the infractor disagrees, they have five days to submit a written objection with proof. They can present it to the Department of Traffic or the Municipal Traffic Court. The resolution must be done within 30 days. Also, the police's statement is a presumption that can be challenged with proof.\n\nFragment [3] is about administrative appeals. It says that if someone is affected by an administrative decision, they can appeal to the head of the Department of Traffic or the Municipal Court within 30 days. If there's silence, it's considered unfavorable.\n\nFragment [5] mentions that when a driver is fined, the authority gives a warning slip with the infringement, article violated, and sanction. If the vehicle is left without the driver, the slip is placed on the vehicle.\n\nThe user wants to know what to do if they disagree with the fine. So the key here is the procedure for contesting. From [1], the process is: within five days from the date of the infringement, submit written objection with proof to the Department of Traffic or Municipal Traffic Court. The resolution is within 30 days.\n\nAlso, fragment [3] says that in case of administrative decisions, you can appeal to the Department head or Municipal Court within 30 days. But the main point here is the 5-day window for objection as per Article 186.\n\nWait, the user is asking specifically about disagreeing with the fine. So the answer should be based on Article 186. Let me check the exact wording.\n\nArticle 186 says: \"Como gestión o trámite administrativo se entiende el derecho del infractor, de manifestar por escrito su desacuerdo, ofreciendo prueba en un plazo no mayor de cinco días, contados a partir de la fecha en que se cometió la infracción. En tal caso, el interesado presentará el alegato correspond",
+          "sources": [
+            "reglamento:186",
+            "ley:30",
+            "ley:47",
+            "ley:32",
+            "ley:31",
+            "reglamento:189",
+            "ley:33"
+          ],
+          "latency_ms": 24613,
+          "cita_correcta": false,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa y coincide con el artículo 186 del Reglamento de Tránsito, proporcionando la información correcta y relevante para la consulta del ciudadano."
+        }
+      }
+    },
+    {
+      "id": "tb-020",
+      "question": "¿Puedo transportar este objeto grande en mi camioneta si un poco sale por encima de la altura permitida?",
+      "expected_article": "reglamento:49",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The citizen is asking if they can transport a large object in their pickup truck that slightly exceeds the allowed height. \n\nFirst, I need to check the provided context to find relevant articles. The context includes several articles from the Guatemalan Traffic Regulations.\n\nLooking at the articles:\n\nArticle 49 talks about vehicle dimensions and cargo. It says that if the cargo exceeds the limits, a special permit is needed from the relevant authority.\n\nArticle 51 deals with indivisible loads that exceed vehicle dimensions. It specifies that for lengths, it shouldn't protrude more than 2m in front and 3m behind (for vehicles over 5m long), or a third of the vehicle's length. For width, no more than 0.4m on each side. Also, precautions must be taken to avoid hazards.\n\nArticle 50 is about cargo disposition, which mentions not exceeding the authorized weight, stability, visibility, etc.\n\nArticle 78 is about loading and unloading operations, but the question is about transporting an object that's slightly over height, so maybe not directly relevant.\n\nArticle 60 is about pedestrians, so probably not relevant here.\n\nThe key here is the height. The citizen's object is slightly over the allowed height. The question is whether they can do it without a permit.\n\nArticle 49 states that if the cargo exceeds the limits, a special permit is required. So if the height is over the allowed limit, they need a permit.\n\nBut wait, Article 51 mentions indivisible loads. The citizen's object might be considered indivisible (like a large item). The article says that such loads can be transported if they meet certain conditions (length and width), but the height isn't specified here. However, the main point is that exceeding the dimensions requires a special permit.\n\nThe answer should be that they need a special permit because the height exceeds the allowed limit, as per Article 49.\n\nWait, but the question says \"un poco sale por encima de la altura permitida\" (a little bit over the allowed height). So it's a small excess. But according to Article 49, any excess requires a special permit. So even a little bit over would need a permit.\n\nAlso, check if there's any exception. Article 51 talks about indivisible loads, but the height isn't covered there. The height limit is probably set in the Acuerdo G",
+          "sources": [
+            "reglamento:49",
+            "reglamento:51",
+            "reglamento:50",
+            "reglamento:47",
+            "reglamento:78",
+            "reglamento:17",
+            "reglamento:60"
+          ],
+          "latency_ms": 24018,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta no es completamente fidedigna ya que no menciona explícitamente el Acuerdo Gubernativo Número 1084-92, pero sí responde directamente a la consulta y es clara en su explicación."
+        }
+      }
+    },
+    {
+      "id": "tb-021",
+      "question": "¿Si dejo cosas tiradas en la calle que me pueden quitar y cuánto me van a cobrar?",
+      "expected_article": "ley:24",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The citizen is asking if leaving things on the street can be taken away and how much they'll charge.\n\nFirst, I need to check the provided context to find relevant articles. The context has several sections from the Ley de Tránsito and Reglamento de Tránsito.\n\nLooking at the context:\n\n- Article 35 (Ley de Tránsito) talks about incautación of vehicles and things on public roads. It mentions that if a vehicle is left on the street for more than 36 hours, it's considered abandoned and can be taken away. But the citizen is asking about things left on the street, not vehicles.\n\n- Article 24 (Ley de Tránsito) says the authority can remove anything that obstructs traffic. So that's relevant for things left on the street.\n\n- Article 41 (Reglamento) prohibits leaving objects that obstruct traffic. It also mentions that the authority can order removal of obstacles.\n\n- Article 182 (Reglamento) lists fines, including item 10: \"Por arrojar, depositar o abandonar sobre la vía pública, materia que puede entorpecer la circulación.\" So this is about throwing, depositing, or abandoning materials that obstruct traffic. The fine here is 300 quetzales.\n\n- Article 78 (Reglamento) is about loading and unloading, but maybe not directly relevant here.\n\nThe citizen's question is about leaving things on the street. The key points here are:\n\n1. Can they be taken away? Yes, according to Article 24 and 41, the authority can remove things that obstruct traffic.\n\n2. How much will they charge? The fine is 300 quetzales as per Article 182, point 10.\n\nWait, but the question is about the cost to be charged. The context says that in Article 182, the fine is 300 quetzales for abandoning materials that obstruct traffic. So the answer would be that they can be taken away, and the fine is 300 quetzales.\n\nBut I need to check if the context specifies that the fine is applied when the thing is abandoned. Article 182, point 10 says \"Por arrojar, depositar o abandonar sobre la vía pública",
+          "sources": [
+            "ley:35",
+            "ley:24",
+            "reglamento:41",
+            "ley:37",
+            "reglamento:182",
+            "reglamento:78",
+            "ley:38"
+          ],
+          "latency_ms": 24718,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero contiene un error en la fidelidad al afirmar que el costo se aplica en el momento de la remoción, cuando en realidad es una multa por abandono."
+        }
+      }
+    },
+    {
+      "id": "tb-022",
+      "question": "¿Tengo que ponerme casco si manejo mi moto?",
+      "expected_article": "reglamento:94",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's see. The user is asking if they need to wear a helmet when riding their motorcycle in Guatemala. I need to check the provided context to find the relevant article.\n\nLooking at the context, there's Article 94 which says: \"El conductor o el pasajero de molo y motobicicleta esta obligado a usar el casco protector, siempre que circule en la vía pública.\" Wait, the user wrote \"moto\" but in the context it's \"motobicicleta\". Maybe that's a typo. The article states that both the driver and passenger of a motorcycle (motobicicleta) must wear a protective helmet when driving on public roads.\n\nAnother article is 91, but that talks about safety equipment examples, not specifically helmets. Article 48 is about two-wheeled vehicles, but it's about the number of people. Article 40 is about driver obligations, but not helmets. Article 13 is about lighting equipment. Article 18 is about tires. Article 79 is about cargo.\n\nSo the key here is Article 94. The user is asking about their motorcycle, which in Guatemalan terms is \"motobicicleta\" (motorcycle). The article says that the driver or passenger must wear a helmet when circulating in public roads. So the answer is yes, they need to wear a helmet.\n\nI should phrase it in a friendly, clear way, and cite Article 94. Let me check the exact wording. The user said \"manejo mi moto\" which is Spanish for \"drive my motorcycle\". The context uses \"motobicicleta\", so it's the same thing. The answer is yes, based on Article 94.\n\nMake sure not to mention other articles. The answer should be in Spanish, as the user's question is in Spanish. Wait, the user wrote the question in Spanish: \"¿Tengo que ponerme casco si manejo mi moto?\" So the response should be in Spanish too.\n\nWait, the instructions say to respond in a cordial, clear, brief way for a citizen without legal knowledge. The context is in Spanish, so the answer should be in Spanish.\n\nWait, the user's query is in Spanish, so the response should be in Spanish. Let me check the rules again. The user is a citizen, so the answer should be in Spanish.\n\nWait, the problem says: \"",
+          "sources": [
+            "reglamento:94",
+            "reglamento:91",
+            "reglamento:48",
+            "reglamento:13",
+            "reglamento:40",
+            "reglamento:18",
+            "reglamento:79"
+          ],
+          "latency_ms": 20514,
+          "cita_correcta": false,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa, directa y clara, y se basa directamente en el artículo oficial proporcionado."
+        }
+      }
+    },
+    {
+      "id": "tb-024",
+      "question": "¿Tengo que poner luces especiales en mi camión?",
+      "expected_article": "reglamento:15",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The citizen is asking if they need to put special lights on their truck. I need to check the provided context to find the relevant articles.\n\nFirst, looking at the context, there are several articles about lights. Let me go through each one.\n\nArticle 165 talks about using lights in special weather conditions like fog, heavy rain, etc. It mentions using fog lights or low beams. But the question is about a truck, so maybe this is relevant if the truck is in such conditions.\n\nArticle 159 is about position lights and taillights when in tunnels or low visibility conditions. It also mentions that trucks need the license plate light on. Hmm, but the citizen is asking about \"luces especiales\" which might refer to fog lights or other special lights.\n\nArticle 16 is about basic equipment for trailers. It lists that trailers need reflectors, lights (two position lights at the back, directional lights, brake lights), and the license plate must be illuminated. Also, if the trailer is over 2.5m, it needs lights at front, sides, and back. This seems relevant because a truck might have a trailer.\n\nArticle 20 is about emergency vehicles, so probably not relevant here.\n\nArticle 164 is about immobilized vehicles needing position lights. Not directly related.\n\nArticle 163 is about lights during the day, but the citizen is asking about special lights, so maybe not.\n\nArticle 158 says all vehicles between sunset and sunrise must have lights on. But again, the question is about special lights.\n\nThe citizen's truck might be a trailer (remolque) as per Article 16. The context says that remolques (trailers) must have specific lights. The answer should focus on Article 16 because it's about trailer equipment.\n\nWait, the question is \"¿Tengo que poner luces especiales en mi camión?\" which translates to \"Do I have to put special lights on my truck?\" In Guatemala, a \"camión\" is a truck, but the regulations mention \"remolque\" (trailer). So maybe the citizen is referring to their truck as a trailer? Or maybe in their context, a truck has a trailer.\n\nLooking at Article 16: \"El remolque que transite en la vía pública del territorio nacional deberá contar con el siguiente equipo...\" So it's about",
+          "sources": [
+            "reglamento:165",
+            "reglamento:159",
+            "reglamento:16",
+            "reglamento:20",
+            "reglamento:164",
+            "reglamento:163",
+            "reglamento:158"
+          ],
+          "latency_ms": 21506,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero no menciona específicamente las luces requeridas para camiones según el artículo oficial, sino para remolques. Además, no se refiere directamente a las luces especiales mencionadas en la consulta."
+        }
+      }
+    },
+    {
+      "id": "tb-025",
+      "question": "¿Puedo bajar pasajeros en la calle si no hay una parada cerca?",
+      "expected_article": "reglamento:72",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The citizen is asking if they can get off passengers on the street if there's no nearby stop. I need to check the provided context to find the relevant articles.\n\nFirst, looking at the context fragments. The user mentioned \"bajar pasajeros en la calle\" which translates to \"getting off passengers on the street\". The key here is the rules about where passengers can get on or off.\n\nStarting with Article 72: It says that ascenso or descenso de pasajeros must be done only in designated places (paradas). It prohibits stopping in unauthorized places for loading or unloading. So if there's no stop nearby, you can't do it there.\n\nArticle 73 talks about congested stops but that's more about priority when multiple vehicles are stopping. Not directly relevant here.\n\nArticle 74 is about taxis, which can stop anywhere but with conditions. But the question is about general passengers, not taxis.\n\nArticle 58 is about pedestrians and cycling, not relevant here.\n\nArticle 149 is about parking spaces, not passenger stops.\n\nArticle 68 is about drivers' conduct, not passenger stops.\n\nSo the main relevant part is Article 72. It states that you must only do ascenso/descenso in designated places (paradas) and prohibits stopping in unauthorized places. Therefore, if there's no stop nearby, you can't get off passengers on the street.\n\nThe answer should be based on Article 72, which says that the driver must only stop in designated places (paradas) and it's prohibited to stop in unauthorized places. So the answer is no, you can't do that.\n\nI need to phrase it in a friendly, clear way for a citizen without legal knowledge. Also, end with the article reference.\n\nCheck if there's any other article that might apply. Article 68 mentions drivers must conduct without sudden movements, but that's about driving, not stopping for passengers.\n\nSo the answer is based on Article 72. The response should state that according to the regulation, you can't stop to get off passengers on the street if there's no designated stop, and cite Article 72.\n</think>\n\nNo, no puede bajar pasajeros en la calle si no hay una parada cercana. Según el Reglamento de Tránsito, Artículo 72, las maniobras de ascenso o descenso",
+          "sources": [
+            "reglamento:72",
+            "reglamento:73",
+            "reglamento:74",
+            "reglamento:58",
+            "reglamento:149",
+            "reglamento:47",
+            "reglamento:68"
+          ],
+          "latency_ms": 23589,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa y concisa, refleja correctamente el artículo oficial, responde directamente a la consulta y es clara para un ciudadano sin formación jurídica."
+        }
+      }
+    },
+    {
+      "id": "tb-026",
+      "question": "Si estoy caminando en la calle y un coche se acerca girando, ¿tengo derecho a cruzar aunque no haya un paso de peatones?",
+      "expected_article": "reglamento:125",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this question. The citizen is asking if they have the right to cross the street even if there's no pedestrian crossing when a car is approaching and turning.\n\nFirst, I need to check the provided context to find the relevant articles. The context includes several articles from the Guatemalan Traffic Regulations.\n\nLooking at the context:\n\nArticle 125 (Prioridad de Paso de los Peatones Ante los Vehículos) lists situations where pedestrians have priority. Point d) says: \"Cuando los vehículos giren a otra vía y haya peatones cruzándola, aunque no esté demarcado el paso de peatones.\" So when vehicles turn and there are pedestrians crossing, even if there's no marked pedestrian path.\n\nArticle 61 (Pasos Peatonales) mentions that in pedestrian crossings, pedestrians have priority, but in traffic lights, if the pedestrian crossing is perpendicular, drivers must yield.\n\nThe question is about crossing without a pedestrian crossing when a car is turning. So the key here is Article 125, point d. It states that pedestrians can cross when vehicles are turning, even without a marked pedestrian path.\n\nWait, the citizen is asking if they have the right to cross when a car is approaching and turning, and there's no pedestrian crossing. According to Article 125, d), pedestrians have priority in such situations (when vehicles turn and pedestrians are crossing). So the answer would be yes, they have the right to cross.\n\nBut I need to make sure. Let me re-read the articles.\n\nArticle 125, d) says: \"Cuando los vehículos giren a otra vía y haya peatones cruzándola, aunque no esté demarcado el paso de peatones.\" So when vehicles turn and there are pedestrians crossing, even if there's no marked pedestrian path. So the pedestrian has the right to cross in that case.\n\nThe citizen is walking on the street (no pedestrian crossing) and a car is approaching to turn. So the answer is yes, they can cross because the car is turning and pedestrians have priority there.\n\nWait, but the question is phrased as \"¿tengo derecho a cruzar aunque no haya un paso de peatones?\" So the citizen is asking if they have the right to cross even without a pedestrian crossing when a car is approaching and turning.\n\nAccording to Article 125, d",
+          "sources": [
+            "reglamento:125",
+            "reglamento:61",
+            "reglamento:121",
+            "reglamento:58",
+            "reglamento:59",
+            "reglamento:134",
+            "reglamento:132"
+          ],
+          "latency_ms": 24283,
+          "cita_correcta": false,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa y coincide con el artículo oficial, responde directamente a la consulta y es clara para un ciudadano sin formación jurídica."
+        }
+      }
+    },
+    {
+      "id": "tb-033",
+      "question": "¿Puedo llevar mi vaca por la calle si no hay un camino de tierra?",
+      "expected_article": "reglamento:53",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this question. The citizen is asking if they can take their cow on the street if there's no dirt path. I need to check the provided context to find the relevant articles.\n\nFirst, looking at the context, the main articles related to animals on public roads are Articles 53, 54, and 55 of the Reglamento de Tránsito.\n\nArticle 53 says that animals like those for traction, cargo, or saddles can only pass on public roads if there's no practicable path via a rural route, and they must be guarded by a person. Also, they have to use the alternative path with less vehicle traffic.\n\nArticle 54 gives specific conditions for animals, including that they must be guided by a person, not invade sidewalks, and circulate on the right side of the road. Also, they can't occupy more than half the road in a group.\n\nArticle 55 prohibits animals from passing on highways, expressways, and urban main arteries. So if the street is a regular city street (not a highway or expressway), maybe it's allowed.\n\nThe citizen mentions there's no dirt path. So they're asking if they can take the cow on the street (which is a public road) when there's no dirt path. \n\nFrom Article 53: \"En la vía pública sólo se permitirá el paso de animales de tiro, carga o silla, cabezas de ganado aisladas, en manada o rebano, cuando no exista itinerario practicable por vía vecinal, de herradura o vereda...\" So the animal can pass on the public road only if there's no practicable rural path (vía vecinal, de herradura, vereda). The citizen says there's no dirt path, so maybe that condition is met.\n\nWait, the question is in Spanish: \"¿Puedo llevar mi vaca por la calle si no hay un camino de tierra?\" So \"calle\" is street, \"camino de tierra\" is dirt path.\n\nSo the citizen is saying there's no dirt path (camino de tierra), so they want to know if they can take their cow on the street.\n\nAccording to Article 53, the animal can pass on the public road only when there's no practicable rural path (vía vecinal, de herradura,",
+          "sources": [
+            "reglamento:53",
+            "reglamento:54",
+            "reglamento:55",
+            "reglamento:105",
+            "reglamento:60",
+            "ley:2",
+            "reglamento:64"
+          ],
+          "latency_ms": 23887,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero contiene un error al no mencionar explícitamente que el camino de herradura se refiere a una vía alternativa de menor intensidad de circulación de vehículos, no necesariamente un camino de tierra."
+        }
+      }
+    },
+    {
+      "id": "tb-034",
+      "question": "Si estoy en una calle con carriles para bicicletas y un camión quiere pasarme, ¿tengo que ceder el paso al camión o puedo seguir usando mi carril?",
+      "expected_article": "reglamento:67",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this question. The citizen is asking if they have to yield to a truck when there are bike lanes and the truck wants to pass them.\n\nFirst, I need to check the provided context to find the relevant articles. The context has several articles from the Guatemalan Traffic Regulation.\n\nLooking at the context:\n\nArticle 67 (Lugares de Circulación de las Bicicletas) mentions that bike lanes are priority for cyclists, but vehicles can overtake them. The priority is defined by the signage at each crossing. Also, in intersections, cyclists use bike lanes or designated paths.\n\nArticle 66 (Prioridad de los Ciclistas) states that cyclists have the right of way over any other transport except pedestrians. Drivers must yield to cyclists.\n\nArticle 126 (Prioridad de paso de las Bicicletas Ante los Demás Vehículo) says cyclists have priority over vehicles in certain situations, like when vehicles turn, cross the bike lane, or where signage indicates.\n\nThe citizen's situation: They're on a street with bike lanes, and a truck wants to pass. The question is whether they have to yield to the truck.\n\nFrom Article 67: \"Los carriles son de uso prioritario para las bicicletas, pero los vehículos automotores pueden sobrepasar estos carriles, estando la prioridad definida por la señalización puntual en cada lugar de cruce de trayectorias.\" So bike lanes are priority for cyclists, but vehicles can overtake them, and priority is defined by signage at each crossing.\n\nAlso, Article 126 mentions that cyclists have priority in specific cases, like when vehicles turn or cross the bike lane. But the question is about a truck trying to pass the cyclist.\n\nWait, the citizen is a cyclist using the bike lane. The truck wants to pass. So the truck is trying to overtake the cyclist. According to Article 67, vehicles can overtake bike lanes, but the priority is defined by signage. However, the cyclist has priority in certain situations.\n\nWait, Article 66 says cyclists have the right of way over any vehicle except pedestrians. So drivers must yield to cyclists. But the context says \"excepto los derechos del peatón\" (except pedestrians). So cyclists have priority over vehicles.\n\nBut in the case where the truck is trying to pass, the cyclist would have to yield?",
+          "sources": [
+            "reglamento:67",
+            "reglamento:66",
+            "reglamento:67",
+            "reglamento:126",
+            "reglamento:102",
+            "reglamento:101",
+            "reglamento:103"
+          ],
+          "latency_ms": 24697,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es confusa y no responde directamente la pregunta, además de contener una interpretación incorrecta de la ley."
+        }
+      }
+    },
+    {
+      "id": "tb-035",
+      "question": "¿Qué necesito para que mi carro pueda circular por la calle?",
+      "expected_article": "ley:18",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The user is asking what they need for their car to circulate on the street according to Guatemala's traffic laws. I need to check the provided context to find the relevant articles.\n\nFirst, I'll go through each of the context sections. The user is specifically asking about the requirements for a car to be able to circulate. The context has several articles from the Ley de Tránsito and Reglamento de Tránsito.\n\nStarting with [1] Reglamento de Tránsito, Artículo 14: This lists the basic equipment for vehicles. It includes things like horn, mirrors, windshield, seatbelts, spare tire, tools, silencer, speedometer, lights, and reflective triangles. But the user is asking about what's needed to circulate, so this is part of the equipment.\n\nThen [2] Reglamento de Tránsito, Artículo 10: Documents required, like the circulation card or copy, and valid plates. Also mentions that bike riders under 12 don't need docs, but the user is asking about a car, so this is relevant.\n\n[3] Ley de Tránsito, Artículo 18: Defines vehicles and their requirements, including valid circulation card/plates, being in good working condition, meeting safety standards, no pollution, and adaptations for disabled. This seems important.\n\n[4] Reglamento de Tránsito, Artículo 18: Tires must be in safe condition, no smooth or broken tires, and trucks need protective covers. But the user is asking about general car circulation, so maybe this is a detail but still relevant.\n\n[5] Reglamento de Tránsito, Artículo 100: About driving on the right side in curves, but the user's question is about what's needed to circulate, not the rules of the road.\n\n[6] Ley de Tránsito, Artículo 15: Requirements for driving, like having a valid license, mental capacity, and driving within speed limits. This is about the driver, not the vehicle itself.\n\n[7] Reglamento de Tránsito, Artículo 17: Max weights and dimensions, but again, maybe not the main point here.\n\nThe user's question is about what the car needs to circulate. So the main points would be the vehicle's equipment (Art.14), documents (",
+          "sources": [
+            "reglamento:14",
+            "reglamento:10",
+            "ley:18",
+            "reglamento:18",
+            "reglamento:100",
+            "ley:15",
+            "reglamento:17"
+          ],
+          "latency_ms": 24171,
+          "cita_correcta": true,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero no menciona todos los requisitos específicos del Artículo 18 de la Ley de Tránsito de Guatemala."
+        }
+      }
+    },
+    {
+      "id": "tb-036",
+      "question": "¿Qué luces necesito tener en mi moto para circular por la calle?",
+      "expected_article": "reglamento:13",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The citizen is asking what lights they need on their motorcycle to drive on the street in Guatemala. I need to check the provided context to find the relevant articles.\n\nFirst, looking at the context, there's Article 13 of the Reglamento de Tránsito which specifies the basic equipment for motorcycles. It lists the required lights: high beam, low beam, rear position light, directional lights, and a silencer. Wait, but the silencer is a bit odd here—maybe it's a typo? The context says \"Silenciador\" which translates to silencer, but in traffic regulations, that's not a light. Hmm, but the user is asking about lights, so maybe the silencer is a mistake here. But I have to go with what's in the context.\n\nThen, there's Article 163 about using lights during the day. It says that motorcycles must have the position light or low beam on during the day. Wait, but the question is about what lights are needed to circulate on the street. The street is a public road, so maybe the basic equipment from Article 13 is the main answer here.\n\nWait, the citizen is asking specifically for the lights needed when circulating on the street. The context mentions that Article 13 requires the following for motorcycles: a) high and low beam front, b) rear position light, c) front and rear directional lights, d) brake light with reflector, e) silencer. But the silencer isn't a light, so maybe that's a mistake in the context. However, the user is asking about lights, so I should focus on the light-related items.\n\nAlso, Article 163 says that during the day, motorcycles must have the position light or low beam on. But the question is about what lights are needed to circulate on the street, so the basic equipment (Article 13) is the primary requirement. The answer should be based on Article 13.\n\nWait, the user is in Guatemala, so the law is the Ley de Tránsito de Guatemala (Decreto 132-96) and its Reglamento (Acuerdo Gubernativo 273-98). The context provided is the Reglamento articles.\n\nSo, the answer should be that according to Article 13, the motorcycle must have: luz alta y baja adelante",
+          "sources": [
+            "reglamento:13",
+            "reglamento:163",
+            "reglamento:161",
+            "reglamento:166",
+            "reglamento:159",
+            "reglamento:164",
+            "reglamento:160"
+          ],
+          "latency_ms": 21866,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta omite algunos elementos del artículo oficial y presenta una explicación un poco confusa, pero responde directamente a la consulta."
+        }
+      }
+    },
+    {
+      "id": "tb-039",
+      "question": "¿Puedo usar mi bocina de mi carro a todo volumen sin que me pongan una multa?",
+      "expected_article": "reglamento:44",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The citizen is asking if they can use their car's horn at full volume without getting a fine. I need to check the provided context to find the relevant articles.\n\nFirst, looking at the context, there's Article 182 which lists penalties for various infractions, including using horns. Wait, no, Article 182 mentions penalties for things like throwing trash, but the specific part about horns is in Article 182, point 5: \"Por producir sonidos o ruidos estridentes exagerados o innecesarios, por medio de los propios vehículos, bocinas, altavoces u otros aditamentos, en áreas residenciales, hospitales y sanatorios, o en horas de la noche.\"\n\nThen there's Article 44, which talks about noise pollution: \"Queda prohibido producir sonidos o ruidos estridentes, exagerados o innecesarios, por medio de los propios vehículos, escapes, bocinas u otros aditamentos especialmente en áreas residenciales, hospitales y horas de la noche.\"\n\nAlso, Article 183 mentions penalties for using emergency lights, but the main issue here is the horn. The key point is that using the horn excessively or in prohibited areas (residential, hospitals, at night) can lead to fines.\n\nThe citizen is asking if they can use the horn at full volume without a fine. So, the answer depends on where and when they use it. If they use it in residential areas, hospitals, or at night, it's prohibited. Otherwise, maybe allowed. But the question is whether they can do it without a fine. The context says that producing loud noises via horns in those areas is prohibited and can lead to a fine (Article 182, point 5 and Article 44).\n\nWait, the answer should be that using the horn at full volume is allowed unless in specific areas or times. But the exact answer needs to be based on the provided context.\n\nLooking at Article 44: it says it's prohibited to produce loud noises in residential areas, hospitals, and at night. So if the citizen uses the horn in those places or times, they get a fine. Otherwise, it's allowed. But the question is whether they can do it without a fine. So the answer would be: Yes",
+          "sources": [
+            "reglamento:182",
+            "reglamento:44",
+            "reglamento:172",
+            "reglamento:40",
+            "ley:31",
+            "ley:35",
+            "reglamento:183"
+          ],
+          "latency_ms": 25590,
+          "cita_correcta": false,
+          "fidelidad": 2,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta no es completamente fidedigna ya que no menciona las restricciones específicas de uso de la bocina en áreas residenciales, hospitales y horas nocturnas. Sin embargo, es relevante y clara en la medida en que responde la consulta del ciudadano."
+        }
+      }
+    },
+    {
+      "id": "tb-042",
+      "question": "Si tengo que ceder el paso para entrar a una calle principal, ¿cuándo puedo arrancar?",
+      "expected_article": "reglamento:120",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let me try to figure out how to answer this question. The citizen is asking: \"Si tengo que ceder el paso para entrar a una calle principal, ¿cuándo puedo arrancar?\" which translates to \"If I have to yield the right of way to enter a main street, when can I start moving?\"\n\nFirst, I need to check the provided context to find the relevant articles. The context includes several articles from Guatemala's Traffic Regulations (Reglamento de Tránsito). Let me go through each one.\n\nStarting with Article 122 (Priority at intersections): It says that in unmarked intersections, the vehicle that approaches the public way of higher hierarchy (like autopista over vía rápida, etc.) has priority. But the question is about when you can start moving after yielding. The key part here might be about when you can proceed after yielding.\n\nArticle 120 (General norms) states that when a driver must yield, they shouldn't start or continue moving until they're sure that the vehicle with priority won't have to abruptly change direction or speed. So, the driver must ensure that the other vehicle won't be forced to make sudden maneuvers.\n\nArticle 125 (Pedestrian priority) is about pedestrians, so maybe not directly relevant here.\n\nArticle 140 (Retroceso) is about reversing, so probably not relevant.\n\nArticle 121 (Blocking intersections) talks about not entering intersections if it blocks traffic, but the question is about when you can start after yielding.\n\nThe citizen is entering a main street (calle principal), so they need to yield to the vehicle that has priority. According to Article 122, in unmarked intersections, the vehicle approaching the higher hierarchy road (like main street) has priority. Wait, but the question says \"tengo que ceder el paso\" (I have to yield), so the citizen is the one who has to yield, meaning they are the vehicle that's not the priority. So they are approaching an intersection where the other vehicle has priority.\n\nWait, the context says: \"En intersecciones que no estén señalizadas, siempre llevará el derecho de paso o la vía, el que se aproxime sobre la vía pública de mayor jerarquía...\" So in unmarked intersections, the vehicle that approaches the higher hierarchy road (like main street) has priority. So if the citizen is entering a",
+          "sources": [
+            "reglamento:122",
+            "reglamento:120",
+            "reglamento:61",
+            "reglamento:140",
+            "reglamento:121",
+            "reglamento:128",
+            "reglamento:125"
+          ],
+          "latency_ms": 24394,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero contiene un error en la interpretación del artículo oficial, lo que reduce la fidelidad."
+        }
+      }
+    },
+    {
+      "id": "tb-043",
+      "question": "¿Tengo que avisarle a los demás conductores antes de girar o cambiar de carril?",
+      "expected_article": "reglamento:168",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The citizen is asking if they have to warn other drivers before turning or changing lanes.\n\nFirst, I need to check the provided context to find the relevant articles. The context has several articles from the Guatemalan Traffic Regulations.\n\nLooking at the articles:\n\nArticle 132 talks about notifying drivers in advance when making maneuvers like turning, changing lanes, etc. It says the driver must warn others ahead of time and ensure safety.\n\nArticle 138 is about changing lanes, but it mentions priority and avoiding intersections.\n\nArticle 169 is about lateral movement, requiring the use of directional lights or hand signals.\n\nArticle 168 specifically states the obligation to warn other users of the maneuvers with sufficient advance, using lights, arm, or horn.\n\nArticle 135 is about left turns, but the main point here is the warning.\n\nArticle 134 is about right turns at traffic lights.\n\nArticle 133 is about right turns.\n\nThe question is about whether they need to warn before turning or changing lanes. The key here is Article 168, which says \"El conductor obligatoriamente advertirá al resto de los usuarios de la vía, de las maniobras que efectuará con su vehículo.\" That translates to the driver must warn other users of the maneuvers they will perform.\n\nAlso, Article 132 mentions notifying in advance when making turns or lane changes.\n\nSo the answer should reference both Article 132 and Article 168. But the user is asking specifically about turning or changing lanes. Let me check the exact wording.\n\nThe citizen's question: \"¿Tengo que avisarle a los demás conductores antes de girar o cambiar de carril?\"\n\nIn the context, Article 168 says \"Obligación de Advertir las Maniobras\" which is exactly about warning before maneuvers. It states that the driver must warn using lights, arm, or horn with sufficient advance.\n\nArticle 132 also says the driver must warn in advance when turning, changing lanes, etc.\n\nSo the answer should mention that yes, you have to warn, and cite both articles? Wait, but the user might need the most direct reference.\n\nWait, the problem says to respond only with the fragments in the context. Let me check the exact articles.\n\nArticle 168: \"El conductor obligatoriamente advertirá al resto",
+          "sources": [
+            "reglamento:132",
+            "reglamento:138",
+            "reglamento:169",
+            "reglamento:168",
+            "reglamento:135",
+            "reglamento:134",
+            "reglamento:133"
+          ],
+          "latency_ms": 22805,
+          "cita_correcta": false,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa y directa, citando el artículo oficial que especifica la obligación de advertir antes de realizar maniobras."
+        }
+      }
+    },
+    {
+      "id": "tb-046",
+      "question": "¿Si veo una señal de tráfico rota en la calle, quién tiene que hacer que la quiten?",
+      "expected_article": "reglamento:86",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this question. The citizen is asking, \"¿Si veo una señal de tráfico rota en la calle, quién tiene que hacer que la quiten?\" which translates to \"If I see a broken traffic sign on the street, who has to make them remove it?\"\n\nFirst, I need to check the provided context to find the relevant articles. Let me go through each one.\n\nStarting with [1] Reglamento de Tránsito, Artículo 88: It talks about prohibiting removing, altering, or covering traffic signs. It says the authority must order the removal if the additions or alterations cause confusion, reduce visibility, etc. But this is about what's prohibited, not who removes the broken signs.\n\n[2] Reglamento de Tránsito, Artículo 86: Obligación de Retirar Señales Obsoletas. The authority must remove or replace obsolete signs immediately. The exception is \"No estacionar\" signs at private property entrances. So if the sign is obsolete, the authority has to remove it. But the question is about a broken sign, not necessarily obsolete.\n\n[3] Reglamento de Tránsito, Artículo 84: Responsibility for signaling. The Department or Municipalities must fabricate, install, and maintain traffic signs. They can contract third parties. So they're responsible for the signs, but if a sign is broken, who fixes it?\n\n[4] Ley de Tránsito, Artículo 24: The authority can remove anything obstructing traffic. But this is about objects, vehicles, materials, etc., not specifically broken signs.\n\n[5] Reglamento de Tránsito, Artículo 81: Obedience to signs. Not relevant here.\n\n[6] Ley de Tránsito, Artículo 23: Defines public way and prohibits obstructing it. Also mentions that it's prohibited to alter, destroy, or remove traffic signs. So if a sign is broken, it's against the law, but who has to fix it?\n\n[7] Reglamento de Tránsito, Artículo 85: Signaling for works. Not directly relevant here.\n\nHmm. The key here is that the broken sign is an \"obsoleta\" (obsolete) sign or just broken. Article 86 says that the authority must remove obsolete signs. But if the sign is broken (not obsolete",
+          "sources": [
+            "reglamento:88",
+            "reglamento:86",
+            "reglamento:84",
+            "ley:24",
+            "reglamento:81",
+            "ley:23",
+            "reglamento:85"
+          ],
+          "latency_ms": 22688,
+          "cita_correcta": true,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero contiene información no solicitada y no precisa sobre quién debe hacer la retirada de las señales roto."
+        }
+      }
+    },
+    {
+      "id": "tb-047",
+      "question": "¿Si subastan un carro, y el carro tenía multas antes de ser subastado, cómo se maneja el dinero de la subasta?",
+      "expected_article": "ley:39",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this question. The user is asking about what happens to the money from a car auction if the car had fines before being auctioned. \n\nFirst, I need to check the provided context to find the relevant articles. The context includes several articles from the Ley de Tránsito and Reglamento de Tránsito.\n\nLooking at the context, Article 39 (Ley de Tránsito) mentions that when vehicles are sold in public auction, the price subastado (the auction price) has to deduct all costs, fines, and other charges. The remaining amount goes to the authority's funds. \n\nAlso, in the context, there's a part in Article 39 (Ley de Tránsito) that says: \"Del precio subastado del vehículo se descontaran todos los gastos ocasionados, multas y recargos y demás que correspondieren al vehículo; y el saldo ingresara a los fondos privativos de la autoridad de transito que los hubiere subastado.\"\n\nSo, the key point here is that the auction price minus all the costs, fines, and penalties (multas) that the vehicle had before the auction will go to the authority's funds.\n\nAnother part in the context is Article 37 (Ley de Tránsito) which talks about vehicles that are abandoned and sold in auction after six months. But the user's question is about the handling of the money when the car had fines before being auctioned.\n\nWait, the user is specifically asking about the money from the auction. The context mentions that the remaining amount after deducting the fines and other charges goes to the authority's funds. So the answer should be that the auction proceeds are first deducted by the fines and other charges, and the leftover goes to the authority's funds.\n\nAlso, in the Reglamento de Tránsito, Article 188 talks about the funds being used for infrastructure, but the main point here is the deduction of fines.\n\nLet me check the exact wording in the context. In [1], it says: \"Del precio subastado del vehículo se descontaran todos los gastos ocasionados, multas y recargos y demás que correspondieren al vehículo; y el saldo ingresara a los fondos privativos de la autoridad de transito que los hubiere subastado.\"\n\nSo the answer is that the",
+          "sources": [
+            "ley:39",
+            "ley:38",
+            "ley:39",
+            "ley:37",
+            "reglamento:188",
+            "reglamento:189",
+            "reglamento:188"
+          ],
+          "latency_ms": 25233,
+          "cita_correcta": false,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa y coincide con el artículo oficial, responde directamente a la consulta y es clara para un ciudadano sin formación jurídica."
+        }
+      }
+    },
+    {
+      "id": "tb-051",
+      "question": "¿Qué hacen las señales de tránsito?",
+      "expected_article": "reglamento:80",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The user is asking, \"¿Qué hacen las señales de tránsito?\" which translates to \"What do traffic signals do?\" in Spanish.\n\nFirst, I need to check the provided context to find the relevant articles. The context includes several articles from the Guatemalan Traffic Law and Regulations.\n\nLooking at the context:\n\n- Article 80 (Reglamento de Tránsito) defines \"señalización\" as the set of directives to inform users of the road, order or regulate their behavior with necessary anticipation in certain circumstances of the road or traffic.\n\n- Article 84 talks about who is responsible for manufacturing and maintaining traffic signals.\n\n- Article 83 mentions the design and specifications, including that signals must be in Spanish if written.\n\n- Article 23 (Ley de Tránsito) prohibits obstructing the public road with signs that limit traffic signals.\n\nBut the main answer here is probably Article 80, which explains what signaling (señalización) is for. The question is about what traffic signals do, so the answer should be based on Article 80.\n\nWait, the user says \"señales de tránsito\" which is traffic signals, not just signaling in general. Let me check the context again.\n\nIn the context, Article 80 defines \"señalización\" as the set of directives to inform users, order or regulate their behavior. So the answer would be that traffic signals inform users, order their behavior, and regulate traffic.\n\nAlso, Article 81 talks about obeying signals, but the question is what they do, not what users must do.\n\nSo the answer should be based on Article 80. Let me rephrase that in simple terms for a citizen without legal knowledge.\n\nThe response should be in Spanish, as the user's query is in Spanish. Wait, the user wrote the query in Spanish, but the instructions say to respond in Spanish? Wait, the problem says \"Responde ÚNICAMENTE con base en los fragmentos de la normativa que aparecen en el CONTEXTO.\" The context is in Spanish, so the answer should be in Spanish.\n\nWait, the user's query is in Spanish: \"¿Qué hacen las señales de tránsito?\" So the answer needs to be in Spanish.\n\nLet me check the context again. The context has articles in Spanish. So the",
+          "sources": [
+            "reglamento:81",
+            "reglamento:80",
+            "reglamento:84",
+            "ley:28",
+            "reglamento:83",
+            "reglamento:7",
+            "ley:23"
+          ],
+          "latency_ms": 22594,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero no se basa directamente en el artículo oficial proporcionado, sino en una interpretación general."
+        }
+      }
+    },
+    {
+      "id": "tb-055",
+      "question": "¿Puedo caminar por la calle si no hay aceras, pero tengo que tener cuidado de no hacer el tráfico más lento?",
+      "expected_article": "reglamento:59",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The citizen is asking if they can walk on the street (calle) if there are no sidewalks (aceras), but they need to be careful not to slow down traffic.\n\nFirst, I need to check the provided context to find relevant articles. The context includes several articles from the Guatemalan Traffic Regulation.\n\nLooking at Article 64: It says that pedestrians are prohibited from walking on the roadway or the verges of highways and fast roads, both urban and extra-urban. They must use designated spaces or green strips if available. Exceptions include authorities, firefighters, etc., but the citizen is a regular pedestrian. Also, it prohibits walking in tunnels, bridges, or level crossings without sidewalks.\n\nSo, if there are no sidewalks (aceras), the pedestrian can't walk on the roadway. Wait, but the question says \"si no hay aceras\" (if there are no sidewalks). So according to Article 64, they must use spaces provided or green strips. If there are no sidewalks, they can't walk on the roadway. So the answer here might be that they can't walk on the street (calzada) if there are no sidewalks.\n\nBut the citizen is asking if they can walk on the street (calle) when there are no sidewalks. Wait, in some contexts, \"calle\" might refer to the street itself, which is the roadway. So if there's no sidewalk, they can't walk on the roadway (calzada) as per Article 64.\n\nThen, the second part: \"pero tengo que tener cuidado de no hacer el tráfico más lento?\" (but I have to be careful not to make traffic slower). So the citizen is concerned about slowing down traffic.\n\nLooking at Article 115: It says that drivers must reduce speed carefully, not abruptly, to avoid collisions. But the question is about pedestrians slowing down traffic. Wait, the citizen is a pedestrian, so maybe they're worried that walking might slow down traffic. But the context here is about the pedestrian's right to walk on the street without slowing traffic.\n\nWait, the user is asking if they can walk on the street (calle) when there are no sidewalks, but they need to be careful not to make traffic slower. So the answer would be based on whether pedestrians are allowed to walk on the street (calzada) without sidewalks, and if walking there affects traffic",
+          "sources": [
+            "reglamento:64",
+            "reglamento:58",
+            "reglamento:58",
+            "reglamento:125",
+            "reglamento:117",
+            "reglamento:140",
+            "reglamento:115"
+          ],
+          "latency_ms": 25053,
+          "cita_correcta": false,
+          "fidelidad": 2,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta no es completamente fidedigna ya que no menciona la prohibición de caminar en la calzada si no hay aceras, pero es relevante al tratar la situación del ciudadano y clara en su estructura."
+        }
+      }
+    },
+    {
+      "id": "tb-059",
+      "question": "¿Necesito ir a un curso de clases para poder sacar el permiso de aprendizaje?",
+      "expected_article": "reglamento:31",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The citizen is asking if they need to go to a course to get the learning permit.\n\nFirst, I need to check the provided context to see what's relevant. The context has several articles from the Guatemalan traffic regulations.\n\nLooking at Article 31 (Reglamento de Tránsito): It says the learning permit is granted to people learning to drive. It requires receiving a course from an authorized school, or having a licensed companion who's authorized by the Department.\n\nArticle 32 mentions the requirements to get the learning permit: a) meet the requirements for the first license except the practical exam, and b) identify the school or companion.\n\nArticle 33 talks about the validity and that the learner must be accompanied by the instructor or the designated companion.\n\nSo the key point here is whether the citizen needs to attend a course. According to Article 31, the permit requires receiving a course from an authorized school. So yes, they need to go to a course.\n\nWait, but the question is specifically about the learning permit. The answer should be based on the context. The context says that the learning permit requires a course from an authorized school or a companion with a license. So the answer is yes, they need to attend a course unless they have a companion.\n\nBut the citizen is asking if they need to go to a course. The answer would be yes, because the permit requires that. The context says \"Dicho permiso obliga a recibir un curso de aprendizaje en una escuela de tránsito autorizada para el efecto.\" So the permit requires receiving a course from an authorized school.\n\nSo the answer is yes, they need to go to a course. The reference is Article 31.\n\nWait, but the user might be thinking if they can do it without a course, but according to the context, the permit requires the course. So the answer is yes.\n\nLet me check other articles to be sure. Article 38 is about sanctions, not relevant here. Article 24 is about foreign licenses, not relevant. Article 6 is about school certificates being valid, but the question is about needing a course to get the permit.\n\nSo the answer is yes, they need to attend a course from an authorized school. The reference is Reglamento de Tránsito, Artículo 31.\n\nI need to phrase it in a friendly, clear way for a",
+          "sources": [
+            "reglamento:31",
+            "reglamento:33",
+            "reglamento:32",
+            "reglamento:24",
+            "reglamento:38",
+            "ley:17",
+            "reglamento:27"
+          ],
+          "latency_ms": 21749,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa y concisa, refleja la información correcta del artículo oficial y responde directamente a la consulta del ciudadano."
+        }
+      }
+    },
+    {
+      "id": "tb-060",
+      "question": "¿Tengo que llevar siempre conmigo la tarjeta de circulación cuando conduzco mi bicicleta?",
+      "expected_article": "reglamento:10",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this question. The citizen is asking if they need to carry the circulation card (tarjeta de circulación) when riding their bicycle.\n\nFirst, I need to check the provided context to find relevant articles. The context has several sections: Articles 10, 181, 19, 94, 65, 176, and 14 of the Traffic Regulations.\n\nStarting with Article 10 of the Reglamento de Tránsito: It says that vehicles must have certain documents, including the circulation card or its authenticated copy. But it also mentions that bicycle drivers (conductores de bicicleta) who are children up to 12 years old, used for sports or recreational activities don't need to carry any documents. The Department of Traffic regulates other bicycle drivers.\n\nSo, the key part here is: \"No necesitan portar ningún documento lodo conductor de bicicleta, utilizada por niños de hasta 12 años de edad, la utilizada para hacer deporte o alguna otra actividad recreativa.\" Translated, this means that bicycle drivers (for children up to 12, or for sports/recreational use) don't need to carry any documents. But the article says \"lodo\" which might be a typo for \"todos\" (all). So, all bicycle drivers for those categories don't need to carry documents.\n\nWait, the original text says: \"No necesitan portar ningún documento lodo conductor de bicicleta...\" Maybe \"lodo\" is a typo for \"todos\". So, \"No necesitan portar ningún documento todos los conductores de bicicleta...\" meaning all bicycle drivers in those categories don't need to carry documents.\n\nSo, if the citizen is riding a bicycle for recreational purposes or for children under 12, they don't need to carry the circulation card. But if they are a regular cyclist (not in those categories), they might need to? Wait, the article says \"No necesitan portar ningún documento lodo conductor de bicicleta, utilizada por niños de hasta 12 años de edad, la utilizada para hacer deporte o alguna otra actividad recreativa.\" So the ones who are children up to 12, or using it for sports/recreational activities don't need to carry documents.\n\nBut the question is about the citizen's bicycle. The answer depends on the type",
+          "sources": [
+            "reglamento:10",
+            "reglamento:181",
+            "ley:19",
+            "reglamento:94",
+            "reglamento:65",
+            "reglamento:176",
+            "ley:14"
+          ],
+          "latency_ms": 23869,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es confusa y no responde directamente la pregunta, además contiene interpretaciones incorrectas del artículo oficial."
+        }
+      }
+    },
+    {
+      "id": "tb-061",
+      "question": "¿Si no estoy presente cuando me ponen la multa, aún me la puedo aplicar?",
+      "expected_article": "reglamento:187",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The citizen is asking if they can still be fined if they aren't present when the ticket is issued. \n\nFirst, I need to check the provided context to find relevant articles. The user mentioned \"no estoy presente cuando me ponen la multa\" which translates to \"I'm not present when they give me the ticket.\"\n\nLooking at the context:\n\nIn [1], Article 187 says that if the offender isn't present when the infraction is committed or verified, the police will place the ticket in a visible place. So this seems relevant.\n\nAlso, [2] mentions that if the vehicle is left on the public way and the driver isn't present, the authority leaves the warning ticket in the vehicle in a visible and safe place. So this is another point.\n\nThe question is whether the fine can still be applied if the person isn't present. The answer here is yes, because according to the regulations, the authority can still issue the ticket even if the driver isn't there. The key is that the ticket is placed in the vehicle or left in a visible place.\n\nSo the answer should reference Article 187 and maybe Article 2. Let me check the exact wording.\n\nArticle 187: \"El policía de tránsito, en lugar visible del vehículo, colocará la boleta cuando el infractor no esté presente en el momento de cometerse o verificarse la infracción, o en caso que el infractor no se identifique personalmente.\"\n\nThis translates to: The traffic police will place the ticket in a visible location of the vehicle when the offender is not present at the time of committing or verifying the infraction, or when the offender does not personally identify themselves.\n\nSo the answer is yes, the fine can still be applied because the police will place the ticket in the vehicle. The relevant article here is 187.\n\nWait, the user is asking if they can still be fined (aplicar) if they aren't present. The answer is yes, because the police will place the ticket in the vehicle. So the response should state that yes, the fine can be applied because the police will place the ticket in the vehicle in a visible place.\n\nThe answer should be in Spanish, as the context is in Spanish. Wait, the user wrote the question in Spanish, so the response should be in Spanish too.\n\nWait, the user's query is",
+          "sources": [
+            "reglamento:187",
+            "ley:31",
+            "reglamento:189",
+            "reglamento:186",
+            "reglamento:182",
+            "reglamento:185",
+            "ley:32"
+          ],
+          "latency_ms": 25178,
+          "cita_correcta": false,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa y coincide con el artículo oficial, responde directamente a la consulta y está clara para un ciudadano sin formación jurídica."
+        }
+      }
+    },
+    {
+      "id": "tb-062",
+      "question": "¿Dónde puedo hacer los exámenes para sacar mi licencia de conducir?",
+      "expected_article": "reglamento:27",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's see. The user is asking where they can take the exams to get their driver's license in Guatemala. I need to check the provided context to find the relevant articles.\n\nFirst, looking at the context fragments. The user mentioned \"exámenes para sacar mi licencia de conducir\" which translates to exams for getting a driver's license.\n\nIn fragment [1], it says: \"Los exámenes teóricos y prácticos necesarios para obtener licencia, deberán ser efectuados por la autoridad o por las entidades públicas y privadas a las que el Departamento delegue esta función, en los lugares y tiempos que disponga.\" So here it mentions that the exams must be conducted by the authority (the Department) or by public/private entities that the Department delegates the function to. The places and times are determined by the Department.\n\nFragment [2] is about the first license requirements, but doesn't specify where the exams are taken.\n\nFragment [3] is about what a driver's license is, not the exam locations.\n\nFragment [4] is about driving schools, but it's about certificates from authorized schools.\n\nFragment [5] is about foreign licenses, not relevant here.\n\nFragment [6] is about learner's permits, not exams.\n\nFragment [7] is about the applicant requirements for learner's permit.\n\nSo the key info is in fragment [1]. The answer should be that the exams are conducted by the authority (Departamento de Tránsito) or authorized public/private entities that the Department delegates. The places and times are as per the Department's schedule.\n\nI need to phrase it in a friendly, clear way for a citizen without legal knowledge. Also, must cite the article: Reglamento de Tránsito, Artículo 27.\n\nWait, the user is asking where to take the exams. The answer is that they can take the exams at the Department of Traffic (Departamento de Tránsito) or at authorized public/private entities that the Department has delegated the function to. The specific locations and times are determined by the Department.\n\nSo the response should be: Los exámenes teóricos y prácticos para obtener licencia de conducir deben realizarse en los lugares y tiempos que disponga el Departamento de Tránsito, o en entidades públicas y privadas autorizadas por el Departamento",
+          "sources": [
+            "reglamento:27",
+            "reglamento:25",
+            "ley:14",
+            "ley:17",
+            "reglamento:24",
+            "reglamento:31",
+            "reglamento:33"
+          ],
+          "latency_ms": 23052,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa y coincide con el artículo oficial, responde directamente a la consulta y es clara para un ciudadano sin formación jurídica."
+        }
+      }
+    },
+    {
+      "id": "tb-063",
+      "question": "¿Quién se encarga de hacer el reglamento de la Ley de Tránsito?",
+      "expected_article": "ley:48",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this question. The user is asking, \"¿Quién se encarga de hacer el reglamento de la Ley de Tránsito?\" which translates to \"Who is responsible for making the regulation of the Traffic Law?\"\n\nFirst, I need to check the provided context to find the relevant articles. Let me go through each section.\n\nLooking at the context:\n\n[1] Ley de Tránsito, Artículo 48. Reglamentación. Here it says that the President of the Republic, with the approval of the Minister of Governance, must regulate the law within 60 days from its publication.\n\n[2] Ley de Tránsito, Artículo 5. Facultades. This lists the powers of the Department of Traffic, including the ability to \"elaborar el reglamento para la aplicación de esta ley\" (elaborate the regulation for the application of this law). So the Department of Traffic is authorized to create the regulation.\n\nWait, but the question is about who is responsible for making the regulation. The answer might be the Department of Traffic, but according to Article 48, it's the President with the Minister's approval.\n\nWait, let me check again. Article 48 says: \"Corresponde al presidente de la república con el refrendo del ministro de gobernación reglamentar la presente ley, dentro de los sesenta días contados a partir de la fecha de su publicación.\" So the President of the Republic, with the endorsement of the Minister of Governance, is responsible for regulating the law within 60 days.\n\nBut Article 5 mentions that the Department of Traffic (under the Ministry of Governance) has the power to \"elaborar el reglamento para la aplicación de esta ley\". So there's a bit of a conflict here. Wait, no. The Department of Traffic is the entity that will apply the law, but the regulation itself is made by the President with the Minister's approval.\n\nWait, the user is asking who makes the regulation. According to Article 48, the President with the Minister's endorsement is responsible for the regulation. But Article 5 says the Department of Traffic can elaborate the regulation. Hmm.\n\nWait, maybe the answer is that the Department of Traffic is the one that elaborates the regulation, but the President has to approve it. Let me check the context again.\n\nIn [1], Article 4",
+          "sources": [
+            "ley:48",
+            "ley:5",
+            "ley:6",
+            "reglamento:84",
+            "ley:4",
+            "reglamento:1",
+            "reglamento:197"
+          ],
+          "latency_ms": 22123,
+          "cita_correcta": true,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero contiene una información contradictoria sobre quién es responsable de hacer el reglamento."
+        }
+      }
+    },
+    {
+      "id": "tb-064",
+      "question": "¿Qué tengo que hacer cuando estoy adelantando a otro coche?",
+      "expected_article": "reglamento:146",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The user is asking what they need to do when they're passing another car. I need to look at the provided context to find the relevant articles.\n\nFirst, I'll check the context sections. The user mentioned \"adelantando\" which translates to passing in Spanish. The context has several articles related to passing.\n\nLooking at the context:\n\n[1] Article 146: Execution of passing. It says that when passing, the driver must go at a speed notably higher than the vehicle they're passing, especially if it's a heavy vehicle. Also, maintain a lateral separation for safety, especially if the vehicle being passed is a bicycle or motorcycle. If circumstances make it difficult, reduce speed and return to the original position. If done without issues, reintegrate to the lane gradually without forcing others to change.\n\n[2] Article 147: Driver obligations. If you see another vehicle intending to pass, you must: a) stay on the right edge or left if turning left, b) not increase speed, c) reduce speed if danger, d) use the right shoulder at low speeds (<=40 km/h) for passing.\n\n[3] Article 145: Right of way. Before passing, check if the vehicle ahead has indicated their intention. If not, you can pass after a prudent time. Also, check if the vehicle behind is also passing.\n\n[4] Article 116: Distance between vehicles. Must maintain a safe distance to stop without collision. At least 50 meters when not passing.\n\n[5] Article 115: Speed reduction. Must check safety before reducing speed.\n\n[6] Article 123: Narrow sections. Not directly relevant here.\n\n[7] Article 150: Leaving vehicle. Not relevant.\n\nThe main question is about what to do when passing. The most relevant articles here are 146 and 147. Let me focus on those.\n\nArticle 146 says that when passing, you must go faster than the vehicle you're passing, maintain a safe lateral distance, especially if it's a bike or motorcycle. If there's a problem, reduce speed and return. If successful, reintegrate gradually.\n\nArticle 147 says that if you see someone behind wanting to pass, you should stay on the right edge, not increase speed, reduce speed if danger, and use the shoulder at low speeds",
+          "sources": [
+            "reglamento:146",
+            "reglamento:147",
+            "reglamento:145",
+            "reglamento:116",
+            "reglamento:115",
+            "reglamento:123",
+            "reglamento:150"
+          ],
+          "latency_ms": 24539,
+          "cita_correcta": false,
+          "fidelidad": 4,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es relevante y clara, pero no menciona explícitamente la necesidad de señalar con las luces o el claxon cuando se está adelantando, lo cual es importante según el artículo oficial."
+        }
+      }
+    },
+    {
+      "id": "tb-065",
+      "question": "¿Qué licencia necesito para conducir mi furgoneta que transporta carga?",
+      "expected_article": "reglamento:23",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The citizen is asking what license they need to drive a cargo truck. I need to check the provided context to find the right article.\n\nFirst, looking at the context fragments. The user mentioned a furgoneta (which is a cargo truck in Spanish). The key here is to see which license type allows driving vehicles that transport cargo.\n\nIn fragment [1], the Reglamento de Tránsito, Artículo 23 lists the license types. Type A is for vehicles over 3.5 tons, which includes cargo transport. Type B is for cars up to 3.5 tons that can be paid for. Type C is for cars, panels, minibuses, pickups up to 3.5 tons without pay. Type M is for motorcycles. Type E is for agricultural and industrial machinery.\n\nThe citizen's furgoneta is a cargo vehicle. So, the weight matters here. The question is, what's the weight of their furgoneta? The context says Type A is for vehicles over 3.5 tons. But the user didn't specify the weight. However, in Guatemala, furgonetas (pickups) are often considered under 3.5 tons, but maybe the user's is over.\n\nWait, in fragment [5], the Reglamento de Tránsito, Artículo 22 says that licenses have a validity of 1-5 years, but that's not directly relevant here.\n\nFragment [6] talks about the first license, but the user is probably already licensed.\n\nThe main point is in Artículo 23. Type A is for vehicles over 3.5 tons, which includes cargo transport. Type C is for vehicles up to 3.5 tons without pay. So if the furgoneta is over 3.5 tons, they need Type A. If it's under, Type C.\n\nBut the citizen didn't specify the weight. However, the question is \"¿Qué licencia necesito para conducir mi furgoneta que transporta carga?\" So they might be assuming it's a standard cargo vehicle. In Guatemala, furgonetas (pickups) are often Type C (up to 3.5 tons) but if it's a heavier truck, Type A.\n\nWait, the context says Type A: \"Para conducir toda clase de vehículos de transporte de carga de más de 3.5",
+          "sources": [
+            "reglamento:23",
+            "ley:14",
+            "ley:15",
+            "ley:18",
+            "reglamento:22",
+            "reglamento:25",
+            "reglamento:49"
+          ],
+          "latency_ms": 23622,
+          "cita_correcta": true,
+          "fidelidad": 4,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es relevante y clara, pero no menciona explícitamente que el peso de la furgoneta es crucial para determinar el tipo de licencia necesaria."
+        }
+      }
+    },
+    {
+      "id": "tb-068",
+      "question": "¿Qué tengo que hacer cuando quiero girar a la derecha?",
+      "expected_article": "reglamento:133",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The user is asking what they need to do when they want to turn right. I need to check the provided context to find the relevant articles.\n\nLooking at the context, there are several articles related to turning right. Let me go through each one.\n\nArticle 133 is about turning right. It says the driver must position themselves in the right lane, close to the curb or sidewalk, make necessary signals, follow intersection rules, especially priority, and then merge into the right lane of the new road.\n\nArticle 134 is about continuous right turns. It mentions that in signalized intersections, you can turn right on red if there's the corresponding signage. The driver must position on the right edge of the road, make signals, yield to all vehicles entering the new road, and complete the turn on the right lane.\n\nArticle 132 is general norms. It states that when turning right or left, the driver must warn others in advance, ensure enough space and speed to do the maneuver safely.\n\nArticle 180 lists penalties, but the user is asking about the procedure, so maybe not relevant here.\n\nThe user's question is about what to do when turning right. The main articles here are 132 and 133. Since the user is asking for the steps, Article 133 seems the most direct. It specifies positioning in the right lane, close to the curb, making signals, following priority rules, and then merging into the new right lane.\n\nWait, but Article 132 also mentions warning others in advance, so maybe both articles are relevant. However, the user is specifically asking about turning right, so the answer should focus on the specific steps for right turns.\n\nLet me check the exact wording of Article 133 again: \"El conductor que vaya a virar o girar a la derecha, deberá posicionarse con la atención suficiente en el carril derecho, pegado al bordillo o arcén. Hará las indicaciones necesarias y en la intersección se comportará acorde a las normas de este Reglamento, especialmente a las de prioridad, incorporándose luego al carril derecho de fa nueva vía.\"\n\nSo the steps are: position in the right lane close to the curb, make necessary signals, behave according to priority rules at the intersection, then merge into the right lane of the new road.\n\nArticle",
+          "sources": [
+            "reglamento:133",
+            "reglamento:134",
+            "reglamento:135",
+            "reglamento:132",
+            "reglamento:142",
+            "reglamento:169",
+            "reglamento:180"
+          ],
+          "latency_ms": 23866,
+          "cita_correcta": false,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa y completa, incluyendo todos los pasos mencionados en el artículo oficial, y responde directamente a la consulta del ciudadano."
+        }
+      }
+    },
+    {
+      "id": "tb-069",
+      "question": "¿Qué necesito para poder tener una licencia de conducir?",
+      "expected_article": "ley:14",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The user is asking what they need to have a driver's license in Guatemala based on the provided context.\n\nFirst, I need to check the context given. The user provided several articles from the Ley de Tránsito and Reglamento de Tránsito. The main relevant part here is probably Article 25 of the Reglamento de Tránsito, which is about the first license.\n\nLooking at the context, [1] is Reglamento de Tránsito, Artículo 25. Primera Licencia. It lists the requirements for obtaining a first license. The key points here are:\n\na) Fill out the application form.\nb) Be of age (with specific age requirements for types A and B).\nc) Present a vision exam certification.\nd) Be able to read and write in the official language, or special tests if illiterate.\ne) Pay the corresponding fee.\nf) Pass theoretical and practical exams.\ng) Present the required number of photos.\n\nThe user is asking about getting a license for the first time, so Article 25 is the main one here. The other articles like 14, 24, 29, 27, 22 might not be directly relevant here since the question is about initial license requirements.\n\nI need to make sure not to include any other articles. The answer should be based solely on the provided context. The user is a citizen without legal knowledge, so the answer should be clear and in simple terms.\n\nAlso, the response must end with the article cited, like (Reglamento de Tránsito, Artículo 25).\n\nLet me check if there's any other part that might be relevant. For example, Article 14 talks about what a driver's license is, but the requirements for obtaining it are in Article 25. So the answer should focus on Article 25.\n\nThe user's question is in Spanish, so the answer should be in Spanish as well. Wait, the user wrote the query in Spanish: \"¿Qué necesito para poder tener una licencia de conducir?\" So the response should be in Spanish.\n\nWait, the instructions say: \"Redacta de forma cordial, clara y breve, para un ciudadano sin formación jurídica.\" So the answer needs to be in Spanish.\n\nLet me structure the answer:\n\nFirst, list the requirements from",
+          "sources": [
+            "reglamento:25",
+            "ley:14",
+            "reglamento:24",
+            "ley:15",
+            "reglamento:29",
+            "reglamento:27",
+            "reglamento:22"
+          ],
+          "latency_ms": 23727,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero no incluye todos los detalles necesarios del artículo oficial."
+        }
+      }
+    },
+    {
+      "id": "tb-070",
+      "question": "¿Puedo poner un cartel publicitario en un semáforo?",
+      "expected_article": "ley:23",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The citizen is asking if they can put an advertising sign on a traffic light. I need to check the provided context to see which articles apply.\n\nFirst, looking at the context fragments. The user mentioned the Law of Traffic (Ley de Tránsito) and the Traffic Regulation (Reglamento de Tránsito). \n\nIn the context, Article 87 of the Traffic Regulation (Reglamento de Tránsito) talks about prohibiting the installation of signs or billboards that contain or emulate traffic signals. It says that it's forbidden to place such materials in public ways or private properties that have traffic signals. Also, it mentions that the authority can remove them immediately.\n\nArticle 88 is about prohibiting removing, altering, or covering traffic signals. It states that except for the authority, you can't do that. If you add things that cause confusion, reduce visibility, etc., the department or municipality must order removal.\n\nArticle 23 of the Law of Traffic (Ley de Tránsito) says that the public way is for traffic and circulation, and it's prohibited to place signs or elements that limit or alter traffic signals. Also, altering, destroying, or removing traffic signals is prohibited, and placing ads on traffic signals without authorization is forbidden.\n\nArticle 19 of the Traffic Regulation (Reglamento de Tránsito) prohibits vehicles from having opaque objects on windshields that impair visibility, but that's about vehicles, not traffic lights.\n\nArticle 24 of the Law of Traffic allows the traffic authority to remove anything obstructing traffic, including ads.\n\nThe question is specifically about putting an ad on a traffic light. Traffic lights are part of the traffic signals. So, according to Article 87, you can't place signs that emulate traffic signals. Also, Article 23 (b) says you can't place signs that limit or alter traffic signals. \n\nThe key here is that traffic lights are signals, so adding an ad on them would be altering or covering the signal, which is prohibited. The authority can remove such materials. \n\nSo the answer is no, you can't put an ad on a traffic light. The relevant articles are 87 and 23. But the user asked for the specific article. Let me check which one is most directly related.\n\nArticle 87: Prohibición de Colocar Carteles o Vallas Public",
+          "sources": [
+            "reglamento:87",
+            "reglamento:88",
+            "ley:23",
+            "reglamento:19",
+            "ley:24",
+            "reglamento:81",
+            "ley:28"
+          ],
+          "latency_ms": 22513,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero no menciona el artículo oficial exacto que regula la situación."
+        }
+      }
+    },
+    {
+      "id": "tb-071",
+      "question": "¿Puedo transportar muebles en mi camioneta si son grandes y salen de la caja?",
+      "expected_article": "reglamento:51",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The citizen is asking if they can transport large furniture in their pickup truck if the items are bigger than the truck's box.\n\nFirst, I need to check the provided context to find relevant articles. The context has several articles from the Guatemalan Traffic Regulations.\n\nLooking at the context:\n\nArticle 51 talks about indivisible loads that exceed vehicle dimensions. It says that loads like furniture, pipes, beams, etc., that exceed the vehicle's dimensions can be transported if they comply with Acuerdo Gubernativo 1054-92 and the following conditions:\n\na) Length: No more than 2.00 meters in front of the front axle and 3.00 meters behind in vehicles longer than 5.00 meters. If the vehicle is shorter than 5.00 meters, then each front and rear end shouldn't exceed one third of the vehicle's length.\n\nb) Width: No more than 0.40 meters on each side.\n\nAlso, they must take precautions to avoid damage or danger to other users.\n\nArticle 49 mentions vehicle dimensions and cargo, stating that cargo shouldn't exceed the limits in Acuerdo 1084-92, and if it's unavoidable, a special permit is needed.\n\nArticle 47 is about transporting people, which might not be relevant here.\n\nArticle 50 is about cargo disposition, which says cargo must be secured so it doesn't move, cause danger, etc.\n\nThe citizen is asking about transporting large furniture that extends beyond the truck's box. So, the key here is Article 51, which specifically addresses indivisible loads like furniture.\n\nThe answer should be based on Article 51. The conditions are that the load must not exceed the specified dimensions (2m front, 3m back for vehicles over 5m, or 1/3 of the vehicle length for shorter ones; 0.4m width on each side). Also, they need to take precautions.\n\nSo, the response should say that yes, but with the conditions from Article 51. If the furniture meets those dimensions, then it's allowed. Otherwise, they need a special permit as per Article 49.\n\nWait, the question is specifically about whether they can transport if the items are big and extend beyond the box. So the answer would be that it's allowed if they comply with the dimensional limits in Article 5",
+          "sources": [
+            "reglamento:51",
+            "reglamento:49",
+            "reglamento:47",
+            "reglamento:50",
+            "reglamento:69",
+            "reglamento:78",
+            "reglamento:62"
+          ],
+          "latency_ms": 25664,
+          "cita_correcta": false,
+          "fidelidad": 4,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es correcta en su esencia pero podría ser más precisa al mencionar los detalles específicos del artículo 51."
+        }
+      }
+    },
+    {
+      "id": "tb-072",
+      "question": "¿Puedo llevar a mis amigos en la parte trasera de mi camioneta si están de pie?",
+      "expected_article": "reglamento:69",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this question. The citizen is asking if they can carry their friends in the back of their pickup truck while they're standing. I need to check the provided context to find the relevant articles.\n\nFirst, looking at the context, there are several articles. Let me go through them one by one.\n\nArticle 69 is about the maximum number of occupants in vehicles. It says that transporting more people than in the documents is prohibited, especially in standing areas without authorization. Also, it mentions that you can't transport people in places not designed for that, like outside the vehicle (parrillas, escaleras, etc.). So this might be relevant.\n\nArticle 47 talks about the placement and conditioning of people. It says that in vehicles for cargo, you can have passengers in the cargo area if speed is 50 km/h or less. For pick-ups (which are the same as pickup trucks), there are specific numbers: max 12 in short beds, 16 in long beds, and they need barriers. Wait, the citizen is asking about their pickup truck, so this might be relevant. The article mentions that in areas without buses, pick-ups can transport people in the cargo area with those conditions.\n\nArticle 51 is about indivisible loads, which seems unrelated here.\n\nArticle 48 is about two-wheeled vehicles, so not relevant.\n\nArticle 14 is about basic equipment, not relevant.\n\nArticle 93 is about exceptions for seat belts, which might not be directly relevant here.\n\nArticle 18 is about tires, not relevant.\n\nSo the main articles to check are 69 and 47. Let's focus on 47 because it's about pick-up trucks. The citizen is using a pickup truck (camioneta), so Article 47 says that in areas without buses, pick-ups can carry people in the cargo area with max 12 or 16 people depending on the bed length, and they need barriers. Also, the speed must be 50 km/h or less.\n\nBut the question is about whether they can have friends standing in the back. The article says \"en el lugar donde también se transporta carga\" (where cargo is transported), so the back of the pickup truck is the cargo area. The article specifies that for pick-ups, there's a max of 12 or 16 people, and they need barriers. Also, the people",
+          "sources": [
+            "reglamento:69",
+            "reglamento:47",
+            "reglamento:51",
+            "reglamento:48",
+            "reglamento:14",
+            "reglamento:93",
+            "reglamento:18"
+          ],
+          "latency_ms": 24299,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero contiene información inventada al afirmar que el artículo 47 permite transportar personas de pie en la parte trasera de la camioneta, cuando en realidad solo permite transportar personas sentadas en el área destinada a carga."
+        }
+      }
+    },
+    {
+      "id": "tb-073",
+      "question": "¿Quién decide cómo se ven las tarjetas y placas de circulación?",
+      "expected_article": "ley:19",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this question. The citizen is asking, \"¿Quién decide cómo se ven las tarjetas y placas de circulación?\" which translates to \"Who decides how the cards and plates look?\"\n\nFirst, I need to check the provided context to find the relevant articles. The context has several sections from the Ley de Tránsito and Reglamento de Tránsito.\n\nLooking at the context:\n\nIn [1], Ley de Tránsito, Artículo 19: \"Todo vehículo que transite por la vía publica se identificara con la tarjeta y placa de circulación emitidas por el Ministerio de Finanzas Publicas, pero el ministerio de gobernación esta facultado para disponer los diseños, definir los sistemas de emisión y vigilar el uso de las mismas, en resguardo del interés general y la seguridad nacional...\"\n\nSo here it says that the Ministry of Finance (Ministerio de Finanzas Publicas) issues the cards and plates, but the Ministry of Government (Ministerio de Gobernación) has the authority to decide the designs, define the emission systems, and monitor their use, for the interest of the nation and security.\n\nThe question is about who decides how they look (diseños). According to this, the Ministry of Government (Ministerio de Gobernación) is the one that has the authority to \"disponer los diseños\" (decide the designs).\n\nLet me check if there's any other part that might contradict this. The other articles don't seem to address the design of the cards and plates. For example, [2] talks about documents required, [3] about retention, [4] about public service vehicles, [5] about vehicles, [6] about emissions, [7] about driver identification.\n\nSo the answer is the Ministry of Government (Ministerio de Gobernación) as per Artículo 19 of the Ley de Tránsito.\n\nI need to make sure the answer is in Spanish, as the context is in Spanish. The response should be in Spanish, citing the article.\n\nThe user wants the answer in Spanish, so I'll phrase it accordingly.\n\nThe answer should be: El Ministerio de Gobernación está facultado para disponer los diseños, definir los sistemas de emisión y vigilar el uso",
+          "sources": [
+            "ley:19",
+            "reglamento:10",
+            "reglamento:176",
+            "ley:20",
+            "ley:18",
+            "reglamento:194",
+            "reglamento:70"
+          ],
+          "latency_ms": 23909,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa y concisa, refleja exactamente el contenido del Artículo 19 de la Ley de Tránsito de Guatemala, responde directamente a la consulta y es clara para un ciudadano sin formación jurídica."
+        }
+      }
+    },
+    {
+      "id": "tb-075",
+      "question": "¿Qué necesito hacer para que la municipalidad donde vivo asuma el control del tránsito?",
+      "expected_article": "reglamento:5",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The user is asking what they need to do for their municipality to take over traffic control. I need to check the provided context to find the relevant articles.\n\nFirst, looking at the context, there are several articles from the Ley de Tránsito and Reglamento de Tránsito. The main ones related to transferring traffic administration to municipalities are Articles 5, 8, 9, and maybe others.\n\nStarting with Article 5 of the Reglamento de Tránsito: It says the Ministry of Governance can transfer traffic administration to municipalities that request it, following certain requirements. The requirements include a written request from the mayor, documents proving the creation of the Municipal Traffic Court and Municipal Traffic Police, and documents showing the municipality has the necessary resources, projects, etc. Also, if multiple municipalities want to do it together, they can submit a joint request.\n\nThen Article 8 of the Ley de Tránsito: The executive body (Ministry) can transfer traffic administration to municipalities that meet certain conditions. The municipality must formally request it and show they have the resources. Also, the municipal council must validate the transfer via a municipal agreement. The transfer doesn't include things like driver licenses, vehicle plates, etc.\n\nArticle 9 is about joint exercises, so if multiple municipalities want to do it together, they need a prior agreement and then submit to the Ministry.\n\nThe user is asking what they need to do. Since they're in a municipality, they probably need to act as the mayor or the municipal government. The process starts with a written request from the mayor (as per Article 5 and 8). They need to provide documents proving the Municipal Traffic Court and Police exist, and that they have the necessary resources.\n\nWait, the user says \"la municipalidad donde vivo\" so they might be a resident, not the mayor. But the process requires the mayor to submit the request. So the answer should guide them to contact their mayor to initiate the process.\n\nThe key steps from the context: The municipality must submit a written request (Art. 5), have the necessary documents (Municipal Traffic Court, Police, resources), and the Ministry will review within 30 days. Also, the municipal council must approve the transfer (Art. 8).\n\nSo the answer should outline that the mayor needs to submit a written request with the required documents. The user (resident) should inform their mayor about this",
+          "sources": [
+            "reglamento:5",
+            "ley:8",
+            "ley:9",
+            "reglamento:118",
+            "ley:45",
+            "reglamento:151",
+            "ley:11"
+          ],
+          "latency_ms": 23758,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es relevante y clara, pero no menciona que el residente debe informar al alcalde sobre el proceso, y omite la necesidad de un dictamen favorable del Departamento de Tránsito."
+        }
+      }
+    },
+    {
+      "id": "tb-076",
+      "question": "¿Puedo usar la bocina en mi coche si estoy pasando por mi barrio por la noche?",
+      "expected_article": "reglamento:44",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The citizen is asking if they can use their car horn while driving through their neighborhood at night.\n\nFirst, I need to check the provided context to find relevant articles. The context includes several articles from the Guatemalan Traffic Regulations.\n\nLooking at the context:\n\nArticle 44 (Contaminación Auditiva) says it's prohibited to produce loud, excessive, or unnecessary sounds via vehicles, exhausts, horns, or other accessories, especially in residential areas, hospitals, and at night. It also prohibits the use of sirens or devices that emit sounds similar to emergency vehicles.\n\nArticle 172 (Aviso Luminoso) talks about using light signals instead of horns, but that's about lights, not horns.\n\nArticle 62 is about pedestrian areas, which might not be directly relevant here.\n\nArticle 40 (Obligaciones de los Conductores) mentions prohibiting the use of headphones and phones while driving, but not specifically horns.\n\nArticle 165 is about lights in bad weather.\n\nArticle 20 is about emergency vehicle lights.\n\nArticle 50 is about cargo.\n\nSo the key here is Article 44. It explicitly prohibits using horns (bocinas) in residential areas and at night. The citizen is driving through their neighborhood at night, which falls under the prohibited areas and times mentioned.\n\nThe answer should state that according to Article 44, using the horn is prohibited in residential areas at night. So the answer is no, they can't use the horn.\n\nI need to make sure to cite the correct article. The context says Article 44 is \"Contaminación Auditiva\" and the prohibition includes \"bocinas\" (horns) especially in residential areas and at night.\n\nYes, so the response should be that it's prohibited, citing Article 44.\n</think>\n\nNo, según la normativa, queda prohibido usar la bocina en áreas residenciales y durante las horas de la noche, ya que produce sonidos estridentes o innecesarios que pueden causar molestias a los vecinos. (Reglamento de Tránsito, Artículo 44).",
+          "sources": [
+            "reglamento:44",
+            "reglamento:172",
+            "reglamento:62",
+            "reglamento:40",
+            "reglamento:165",
+            "reglamento:20",
+            "reglamento:50"
+          ],
+          "latency_ms": 23536,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa y concisa, citando el artículo correcto y la prohibición específica de usar la bocina en áreas residenciales y durante la noche, sin añadir información innecesaria o contradictoria."
+        }
+      }
+    },
+    {
+      "id": "tb-077",
+      "question": "Si manejo un taxi, ¿puedo parar en la calle para que se bajen mis pasajeros si es rápido?",
+      "expected_article": "reglamento:74",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The user is asking if they can stop on the street to let passengers get off quickly when they're driving a taxi.\n\nFirst, I need to check the provided context to find the relevant articles. The user mentioned \"parar en la calle\" (stop on the street) for passengers to get off quickly.\n\nLooking at the context:\n\nArticle 74 (Paradas de Taxis) says taxis can stop anywhere to load or unload passengers as long as they take necessary precautions, follow norms and signals, and the activity takes less than two minutes. Also, they must be in a permitted parking space if not.\n\nArticle 72 (Ascenso y Descenso de Pasajeros) states that passengers must board and alight only at designated stops (paradas), taking all precautions. Drivers must be close to the sidewalk (max 30 cm) and parallel. It's prohibited to stop in unauthorized places, and ignoring this leads to sanctions.\n\nArticle 73 (Paradas Congestionadas) talks about priority in crowded stops, but the user is asking about stopping on the street, not a designated stop.\n\nArticle 58 (Circulación Por espacios Destinados al Peatón) mentions not leaving pedestrian areas to cross streets, but the user is about taxis stopping on the street.\n\nThe key here is whether stopping on the street (not a designated parking area) is allowed for taxis. Article 74 says taxis can stop anywhere \"siempre y cuando tomen las precauciones debidas, cumplan con las normas y señales establecidas y la actividad de ascenso o descenso se desarrolle en un tiempo menor a dos minutos, salvo que el taxi se ubique en un espacio de estacionamiento permitido.\"\n\nSo, the answer is yes, but with conditions: take necessary precautions, follow norms/signals, and the activity (loading/unloading) must be under two minutes. However, Article 72 prohibits stopping in unauthorized places. Wait, but Article 74 is specifically for taxis, so maybe the answer is that taxis can stop on the street (not in a parking space) as long as they meet the conditions.\n\nWait, the user is asking if they can stop on the street (calle) quickly. The context says that taxis can stop anywhere for loading/unloading as long as they take precautions, follow norms, and it's done in less than",
+          "sources": [
+            "reglamento:74",
+            "reglamento:72",
+            "reglamento:73",
+            "reglamento:68",
+            "reglamento:58",
+            "reglamento:171",
+            "reglamento:115"
+          ],
+          "latency_ms": 23411,
+          "cita_correcta": false,
+          "fidelidad": 4,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es relevante y clara, pero no menciona explícitamente que el tiempo de descenso debe ser menor a dos minutos como indica el artículo oficial."
+        }
+      }
+    },
+    {
+      "id": "tb-079",
+      "question": "¿Quién puede contratar policías de tránsito?",
+      "expected_article": "ley:10",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The user is asking, \"¿Quién puede contratar policías de tránsito?\" which translates to \"Who can hire traffic police?\" in Spanish.\n\nFirst, I need to check the provided context to find the relevant articles. The context includes several articles from the Ley de Tránsito (Traffic Law) and Reglamento de Tránsito (Traffic Regulation).\n\nLooking at the context:\n\n- Article [1] is about contracting services, but it mentions the Ministry of Governance or municipalities can contract services for police and traffic administration.\n- Article [2] talks about appointments and contracts for the Traffic Department, stating that the Head and Deputy Head are appointed by the Minister of Governance based on the proposal from the Director General of the National Civil Police.\n- Article [3] mentions that the Ministry of Governance can transfer or contract functions with public or private entities, but they reserve the right to terminate the relationship.\n- Article [4] is about the delegation of traffic administration to municipalities. It says that the executive body (through a gubernative agreement) can transfer traffic administration to municipalities that meet certain conditions. The municipality must validate the transfer via a municipal agreement. Also, municipalities can only handle functions within their jurisdiction, excluding driver licenses, vehicle plates, etc.\n- Article [5] states that the Ministry of Governance organizes the Traffic Department, which is directed by a head and deputy appointed by the Minister, based on the proposal from the Director General of the National Civil Police. Also, the Traffic Police is created as part of the National Civil Police through a ministerial agreement.\n- Article [6] says that the Ministry of Governance, through the Traffic Department of the National Civil Police, exercises traffic authority, except as per articles 8 and 9.\n- Article [7] is about transferring traffic administration to municipalities. It lists requirements like a written request from the mayor, proof of the Municipal Traffic Court, Municipal Traffic Police, and financial resources.\n\nThe question is about who can hire traffic police. The key here is to find who has the authority to contract or hire traffic police.\n\nFrom Article [5], it says that the Ministry of Governance creates and organizes the Traffic Police as part of the National Civil Police through a ministerial agreement. So the Ministry of Governance is involved in creating the Traffic Police.\n\nArticle [2] mentions that the Head and Deputy Head of the Traffic Department are appointed by the Minister of Governance based on the",
+          "sources": [
+            "ley:10",
+            "reglamento:3",
+            "ley:7",
+            "ley:8",
+            "ley:6",
+            "ley:4",
+            "reglamento:5"
+          ],
+          "latency_ms": 23356,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero no menciona explícitamente que el Ministerio de Gobernación puede contratar policías de tránsito, lo cual es una información importante aunque no directamente negativa."
+        }
+      }
+    },
+    {
+      "id": "tb-080",
+      "question": "¿Si quiero dar vuelta en 'U', pero no hay un lugar señalizado para hacerlo, qué hago?",
+      "expected_article": "reglamento:139",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this question. The citizen is asking what to do if they want to make a U-turn but there's no marked place for it.\n\nFirst, I need to check the provided context to find the relevant articles. The user mentioned the context includes several articles from Guatemala's Traffic Regulations.\n\nLooking at the context:\n\nIn [1], Article 139 talks about U-turns. It says that the driver must choose an appropriate place with prior authorization from the signage and avoid danger. If there's no marked place, they shouldn't do the maneuver until the right time.\n\nAlso, in [1], it states that U-turns are prohibited in tunnels, rail crossings, highways, and expressways, except where permitted. But the question is about when there's no marked place.\n\nThe citizen is asking specifically when there's no designated spot. So according to Article 139, the driver must choose a place that's allowed by signage and avoids danger. If there's no signage, they have to avoid doing the U-turn until the right moment.\n\nWait, the article says: \"El conductor del vehículo que invierta o cambie el sentido de su marcha (Vuelta en \"U\"’), elegirá con antelación un lugar adecuado y permitido por la señalización horizontal y vertical, evitando causar peligro y obstaculizar a otros usuarios. En caso contrario, se abstendrá de realizar toda maniobra de cambio, esperando el momento oportuno para hacer el cambio o vuelta en “U”.\"\n\nSo if there's no signage (no marked place), they shouldn't do the U-turn and wait for the right moment.\n\nThe answer should be based on Article 139. The citizen needs to wait for the right moment and not perform the U-turn if there's no designated spot.\n\nI need to make sure there's no other article that contradicts this. Let me check the other articles.\n\nArticle 123 is about narrow sections, but that's not directly relevant here. Article 148 talks about prohibitions on passing, but again, not directly about U-turns without signage.\n\nSo the answer is based on Article 139. The response should state that if there's no marked place, the driver should not perform the U-turn and wait for the right moment, as per Article 139.\n\nAlso, the response must",
+          "sources": [
+            "reglamento:139",
+            "reglamento:7",
+            "reglamento:123",
+            "reglamento:148",
+            "reglamento:134",
+            "reglamento:136",
+            "reglamento:108"
+          ],
+          "latency_ms": 25374,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero contiene información inventada al sugerir que el conductor debe esperar un momento, cuando el artículo oficial indica que debe abstenerse de realizar la maniobra en caso de no haber un lugar permitido."
+        }
+      }
+    },
+    {
+      "id": "tb-081",
+      "question": "¿Puedo estacionar mi carro en la calle?",
+      "expected_article": "ley:26",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The user is asking if they can park their car on the street. I need to check the provided context to find the relevant articles.\n\nFirst, looking at the context. The user mentioned \"calle\" which translates to street in Spanish. In Guatemala's traffic laws, the term \"calle\" might refer to public roads. \n\nThe context has several articles. Let me go through them.\n\nArticle 149 (Reglamento de Tránsito) talks about where parking is allowed. It says in rural areas, parking should be outside the roadway, same direction as the nearest lane. In urban areas, you have to park on the sidewalk or right edge of the roadway, facing the same direction as the nearest lane. Also, if there's a curb, the distance from the curb shouldn't exceed 25 cm. The vehicle shouldn't obstruct traffic or pose a risk. \n\nArticle 26 (Ley de Tránsito) says parking on public roads must follow the traffic authority's regulations. So it's allowed but with conditions.\n\nArticle 62 prohibits using sidewalks, pedestrian areas, etc., for vehicles. So parking on sidewalks is not allowed.\n\nArticle 152 lists prohibited places for parking, including curves, tunnels, intersections, etc. But the user is asking about the street in general, not specific prohibited areas.\n\nArticle 153 also has prohibitions like parking in front of fire hydrants, etc.\n\nThe key here is that in urban areas, parking is allowed on the sidewalk or right edge of the roadway (calzada), but not on the sidewalk itself (as per Article 62). Wait, Article 62 says that sidewalks are exclusive for pedestrians and vehicles can't park there. So parking on the sidewalk is prohibited.\n\nBut the user says \"en la calle\" which is street. In some contexts, \"calle\" might refer to the roadway (calzada) itself. In Guatemala, \"calle\" is a public road. So parking on the street (calzada) would be allowed in certain conditions.\n\nArticle 149 says in urban areas, you must park on the sidewalk or right edge of the roadway. Wait, but Article 62 says that sidewalks are exclusive for pedestrians, so parking on the sidewalk is prohibited. So maybe the user is referring to the roadway (calzada) itself.\n\nWait, the user is",
+          "sources": [
+            "reglamento:149",
+            "ley:26",
+            "reglamento:62",
+            "reglamento:152",
+            "reglamento:153",
+            "reglamento:164",
+            "reglamento:7"
+          ],
+          "latency_ms": 25195,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero contiene confusiones sobre el uso de la acera y la calzada, lo que reduce la fidelidad."
+        }
+      }
+    },
+    {
+      "id": "tb-086",
+      "question": "¿Puedo dejar la puerta del auto abierta mientras estoy estacionado?",
+      "expected_article": "reglamento:89",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this question. The user is asking if they can leave the car door open while parked. I need to check the provided context to find the relevant article.\n\nLooking at the context, there's Article 89 about \"Apertura de Puertas\" (Opening of Doors). Let me read that part.\n\nArticle 89 says: \"Se prohíbe a circulación de vehículos con las puertas abiertas, abrirlas antes de su completa inmovilización o apearse del mismo por lo general, se entrará y saldrá del vehículo por el lado más próximo a la acera y sólo cuando aquél se halle parado.\" Translated, it prohibits vehicles from circulating with doors open, opening them before complete immobilization, or getting out of the vehicle. It also says you enter and exit by the side closest to the sidewalk and only when the vehicle is stopped.\n\nSo the key point here is that you can't leave the doors open while the vehicle is parked (since it's prohibited to have doors open when the vehicle is stopped). The article states that you must close the doors when the vehicle is parked. The user is asking if they can leave the door open while parked, so according to Article 89, that's prohibited.\n\nWait, the exact wording: \"Se prohíbe a circulación de vehículos con las puertas abiertas, abrirlas antes de su completa inmovilización o apearse del mismo...\" So it's prohibited to have vehicles circulating with doors open, to open them before complete immobilization, or to get out. But when parked (parado), you have to close the doors. The article says \"sólo cuando aquél se halle parado\" (only when it is stopped). So when the vehicle is parked, you must not have the doors open. Therefore, leaving the door open while parked is not allowed.\n\nSo the answer is no, you can't leave the door open while parked. The reference is Article 89 of the Reglamento de Tránsito.\n\nLet me check if there's any other article that might be relevant. The other articles are about parking, but Article 89 specifically addresses door opening. So the answer should be based on Article 89.\n\nI need to phrase it in a friendly, clear way for a citizen without legal knowledge. Also, the response must",
+          "sources": [
+            "reglamento:150",
+            "reglamento:89",
+            "reglamento:153",
+            "reglamento:149",
+            "reglamento:62",
+            "reglamento:152",
+            "reglamento:41"
+          ],
+          "latency_ms": 26579,
+          "cita_correcta": false,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa y coincide con el artículo oficial, responde directamente a la consulta y es clara para un ciudadano sin formación jurídica."
+        }
+      }
+    },
+    {
+      "id": "tb-087",
+      "question": "Si me multan varias veces en un año, ¿pueden quitarme mi licencia?",
+      "expected_article": "ley:40",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this question. The citizen is asking if they can be taken off their driving license if they get multiple fines in a year.\n\nFirst, I need to check the provided context to find the relevant articles. The user mentioned \"multas\" which translates to fines. Let me look through the context.\n\nIn the context, there's Article 40 of the Ley de Tránsito (Traffic Law) which talks about suspension of the driving license. It says that if someone has been administratively warned five times or fined three times in the same calendar year starting from the first offense, their license can be suspended for 1-6 months.\n\nThen there's Article 33, which mentions retention of documents. It says that if a driver accumulates three fines without paying, their license is retained. But the question is about losing the license, not just suspension.\n\nArticle 41 of the Ley de Tránsito talks about cancellation of the license. It states that if the license has been suspended for two consecutive calendar years or three times in non-consecutive years, it can be canceled. But the question is about multiple fines in a year leading to license removal.\n\nWait, the citizen is asking if being fined multiple times in a year can lead to losing the license. The key here is to see if the fines in a year trigger suspension or cancellation.\n\nLooking at Article 40: three administrative fines in the same calendar year can lead to suspension (1-6 months). So that's suspension, not cancellation. But the question is about \"quitarme mi licencia\" which is losing the license, so cancellation.\n\nArticle 41 mentions cancellation after two consecutive years of suspension or three suspensions in non-consecutive years. But the citizen is talking about fines in a year, not suspensions.\n\nWait, the context also has Article 33, which says that if a driver accumulates three fines without paying, their license is retained. But retention is different from suspension or cancellation.\n\nThe user's question is about being fined multiple times in a year leading to license removal. So the answer would be based on Article 40: three fines in the same year can lead to suspension (1-6 months), but cancellation (which is a more severe penalty) would require more conditions as per Article 41.\n\nWait, the citizen might be conflating suspension with cancellation. The answer needs to clarify that multiple fines in a year can lead",
+          "sources": [
+            "ley:40",
+            "ley:33",
+            "ley:41",
+            "reglamento:192",
+            "ley:31",
+            "reglamento:38",
+            "reglamento:30"
+          ],
+          "latency_ms": 23639,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero contiene información no oficial al sugerir que múltiples multas pueden llevar a la cancelación de la licencia, lo cual no está especificado en el artículo oficial proporcionado."
+        }
+      }
+    },
+    {
+      "id": "tb-089",
+      "question": "Si choco mientras aprendo a manejar con un instructor, ¿quién responde por los daños?",
+      "expected_article": "reglamento:34",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The citizen is asking: \"Si choco mientras aprendo a manejar con un instructor, ¿quién responde por los daños?\" which translates to \"If I crash while learning to drive with an instructor, who is responsible for the damages?\"\n\nFirst, I need to check the provided context to find the relevant articles. The context has several articles from the Ley de Tránsito and Reglamento de Tránsito.\n\nLooking at the context:\n\n- [1] Reglamento de Tránsito, Artículo 34: Talks about the Instructor and Accompanying Person being jointly responsible for damages when driving the learning vehicle.\n\n- [4] Reglamento de Tránsito, Artículo 31: Mentions that the learning permit requires a course in an authorized school, and the learner can be accompanied by someone with a license authorized by the Department.\n\n- [6] Ley de Tránsito, Artículo 3: States that drivers and all persons (pedestrians, passengers, etc.) are responsible for complying with traffic laws. Any sanctions affecting the vehicle are jointly responsible by the owner and the driver.\n\n- [7] Reglamento de Tránsito, Artículo 40: Obligations of drivers, including being careful to avoid damage, but this is more about general driving duties.\n\nThe key here is the scenario where the citizen is learning to drive with an instructor. The question is about who is responsible for damages in case of a crash.\n\nFrom [1], Article 34: \"El Instructor y el Acompañante... serán solidariamente responsables por los daños y perjuicios que se causen al momento de conducir el respectivo vehículo de aprendizaje.\" So the instructor and the accompanying person are jointly responsible for damages when driving the learning vehicle.\n\nWait, but the citizen is the one learning, so in this case, the \"aprendiz\" (learner) is the one driving with an instructor. Wait, but in Guatemala, when you're learning to drive, you usually have an instructor (instructor) and maybe an accompanying person (accompañante). Wait, the context says in [1] that the school of learning, the instructor, in case the accompanying person, and the learner are jointly responsible.\n\nWait, the article says: \"La escuela de aprendizaje de tránsito, el",
+          "sources": [
+            "reglamento:34",
+            "ley:25",
+            "reglamento:179",
+            "reglamento:31",
+            "ley:13",
+            "ley:3",
+            "reglamento:40"
+          ],
+          "latency_ms": 22702,
+          "cita_correcta": true,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero no menciona explícitamente que el instructor y el aprendiz son solidariamente responsables, lo cual es un punto importante según el artículo oficial."
+        }
+      }
+    },
+    {
+      "id": "tb-090",
+      "question": "¿Qué tengo que hacer como conductor de un camión para no causar problemas?",
+      "expected_article": "reglamento:75",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The user is asking what they need to do as a truck driver to avoid causing problems. I need to check the provided context to find the relevant articles.\n\nFirst, looking at the context. The user is a truck driver, so I should focus on articles related to cargo vehicles or trucks. Let me go through each article.\n\nArticle 68 is about urban and extraurban transport vehicles. It says the driver must not make sudden movements or jerks, avoid distractions, and ensure passenger safety. But this is for passenger transport, not cargo.\n\nArticle 75 is about cargo vehicles. It mentions that the driver must conduct and stop without jerks or sudden movements, avoid distractions, and ensure cargo is secured. This seems relevant. So for cargo vehicles, the driver must handle stops and starts smoothly, not be distracted, and check cargo security.\n\nArticle 95 is about accident procedures, which might not be directly relevant here since the user is asking about preventing problems, not accidents.\n\nArticle 40 has obligations for drivers, including not driving negligently, keeping passengers safe, avoiding distractions like headphones or phones (except taxis), and being cautious around vulnerable people. This is general but applies to all drivers, including truck drivers.\n\nArticle 131 is about facilitating incorporation for public transport vehicles, which might not be directly relevant here.\n\nArticle 15 is about driving requirements, like having a license, mental capacity, etc. But the user is a truck driver, so they probably have the license, but this is more about prerequisites.\n\nArticle 115 is about reducing speed, which is important for safety. It says to reduce speed gradually and warn others, not abruptly.\n\nThe user wants to know what they need to do as a truck driver to avoid problems. So the key points here would be from articles 75 (cargo vehicles), 40 (general obligations), and 115 (speed reduction).\n\nFrom article 75: must not have jerks or sudden movements when stopping/starting, avoid distractions, ensure cargo is properly secured.\n\nFrom article 40: don't drive negligently, be cautious around pedestrians, especially vulnerable groups, no headphones or phones while driving (except taxis), must maintain control of the vehicle.\n\nFrom article 115: when reducing speed, do it gradually and warn others.\n\nSo the answer should combine these points. The user is a truck driver (cargo vehicle), so",
+          "sources": [
+            "reglamento:68",
+            "reglamento:75",
+            "reglamento:95",
+            "reglamento:40",
+            "reglamento:131",
+            "ley:15",
+            "reglamento:115"
+          ],
+          "latency_ms": 23419,
+          "cita_correcta": false,
+          "fidelidad": 4,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es relevante y clara, pero no menciona explícitamente el artículo 75, que es específico para vehículos de transporte de carga."
+        }
+      }
+    },
+    {
+      "id": "tb-091",
+      "question": "¿Puedo usar un camión por un carril reversible si no hay semáforo?",
+      "expected_article": "reglamento:104",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this question. The user is asking if they can use a truck on a reversible lane without a traffic light.\n\nFirst, I need to check the provided context to find the relevant articles. The context has several articles related to reversible lanes and vehicle usage.\n\nLooking at the context, Article 104 (Carriles Reversibles) says that in double-way roads, reversible lanes can exist, and drivers must have the low beam lights on. Also, it mentions that heavy vehicles (vehículos pesados) are prohibited from using reversible lanes except in cases of changing direction or with authorization via signals.\n\nWait, the user is asking about a truck (which is a heavy vehicle) using a reversible lane without a traffic light. The context says that in Article 104: \"Queda prohibida, salvo en caso de cambio de dirección o autorización por medio da señales, la utilización da carriles reversibles por vehículos pesados.\" So it's prohibited for heavy vehicles to use reversible lanes except when changing direction or with signal authorization.\n\nThe user mentions \"si no hay semáforo\" (without a traffic light). The article says that reversible lanes are regulated by traffic lights (semáforos de carril) and supplemented by vertical signage. So if there's no traffic light, then the reversible lane might not be active, but the prohibition for heavy vehicles still applies.\n\nWait, the key point here is that the reversible lanes are regulated by traffic lights (semáforos de carril) and vertical signs. So if there's no traffic light, then the reversible lane might not be in use, but the rule says that heavy vehicles can't use them except for changing direction or with signal authorization.\n\nThe user's question is specifically about using a truck on a reversible lane without a traffic light. According to Article 104, heavy vehicles are prohibited from using reversible lanes except in cases of changing direction or with signal authorization. Since the user says there's no traffic light (semáforo), then the authorization by signal isn't present. Therefore, the answer would be no.\n\nAlso, check Article 163 (Uso de Luces Durante el Día) but that's about lights during the day, not directly relevant here.\n\nAnother angle: The context says that reversible lanes are regulated by traffic lights (semáforos de carril) and vertical signs. So if there's no",
+          "sources": [
+            "reglamento:104",
+            "reglamento:155",
+            "reglamento:101",
+            "reglamento:102",
+            "reglamento:163",
+            "reglamento:7",
+            "reglamento:7"
+          ],
+          "latency_ms": 25168,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero contiene información inventada al afirmar que el artículo 163 es relevante, lo cual no lo es en este contexto."
+        }
+      }
+    },
+    {
+      "id": "tb-093",
+      "question": "¿Tengo que pagar algo extra si no tengo el seguro obligatorio para mi carro?",
+      "expected_article": "reglamento:193",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The citizen is asking if they have to pay extra if they don't have the mandatory insurance for their car.\n\nFirst, I need to check the provided context to see what the law says about mandatory insurance and penalties for not having it.\n\nLooking at the context:\n\nIn [1], Ley de Tránsito, Artículo 29: It says that every owner of a vehicle authorized to circulate must have at least a civil liability insurance for third parties and occupants, as per the regulations. The Ministry of Government can require other insurance for drivers, vehicles, urban, and extraurban transport.\n\nThen [2] Reglamento de Tránsito, Artículo 193: It states that the mandatory insurance for vehicles against damage to third parties and occupants is regulated by specific regulations.\n\n[5] Ley de Tránsito, Artículo 31: Sanciones. Here, it mentions that the Ministry of Government can impose administrative sanctions like fines, suspension of licenses, etc. If a driver commits an infringement, they get a warning slip. Also, if a vehicle is left on the public way without the driver present, the warning is left on the vehicle.\n\n[6] Ley de Tránsito, Artículo 42: Costo de servicios. It says that regardless of paying fines, they must pay for services like towing, cranes, deposits, etc.\n\nThe citizen is asking about paying extra if they don't have the mandatory insurance. The key here is whether not having the insurance leads to extra payments.\n\nFrom [1], the mandatory insurance is required. If they don't have it, they might face sanctions. The sanctions are mentioned in [5], which includes fines, suspension of license, etc. So not having the insurance would lead to penalties.\n\nBut the question is specifically about \"pagar algo extra\" (pay extra). The answer should be based on the context. The context says that the Ministry can impose fines (Art. 31), so if they don't have the insurance, they might have to pay a fine. Also, Art. 42 mentions that they have to pay for services like towing, but that's for when the vehicle is left on the road.\n\nWait, the citizen is asking if they have to pay extra if they don't have the mandatory insurance. The mandatory insurance is required by law (Art. 29), so if they don't have it,",
+          "sources": [
+            "ley:29",
+            "reglamento:193",
+            "reglamento:22",
+            "reglamento:29",
+            "ley:31",
+            "ley:42",
+            "ley:39"
+          ],
+          "latency_ms": 22375,
+          "cita_correcta": true,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero contiene información innecesaria y no precisa sobre servicios adicionales que no son directamente relacionados con la consulta."
+        }
+      }
+    },
+    {
+      "id": "tb-094",
+      "question": "¿Tengo que poner las luces de emergencia cuando estoy en un túnel?",
+      "expected_article": "reglamento:159",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this question. The citizen is asking if they need to turn on emergency lights when they're in a tunnel.\n\nFirst, I need to check the provided context to see which articles talk about emergency lights in tunnels. Let me go through each article.\n\nLooking at the context:\n\nArticle [1] is about position and taillights in tunnels or low visibility. It says vehicles must have position and taillights on. But it doesn't mention emergency lights.\n\nArticle [2] is about low beams or population lights in tunnels and well-lit roads. It specifies when to use low beams, but again, not emergency lights.\n\nArticle [3] is about turning off engines in closed spaces, including tunnels. It mentions keeping position lights on if necessary, but not emergency lights.\n\nArticle [4] is about emergency procedures after an accident. It says to turn on emergency lights to prevent new problems. So in case of an accident, but the question is about being in a tunnel, not an accident.\n\nArticle [5] is about emergency vehicle lights, but the question is about regular vehicles.\n\nArticle [6] is about emergency vehicles' signals, not regular vehicles.\n\nArticle [7] is about emergency signals when a vehicle is obstructing the road. Again, not directly about tunnels.\n\nWait, the key here is that the citizen is asking about putting on emergency lights when in a tunnel. The context mentions in Article [4] that after an accident, you have to turn on emergency lights. But the question is about being in a tunnel, not an accident.\n\nWait, maybe the answer is that the emergency lights are required only in specific situations, like when stopped due to an accident. But the question is about being in a tunnel, not stopped.\n\nWait, let me re-read the context. The user is asking if they have to put on emergency lights when they are in a tunnel. So, the answer would depend on whether the law requires emergency lights in tunnels.\n\nLooking at the articles again:\n\nArticle [1] says that in tunnels, vehicles must have position and taillights on. But emergency lights (luz de emergencia) are different. The term \"luces de emergencia\" is mentioned in Article [4] as part of accident procedures.\n\nIn Article [4], it says that if involved in an accident and not seriously injured, they must turn on emergency lights. But the question is about being in a tunnel, not an accident.\n\nSo",
+          "sources": [
+            "reglamento:159",
+            "reglamento:161",
+            "reglamento:90",
+            "reglamento:95",
+            "reglamento:20",
+            "reglamento:174",
+            "reglamento:96"
+          ],
+          "latency_ms": 22996,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero contiene una confusión al relacionar las luces de emergencia con el artículo sobre accidentes, en lugar de con el artículo sobre luces de posición y gálibo en túneles."
+        }
+      }
+    },
+    {
+      "id": "tb-098",
+      "question": "¿Si hay dos carriles que van en direcciones opuestas, tengo que ir siempre por el carril de la derecha?",
+      "expected_article": "reglamento:100",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this question. The citizen is asking if, when there are two lanes going in opposite directions, they have to always go in the right lane.\n\nFirst, I need to check the provided context to find the relevant articles. The context has several articles from the Guatemalan Traffic Regulation.\n\nLooking at the context, article [3] mentions \"Utilización de Carriles\" outside of Poblado in roads with more than one lane per direction. It says that in extraurban roads with more than one lane per direction, drivers normally use the rightmost lane, but can use others if traffic conditions advise. Also, heavy vehicles must use the right lane and can only use the adjacent ones for passing.\n\nArticle [6] talks about usage in Poblado (urban areas) with multiple lanes per direction. Here, drivers can use the lane that best suits their destination but shouldn't leave it except for changing direction, passing, stopping, etc.\n\nThe question is about whether they must always go in the right lane when there are two opposite directions. The key here is that in extraurban roads (article [3]), drivers normally use the rightmost lane, but can use others. In urban areas (article [6]), they can choose the lane but have restrictions.\n\nThe citizen's question is general, not specifying urban or extraurban. But the context mentions \"en Calzadas de más de un Carril por sentido de Circulación\" in both [3] and [6]. The answer should be based on the general rule.\n\nWait, article [101] (which is [3] in the context) says: \"En Brees extraurbanas, en las calzadas con más de un carril reservado para cada sentido de circulación los conductores circularán normalmente por el situado más a su derecha...\" So in extraurban roads, drivers normally use the rightmost lane. But in urban areas (poblado), article [102] says they can choose the lane but not leave it except for specific reasons.\n\nThe question is whether they have to always go in the right lane. The answer would be that in extraurban roads, yes, normally the rightmost lane, but in urban areas, they can choose. However, the citizen's question is general. The context might not specify the exact scenario, but the answer should be based on the provided articles.\n\nWait, the user's question is in",
+          "sources": [
+            "reglamento:142",
+            "reglamento:135",
+            "reglamento:101",
+            "reglamento:143",
+            "reglamento:133",
+            "reglamento:102",
+            "reglamento:132"
+          ],
+          "latency_ms": 23586,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero contiene información no confirmada por el artículo oficial y no es completamente fidedigna."
+        }
+      }
+    },
+    {
+      "id": "tb-100",
+      "question": "¿Tengo que poner las luces de niebla si está lloviendo un poco?",
+      "expected_article": "reglamento:165",
+      "conditions": {
+        "vialbot": {
+          "answer": "Okay, let's tackle this query. The citizen is asking if they need to turn on the fog lights when it's lightly raining.\n\nFirst, I need to check the provided context to see what the regulations say about using fog lights in rainy conditions. Let me go through each article.\n\nStarting with [1] Article 165: It mentions that in conditions like heavy rain, fog, smoke, dust, etc., you must use fog lights or low beams. Specifically, it says \"lluvia intensa\" (intense rain) requires fog lights or low beams. The citizen is asking about \"lluvia un poco\" (light rain), so not intense. So maybe this article doesn't apply here.\n\nLooking at [4] Article 110: It lists cases where you need to moderate speed, including \"niebla, lluvia intensa o nubes de humo o polvo\". Again, it's \"lluvia intensa\" (intense rain), not light rain.\n\n[3] Article 159: Talks about vehicles in tunnels or low visibility conditions, but the citizen is in light rain, so maybe not applicable.\n\n[5] Article 164: About immobilized vehicles, not relevant here.\n\n[6] Article 162: About glare, not directly related.\n\n[7] Article 158: General rule about lights from sunset to sunrise, not relevant.\n\nWait, the key here is in Article 165: \"lluvia intensa\" (intense rain) requires fog lights. The citizen is asking about \"lluvia un poco\" (light rain), which is not intense. So according to the regulation, only when it's heavy rain do you need to use fog lights. Therefore, for light rain, you don't need to turn on fog lights.\n\nBut I should check if there's any other article that mentions rain. Let me re-read the context.\n\nIn [1], it says \"niebla, lluvia intensa, nubes de humo o de polvo\". So \"lluvia intensa\" is the term used. The citizen's case is \"lluvia un poco\", which is not intense. Therefore, the answer is no, they don't need to use fog lights.\n\nSo the response should state that according to Article 165, fog lights are required only in cases of heavy rain, not light",
+          "sources": [
+            "reglamento:165",
+            "reglamento:7",
+            "reglamento:159",
+            "reglamento:110",
+            "reglamento:164",
+            "reglamento:162",
+            "reglamento:158"
+          ],
+          "latency_ms": 23984,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero contiene un dato inventado al afirmar que no se requieren luces de niebla en lluvia ligera, cuando el artículo oficial no especifica claramente este caso."
+        }
+      }
+    }
+  ]
+}

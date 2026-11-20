@@ -1,0 +1,1124 @@
+{
+  "n": 50,
+  "split": "test",
+  "judge": "qwen2.5:7b",
+  "config": {
+    "top_k": 4,
+    "retrieval_mode": "dense",
+    "reranker": null,
+    "num_ctx": 4096,
+    "generator": "vialbot-v2"
+  },
+  "summary": {
+    "vialbot": {
+      "fidelidad": 3.04,
+      "relevancia": 3.92,
+      "claridad": 4.32,
+      "cita_correcta": 0.5,
+      "alucinacion_grave": 0.36,
+      "latencia_ms_mediana": 1515
+    }
+  },
+  "rows": [
+    {
+      "id": "tb-001",
+      "question": "¿Tengo que tener seguro de auto para poder conducir por la calle?",
+      "expected_article": "ley:29",
+      "conditions": {
+        "vialbot": {
+          "answer": "Sí, tienes que tener un seguro obligatorio contra daños a terceros y ocupantes. Es necesario según lo establecido en el Artículo 29 de la Ley de Tránsito. (Ley de Tránsito, Artículo 29).",
+          "sources": [
+            "ley:29",
+            "reglamento:193",
+            "ley:15",
+            "reglamento:40"
+          ],
+          "latency_ms": 3759,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa, directa y concisa, reflejando la información del artículo oficial de la Ley de Tránsito de Guatemala."
+        }
+      }
+    },
+    {
+      "id": "tb-002",
+      "question": "¿Puedo estacionar mi coche donde quiera en la calle si la municipalidad lo permite?",
+      "expected_article": "reglamento:151",
+      "conditions": {
+        "vialbot": {
+          "answer": "Sí, pero solo si la municipalidad lo permite. Si no, puedes estar en contra de las normas del gobierno. (Reglamento de Tránsito, Artículo 153).",
+          "sources": [
+            "reglamento:151",
+            "ley:26",
+            "reglamento:153",
+            "ley:27"
+          ],
+          "latency_ms": 1390,
+          "cita_correcta": false,
+          "fidelidad": 2,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": "La respuesta no menciona el Artículo 151 del Reglamento de Tránsito y contiene una información incorrecta al referirse al Artículo 153, que no existe según el texto proporcionado. Sin embargo, la respuesta es relevante a la consulta y es clara."
+        }
+      }
+    },
+    {
+      "id": "tb-003",
+      "question": "¿Puedo pasar por delante de un carro si lo hago por el lado izquierdo?",
+      "expected_article": "reglamento:141",
+      "conditions": {
+        "vialbot": {
+          "answer": "No, no puedes. Si lo haces por el izquierdo, estás en contra de las normas. (Reglamento de Tránsito, Artículo 123).",
+          "sources": [
+            "reglamento:123",
+            "reglamento:170",
+            "reglamento:21",
+            "reglamento:140"
+          ],
+          "latency_ms": 1338,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": "La respuesta es relevante ya que responde a la consulta, pero no es completamente clara ya que se refiere a un artículo incorrecto (123 en lugar de 141) y no menciona la señalización requerida."
+        }
+      }
+    },
+    {
+      "id": "tb-005",
+      "question": "¿Puedo pasar por delante de otros autos si estoy llevando a una persona herida en una ambulancia?",
+      "expected_article": "ley:21",
+      "conditions": {
+        "vialbot": {
+          "answer": "Sí, pero solo si estás conduciendo conforme las leyes. Si no lo haces, puedes ser multado. (Ley de Tránsito, Artículo 13).",
+          "sources": [
+            "ley:21",
+            "ley:13",
+            "reglamento:98",
+            "reglamento:95"
+          ],
+          "latency_ms": 1367,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es clara y relevante, pero no es completamente fidel a la información del artículo oficial, ya que no menciona específicamente la circulación de vehículos de emergencia."
+        }
+      }
+    },
+    {
+      "id": "tb-007",
+      "question": "¿Quién es responsable de poner las señales de tráfico en las calles?",
+      "expected_article": "reglamento:84",
+      "conditions": {
+        "vialbot": {
+          "answer": "El Departamento o las Municipalidades son responsables de instalar y mantener las señales. Pueden concesionar el servicio a terceros si lo consideran necesario. (Reglamento de Tránsito, Artículo 84).",
+          "sources": [
+            "reglamento:84",
+            "reglamento:56",
+            "ley:28",
+            "reglamento:80"
+          ],
+          "latency_ms": 1284,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa y completa, refleja el artículo oficial sin añadir o omitir información, responde directamente a la consulta y es clara y fácil de entender."
+        }
+      }
+    },
+    {
+      "id": "tb-008",
+      "question": "¿Qué tengo que hacer antes de girar a la derecha o a la izquierda para no poner en riesgo a otros conductores?",
+      "expected_article": "reglamento:132",
+      "conditions": {
+        "vialbot": {
+          "answer": "Debes avisar a los conductores detrás y asegurarte de que hay suficiente distancia y velocidad. Si no, no debes hacer el giro. (Reglamento de Tránsito, Artículo 132).",
+          "sources": [
+            "reglamento:132",
+            "reglamento:136",
+            "reglamento:133",
+            "reglamento:135"
+          ],
+          "latency_ms": 1568,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa y completa, refleja el artículo oficial sin añadir ni omitir información, responde directamente a la consulta y es clara y fácil de entender para un ciudadano sin formación jurídica."
+        }
+      }
+    },
+    {
+      "id": "tb-009",
+      "question": "¿Si me detienen el carro porque está estacionado mal, me tienen que quitar el auto hasta que pague la multa?",
+      "expected_article": "ley:34",
+      "conditions": {
+        "vialbot": {
+          "answer": "Sí, si te detienen por estacionamiento malo, debes pagar la multa. El cepo se liberará cuando lo hagas. (Ley de Tránsito, Artículo 34).",
+          "sources": [
+            "ley:26",
+            "ley:34",
+            "ley:35",
+            "reglamento:150"
+          ],
+          "latency_ms": 1474,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa y concisa, refleja correctamente el contenido del Artículo 34 de la Ley de Tránsito de Guatemala y responde directamente a la consulta del ciudadano."
+        }
+      }
+    },
+    {
+      "id": "tb-012",
+      "question": "Si manejo un bus de transporte público y no hay carril exclusivo, ¿por qué carril tengo que ir?",
+      "expected_article": "reglamento:71",
+      "conditions": {
+        "vialbot": {
+          "answer": "Si no hay carril exclusivo, debes usar el carril derecho del centro. Siempre debes rebasar o cambiar de dirección. (Reglamento de Tránsito, Artículo 76).",
+          "sources": [
+            "reglamento:71",
+            "reglamento:103",
+            "reglamento:76",
+            "reglamento:101"
+          ],
+          "latency_ms": 1330,
+          "cita_correcta": false,
+          "fidelidad": 2,
+          "relevancia": 3,
+          "claridad": 3,
+          "justificacion": "La respuesta contiene datos inventados (Artículo 76 en lugar de Artículo 71) y no es completamente precisa, ya que no menciona que el carril derecho sea el más alejado del centro de la calzada."
+        }
+      }
+    },
+    {
+      "id": "tb-013",
+      "question": "¿Cuánto tengo que pagar para renovar mi licencia de conducir?",
+      "expected_article": "ley:16",
+      "conditions": {
+        "vialbot": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "sources": [
+            "reglamento:29",
+            "reglamento:22",
+            "reglamento:30",
+            "ley:16"
+          ],
+          "latency_ms": 907,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 5,
+          "justificacion": "La respuesta es clara y directa, aunque no es completamente relevante ya que no proporciona la información solicitada."
+        }
+      }
+    },
+    {
+      "id": "tb-014",
+      "question": "¿Qué significa que los vehículos tengan que estar en 'óptimas condiciones de funcionamiento'? ¿Hay que arreglar todo lo que esté un poco roto?",
+      "expected_article": "reglamento:11",
+      "conditions": {
+        "vialbot": {
+          "answer": "Sí, es importante que el equipamiento básico del vehículo esté en buen estado. No se permite que haya fallos o defectos. (Reglamento de Tránsito, Artículo 11).",
+          "sources": [
+            "reglamento:11",
+            "reglamento:97",
+            "reglamento:7",
+            "reglamento:14"
+          ],
+          "latency_ms": 1911,
+          "cita_correcta": true,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es clara y relevante, pero no menciona las 'óptimas condiciones de funcionamiento' especificadas en el artículo oficial, sino que se centra en la ausencia de fallos o defectos."
+        }
+      }
+    },
+    {
+      "id": "tb-015",
+      "question": "¿Puedo usar pitidos si estoy conduciendo por un camino estrecho y sinuoso?",
+      "expected_article": "reglamento:173",
+      "conditions": {
+        "vialbot": {
+          "answer": "Sí, pero solo en vías extraurbanas con muchas curvas. No lo hagas en carreteras principales. (Reglamento de Tránsito, Artículo 173).",
+          "sources": [
+            "reglamento:173",
+            "reglamento:117",
+            "ley:23",
+            "reglamento:18"
+          ],
+          "latency_ms": 1675,
+          "cita_correcta": true,
+          "fidelidad": 4,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es correcta y relevante, pero no menciona explícitamente que se trata de vías extraurbanas, lo cual es importante según el artículo oficial."
+        }
+      }
+    },
+    {
+      "id": "tb-016",
+      "question": "¿Tengo que dejar prendida la luz baja si manejo mi moto por la calle?",
+      "expected_article": "reglamento:163",
+      "conditions": {
+        "vialbot": {
+          "answer": "Sí, tienes que usar la luz baja cuando circulas a menos de 40 km/h. Es para no deslumbrar a otros conductores. (Reglamento de Tránsito, Artículo 161).",
+          "sources": [
+            "reglamento:166",
+            "reglamento:161",
+            "reglamento:160",
+            "reglamento:167"
+          ],
+          "latency_ms": 1472,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": "La respuesta no menciona la luz de población o baja específica, y se refiere incorrectamente al Artículo 161 en lugar del Artículo 163."
+        }
+      }
+    },
+    {
+      "id": "tb-017",
+      "question": "¿Puedo arrastrar mi carro averiado por la calle si no hay una grúa disponible?",
+      "expected_article": "reglamento:98",
+      "conditions": {
+        "vialbot": {
+          "answer": "Sí, pero solo hasta el lugar más cercano donde pueda quedar inmovilizado sin molestar a los demás. (Reglamento de Tránsito, Artículo 98).",
+          "sources": [
+            "reglamento:98",
+            "ley:35",
+            "reglamento:41",
+            "reglamento:96"
+          ],
+          "latency_ms": 1651,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa, directa y concisa, reflejando el contenido del artículo oficial sin añadir ni omitir información relevante."
+        }
+      }
+    },
+    {
+      "id": "tb-018",
+      "question": "¿Puedo ir rápido en una zona escolar si no hay niños cerca?",
+      "expected_article": "reglamento:63",
+      "conditions": {
+        "vialbot": {
+          "answer": "No, porque la velocidad máxima es 30 km/h. Si ves a alguien, debes reducir la velocidad. (Reglamento de Tránsito, Artículo 112).",
+          "sources": [
+            "reglamento:63",
+            "reglamento:63",
+            "reglamento:112",
+            "reglamento:110"
+          ],
+          "latency_ms": 1886,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 2,
+          "claridad": 3,
+          "justificacion": "La respuesta no es relevante ya que se refiere a un artículo que no existe en el texto proporcionado, y no menciona la prioridad de paso para escolares."
+        }
+      }
+    },
+    {
+      "id": "tb-023",
+      "question": "¿Puedo conducir un coche con el volante a la derecha si me autorizan?",
+      "expected_article": "reglamento:21",
+      "conditions": {
+        "vialbot": {
+          "answer": "Sí, pero solo si te lo permiten. Si no, estás en contra de las normas. (Reglamento de Tránsito, Artículo 21).",
+          "sources": [
+            "reglamento:21",
+            "reglamento:133",
+            "reglamento:135",
+            "reglamento:142"
+          ],
+          "latency_ms": 1384,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa, relevante y clara, reflejando el contenido del Artículo 21 del Reglamento de Tránsito de Guatemala."
+        }
+      }
+    },
+    {
+      "id": "tb-027",
+      "question": "¿Qué tengo que hacer si mi carro fue golpeado o robado en un estacionamiento?",
+      "expected_article": "reglamento:179",
+      "conditions": {
+        "vialbot": {
+          "answer": "Si tu carro fue golpeado o robado, debes denunciarlo al Ministerio Público. (Reglamento de Tránsito, Artículo 179).",
+          "sources": [
+            "reglamento:179",
+            "ley:13",
+            "reglamento:41",
+            "ley:26"
+          ],
+          "latency_ms": 1210,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa, directa y concisa, reflejando el artículo oficial sin añadir ni omitir información relevante."
+        }
+      }
+    },
+    {
+      "id": "tb-028",
+      "question": "¿Si me quitan el carro por una multa, cómo se asegura que no lo dañen al llevarlo al depósito?",
+      "expected_article": "reglamento:178",
+      "conditions": {
+        "vialbot": {
+          "answer": "El departamento de tránsito usa grúas o otros medios para trasladar tu vehículo. Si hay daños, te los cubren. (Reglamento de Tránsito, Artículo 190).",
+          "sources": [
+            "reglamento:190",
+            "reglamento:178",
+            "ley:35",
+            "ley:34"
+          ],
+          "latency_ms": 1540,
+          "cita_correcta": false,
+          "fidelidad": 2,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta contiene datos inventados (Artículo 190 no existe en el Reglamento de Tránsito de Guatemala) pero responde parcialmente a la consulta y es clara."
+        }
+      }
+    },
+    {
+      "id": "tb-029",
+      "question": "¿A dónde van los dineros que recaudan las municipalidades por la transito?",
+      "expected_article": "ley:45",
+      "conditions": {
+        "vialbot": {
+          "answer": "Los ingresos se destinan exclusivamente al municipio para mejorar y mantener el tránsito, incluyendo obras vía. (Reglamento de Tránsito, Artículo 188).",
+          "sources": [
+            "ley:45",
+            "reglamento:188",
+            "ley:44",
+            "ley:42"
+          ],
+          "latency_ms": 1400,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es clara y relevante, pero no es completamente fidel a la información del artículo oficial, ya que menciona un reglamento en lugar de la ley."
+        }
+      }
+    },
+    {
+      "id": "tb-030",
+      "question": "¿Cuándo puedo cruzar una calle o un río sin preocuparme por los vehículos?",
+      "expected_article": "ley:12",
+      "conditions": {
+        "vialbot": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "sources": [
+            "reglamento:156",
+            "reglamento:58",
+            "reglamento:114",
+            "reglamento:121"
+          ],
+          "latency_ms": 1176,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 1,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y directa, pero no es relevante ya que no responde la consulta del ciudadano."
+        }
+      }
+    },
+    {
+      "id": "tb-031",
+      "question": "¿Si mi bicicleta está un poco vieja y no tiene todas las cosas nuevas que dicen, me van a multar?",
+      "expected_article": "reglamento:180",
+      "conditions": {
+        "vialbot": {
+          "answer": "Sí, si tu bicicleta no cumple con los requisitos del Artículo 180, te pueden multar. Debes tener el equipamiento básico en óptimas condiciones. (Reglamento de Tránsito, Artículo 180).",
+          "sources": [
+            "ley:37",
+            "ley:35",
+            "reglamento:184",
+            "reglamento:180"
+          ],
+          "latency_ms": 2046,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa, directa y concisa, reflejando el contenido del Artículo 180 del Reglamento de Tránsito de Guatemala sin añadir información incorrecta o innecesaria."
+        }
+      }
+    },
+    {
+      "id": "tb-032",
+      "question": "Si me suspendieron mi licencia de conducir y después de dos años la recupero, ¿puedo volver a tomar la licencia inmediatamente o necesito pasar por algo más?",
+      "expected_article": "ley:41",
+      "conditions": {
+        "vialbot": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "sources": [
+            "reglamento:30",
+            "ley:41",
+            "ley:40",
+            "reglamento:192"
+          ],
+          "latency_ms": 1100,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 5,
+          "justificacion": "La respuesta no contiene información falsa, pero no es relevante ya que no aborda la consulta del ciudadano."
+        }
+      }
+    },
+    {
+      "id": "tb-037",
+      "question": "¿Quién puede emitir mi licencia de conducir?",
+      "expected_article": "ley:5",
+      "conditions": {
+        "vialbot": {
+          "answer": "El departamento de tránsito de la policía nacional es quien emite tu licencia. Es un documento oficial que te permite manejar. (Ley de Tránsito, Artículo 14).",
+          "sources": [
+            "ley:14",
+            "ley:20",
+            "ley:16",
+            "ley:4"
+          ],
+          "latency_ms": 1345,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es clara y relevante, pero no menciona el Artículo 5 como fuente, y el Artículo 14 no existe en la Ley de Tránsito de Guatemala según el texto proporcionado."
+        }
+      }
+    },
+    {
+      "id": "tb-038",
+      "question": "¿Qué hago si quiero adelantar a un carro que viene justo frente a mí y no estoy seguro de si también quiere pasar?",
+      "expected_article": "reglamento:145",
+      "conditions": {
+        "vialbot": {
+          "answer": "Si estás en duda, debes aumentar tu velocidad para permitir que el vehículo se adelante. Si no lo haces, puede haber accidentes. (Reglamento de Tránsito, Artículo 147).",
+          "sources": [
+            "reglamento:98",
+            "reglamento:146",
+            "reglamento:124",
+            "reglamento:147"
+          ],
+          "latency_ms": 1553,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 2,
+          "claridad": 3,
+          "justificacion": "La respuesta no refleja el contenido del Artículo 145, sino que se refiere a un artículo no mencionado (147). No responde directamente la consulta y es confusa en su recomendación."
+        }
+      }
+    },
+    {
+      "id": "tb-040",
+      "question": "Si no hay ninguna señal, ¿igual tengo que ir por la derecha en una curva?",
+      "expected_article": "reglamento:100",
+      "conditions": {
+        "vialbot": {
+          "answer": "Sí, si no hay señales, debes estar atento y hacer las indicaciones necesarias. (Reglamento de Tránsito, Artículo 133).",
+          "sources": [
+            "reglamento:135",
+            "reglamento:81",
+            "reglamento:133",
+            "reglamento:134"
+          ],
+          "latency_ms": 1445,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 3,
+          "justificacion": "La respuesta no menciona el Artículo 100 del Reglamento de Tránsito de Guatemala, que es el artículo oficial relevante para la consulta. Además, la referencia al Artículo 133 es incorrecta y no se menciona el arcén como se indica en el Artículo 100."
+        }
+      }
+    },
+    {
+      "id": "tb-041",
+      "question": "¿Puedo cruzar la vía si no veo trenes acercándose?",
+      "expected_article": "reglamento:156",
+      "conditions": {
+        "vialbot": {
+          "answer": "No, porque debes asegurarte de que no hay riesgo. Si ves un tren cerca, tienes que detenerte y esperar hasta que se haga seguro. (Reglamento de Tránsito, Artículo 156).",
+          "sources": [
+            "reglamento:156",
+            "reglamento:155",
+            "reglamento:154",
+            "reglamento:157"
+          ],
+          "latency_ms": 1401,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa y concisa, refleja el artículo oficial y responde directamente a la consulta del ciudadano."
+        }
+      }
+    },
+    {
+      "id": "tb-044",
+      "question": "¿Se puede poner pegatinas en el parabrisas si me estorban a mí para ver?",
+      "expected_article": "reglamento:19",
+      "conditions": {
+        "vialbot": {
+          "answer": "No, no se permite. Debes asegurarte de que no haya obstáculos opacos en los parabrisas ni en las ventanillas. (Reglamento de Tránsito, Artículo 19).",
+          "sources": [
+            "reglamento:19",
+            "reglamento:18",
+            "reglamento:60",
+            "reglamento:93"
+          ],
+          "latency_ms": 1652,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa, directa y coincide con el artículo oficial, respondiendo directamente a la consulta del ciudadano."
+        }
+      }
+    },
+    {
+      "id": "tb-045",
+      "question": "¿Puedo llevar a mi bebé de 1 año en el carro si ya tengo a otra persona sentada?",
+      "expected_article": "reglamento:46",
+      "conditions": {
+        "vialbot": {
+          "answer": "No, porque los menores de dos años no se cuentan si no ocupan plaza. Si tu bebé está en la parte trasera y usa una cama o asiento especial, sí puede ser considerado como media plaza. (Reglamento de Tránsito, Artículo 46).",
+          "sources": [
+            "reglamento:48",
+            "reglamento:47",
+            "reglamento:26",
+            "reglamento:46"
+          ],
+          "latency_ms": 1738,
+          "cita_correcta": true,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero contiene un dato incorrecto al afirmar que los menores de dos años se cuentan como media plaza si no ocupan plaza."
+        }
+      }
+    },
+    {
+      "id": "tb-048",
+      "question": "¿Puedo pasarle al carro de enfrente si no me están siguiendo muy de cerca?",
+      "expected_article": "reglamento:144",
+      "conditions": {
+        "vialbot": {
+          "answer": "Sí, pero ten cuidado. Si estás en un tramo estrecho y ves que alguien va a ceder el paso, debes retroceder y dejar pasar. (Reglamento de Tránsito, Artículo 123).",
+          "sources": [
+            "reglamento:116",
+            "reglamento:114",
+            "reglamento:123",
+            "reglamento:124"
+          ],
+          "latency_ms": 1944,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 2,
+          "claridad": 3,
+          "justificacion": "La respuesta no menciona el Artículo 144 oficial y no responde directamente la consulta."
+        }
+      }
+    },
+    {
+      "id": "tb-049",
+      "question": "¿A dónde van los multas que se recaudan por las infracciones de tránsito?",
+      "expected_article": "ley:44",
+      "conditions": {
+        "vialbot": {
+          "answer": "Las multas son destinadas al Departamento de Tránsito, y cada municipalidad maneja sus propias normas. (Reglamento de Tránsito, Artículo 188).",
+          "sources": [
+            "ley:42",
+            "reglamento:188",
+            "reglamento:186",
+            "ley:30"
+          ],
+          "latency_ms": 1632,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 3,
+          "justificacion": "La respuesta no es fidedigna ya que contradice el Artículo 44 de la Ley de Tránsito de Guatemala, y no es completamente relevante ya que no menciona la dirección general de la Policía Nacional como destinatario principal."
+        }
+      }
+    },
+    {
+      "id": "tb-050",
+      "question": "¿Si estoy saliendo de la autopista y hay un carril de desaceleración, puedo frenar ahí para ir bajando la velocidad antes de entrar a la carretera normal?",
+      "expected_article": "reglamento:137",
+      "conditions": {
+        "vialbot": {
+          "answer": "No, no puedes. Debes hacerlo en el carril de desaceleración. Si lo haces fuera del carril, estás violando las normas. (Reglamento de Tránsito, Artículo 137).",
+          "sources": [
+            "reglamento:137",
+            "reglamento:114",
+            "reglamento:154",
+            "reglamento:113"
+          ],
+          "latency_ms": 1693,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa, directa y concisa, reflejando el artículo oficial sin añadir ni restar información."
+        }
+      }
+    },
+    {
+      "id": "tb-052",
+      "question": "¿Cuál es la diferencia entre una autopista y una vía rápida?",
+      "expected_article": "reglamento:7",
+      "conditions": {
+        "vialbot": {
+          "answer": "Una autopista es más alta, con mejores pavimentos y menos tránsito. Una vía rápida tiene un ancho mayor pero puede haber peatones. (Reglamento de Tránsito, Artículo 99).",
+          "sources": [
+            "reglamento:99",
+            "reglamento:7",
+            "reglamento:7",
+            "reglamento:137"
+          ],
+          "latency_ms": 2020,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 1,
+          "claridad": 3,
+          "justificacion": "La respuesta no contiene datos falsos, pero no es relevante ni clara en relación al artículo oficial proporcionado, ya que el Artículo 99 no existe en el reglamento citado."
+        }
+      }
+    },
+    {
+      "id": "tb-053",
+      "question": "¿Cómo se sabe qué vehículos están registrados en el país?",
+      "expected_article": "ley:22",
+      "conditions": {
+        "vialbot": {
+          "answer": "Los registros son unificados entre el Ministerio de Finanzas y el Ministerio de Gobernación. (Ley de Tránsito, Artículo 22).",
+          "sources": [
+            "ley:22",
+            "reglamento:8",
+            "reglamento:70",
+            "ley:19"
+          ],
+          "latency_ms": 1175,
+          "cita_correcta": true,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es clara y relevante, pero no menciona todos los detalles del artículo oficial, específicamente sobre el rol del Departamento de Transito y los reportes de Aduanas."
+        }
+      }
+    },
+    {
+      "id": "tb-054",
+      "question": "¿Cuánto tengo que dejar de distancia entre mi coche y el que va delante?",
+      "expected_article": "reglamento:116",
+      "conditions": {
+        "vialbot": {
+          "answer": "Debes dejar una distancia suficiente para detenerte sin colisionar. Es importante, especialmente en carreteras con condiciones difíciles. (Reglamento de Tránsito, Artículo 116).",
+          "sources": [
+            "reglamento:116",
+            "reglamento:113",
+            "reglamento:112",
+            "reglamento:181"
+          ],
+          "latency_ms": 1697,
+          "cita_correcta": true,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es clara y relevante, pero omite la especificación de 50 metros de distancia en al menos algunos casos."
+        }
+      }
+    },
+    {
+      "id": "tb-056",
+      "question": "¿Puedo tener un amigo que me acompañe mientras aprendo a manejar si no quiero ir a clases?",
+      "expected_article": "reglamento:35",
+      "conditions": {
+        "vialbot": {
+          "answer": "Sí, pero solo puedes tener uno. Además, tienes que ser mayor de 25 años y sin haber sido sancionado en los últimos cinco años. (Reglamento de Tránsito, Artículo 35).",
+          "sources": [
+            "reglamento:35",
+            "reglamento:31",
+            "reglamento:32",
+            "reglamento:34"
+          ],
+          "latency_ms": 1373,
+          "cita_correcta": true,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es relevante y clara, pero no menciona que el acompañante debe tener una licencia vigente, lo cual es un requisito importante según el artículo oficial."
+        }
+      }
+    },
+    {
+      "id": "tb-057",
+      "question": "¿Quién es responsable de hacer cumplir las reglas de tránsito en Guatemala?",
+      "expected_article": "ley:6",
+      "conditions": {
+        "vialbot": {
+          "answer": "El ministerio de gobernación, por medio del departamento de tránsito de la policía nacional, es quien se encarga de eso. (Ley de Tránsito, Artículo 4).",
+          "sources": [
+            "ley:5",
+            "ley:28",
+            "ley:11",
+            "ley:4"
+          ],
+          "latency_ms": 1385,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es clara y relevante, pero no menciona el Artículo 6 correcto y contiene un error al citar el Artículo 4 en lugar del Artículo 6."
+        }
+      }
+    },
+    {
+      "id": "tb-058",
+      "question": "¿Puedo organizar una carrera de coches en la calle si tengo el permiso?",
+      "expected_article": "reglamento:119",
+      "conditions": {
+        "vialbot": {
+          "answer": "Sí, pero solo si tienes el permiso. Si no lo tienes, no puedes hacerlo. (Reglamento de Tránsito, Artículo 119).",
+          "sources": [
+            "reglamento:119",
+            "reglamento:5",
+            "reglamento:27",
+            "reglamento:118"
+          ],
+          "latency_ms": 1493,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa, concisa y coincide con el artículo oficial proporcionado."
+        }
+      }
+    },
+    {
+      "id": "tb-066",
+      "question": "¿Cuánto peso o tamaño puede tener mi camión para poder circular por la calle?",
+      "expected_article": "reglamento:17",
+      "conditions": {
+        "vialbot": {
+          "answer": "El peso bruto máximo de tu camión debe ser 3.5 toneladas métricas, y debes tener permiso especial si superas ese límite. (Reglamento de Tránsito, Artículo 49).",
+          "sources": [
+            "reglamento:49",
+            "reglamento:17",
+            "reglamento:7",
+            "reglamento:9"
+          ],
+          "latency_ms": 1854,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 1,
+          "claridad": 3,
+          "justificacion": "La respuesta no coincide con el artículo oficial y no responde directamente la consulta, por lo que no cumple con los criterios de fidelidad y relevancia."
+        }
+      }
+    },
+    {
+      "id": "tb-067",
+      "question": "Si el Ministerio de Gobernación contrata a una empresa para hacer funciones del Departamento de Tránsito, ¿esa empresa tiene que cumplir con las leyes de tránsito?",
+      "expected_article": "ley:7",
+      "conditions": {
+        "vialbot": {
+          "answer": "Sí, la empresa contratada debe cumplir con todas las normas y reglamentos de tránsito. Si no lo hace, puede haber multa o incluso problemas más serios. (Ley de Tránsito, Artículo 7).",
+          "sources": [
+            "ley:7",
+            "ley:6",
+            "ley:4",
+            "ley:5"
+          ],
+          "latency_ms": 1766,
+          "cita_correcta": true,
+          "fidelidad": 4,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es correcta y relevante, pero no menciona explícitamente que el control sea del Ministerio de Gobernación y/o municipalidad correspondiente, como indica el Artículo 7."
+        }
+      }
+    },
+    {
+      "id": "tb-074",
+      "question": "¿Si quiero que reduzcan la velocidad de un tramo de calle donde vivo, tengo que pedir permiso a quién y qué más necesito?",
+      "expected_article": "reglamento:118",
+      "conditions": {
+        "vialbot": {
+          "answer": "Tienes que pedir permiso al Departamento o a la Municipalidad. También tienes que pagar una constancia de pago correspondiente. (Reglamento de Tránsito, Artículo 118).",
+          "sources": [
+            "reglamento:118",
+            "reglamento:117",
+            "reglamento:115",
+            "reglamento:111"
+          ],
+          "latency_ms": 1695,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa y completa, refleja fielmente el artículo oficial, responde directamente a la consulta y es clara para un ciudadano sin formación jurídica."
+        }
+      }
+    },
+    {
+      "id": "tb-078",
+      "question": "¿Qué puedo hacer en las aceras?",
+      "expected_article": "reglamento:62",
+      "conditions": {
+        "vialbot": {
+          "answer": "En las aceras no se permite parar ni descender. Solo puedes estacionar o parar en los lugares autorizados. (Reglamento de Tránsito, Artículo 72).",
+          "sources": [
+            "reglamento:78",
+            "reglamento:7",
+            "reglamento:72",
+            "reglamento:149"
+          ],
+          "latency_ms": 2027,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 1,
+          "claridad": 1,
+          "justificacion": "La respuesta no coincide con el artículo oficial y no responde la consulta."
+        }
+      }
+    },
+    {
+      "id": "tb-082",
+      "question": "¿Puedo usar cualquier carril en la ciudad si hay varios?",
+      "expected_article": "reglamento:102",
+      "conditions": {
+        "vialbot": {
+          "answer": "Sí, pero solo para cambiar de dirección o rebasar. No puedes dejar los otros carriles para vehículos livianos. (Reglamento de Tránsito, Artículo 71).",
+          "sources": [
+            "reglamento:103",
+            "reglamento:101",
+            "reglamento:71",
+            "reglamento:102"
+          ],
+          "latency_ms": 1394,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": "La respuesta no es completamente fidedigna ya que se refiere al Artículo 71 en lugar del Artículo 102, pero contiene información relevante y clara sobre las limitaciones en el uso de carriles."
+        }
+      }
+    },
+    {
+      "id": "tb-083",
+      "question": "¿Qué pasa si me escriben una multa y no estoy yo manejando?",
+      "expected_article": "ley:31",
+      "conditions": {
+        "vialbot": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "sources": [
+            "ley:31",
+            "ley:32",
+            "reglamento:185",
+            "reglamento:181"
+          ],
+          "latency_ms": 1554,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 1,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y precisa, pero no es relevante ya que no aborda la consulta del ciudadano sobre el caso de recibir una multa cuando no se estaba manejando."
+        }
+      }
+    },
+    {
+      "id": "tb-084",
+      "question": "¿Qué documentos necesito para renovar mi licencia?",
+      "expected_article": "reglamento:29",
+      "conditions": {
+        "vialbot": {
+          "answer": "Tienes que presentar la solicitud escrita o llenar el formulario correspondiente. También tienes que presentarte personalmente, pagar el valor y estar solvente de multas. (Reglamento de Tránsito, Artículo 29).",
+          "sources": [
+            "reglamento:29",
+            "reglamento:30",
+            "ley:14",
+            "reglamento:22"
+          ],
+          "latency_ms": 1528,
+          "cita_correcta": true,
+          "fidelidad": 4,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta omite la parte sobre la toma de fotos y la presentación de la licencia a renovar, pero contiene la información correcta y es relevante y clara para el ciudadano."
+        }
+      }
+    },
+    {
+      "id": "tb-085",
+      "question": "¿Pueden varias municipalidades trabajar juntas para controlar el tránsito en sus ciudades?",
+      "expected_article": "ley:9",
+      "conditions": {
+        "vialbot": {
+          "answer": "Sí, si dos o más municipales quieren hacer un acuerdo y luego pedirle al Ministerio de Gobernación que les dé funciones. (Ley de Tránsito, Artículo 9).",
+          "sources": [
+            "ley:9",
+            "ley:8",
+            "reglamento:151",
+            "ley:11"
+          ],
+          "latency_ms": 1503,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa, concisa y coincide con el artículo oficial proporcionado."
+        }
+      }
+    },
+    {
+      "id": "tb-088",
+      "question": "¿Qué tengo que hacer cuando veo a un policía en la calle?",
+      "expected_article": "reglamento:82",
+      "conditions": {
+        "vialbot": {
+          "answer": "El policía debe colocar una boleta si el conductor no está presente. Si no lo hace, es posible que haya cometido una infracción. (Reglamento de Tránsito, Artículo 187).",
+          "sources": [
+            "ley:6",
+            "reglamento:151",
+            "ley:5",
+            "reglamento:187"
+          ],
+          "latency_ms": 1566,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 1,
+          "claridad": 1,
+          "justificacion": "La respuesta no se basa en el Artículo 82 proporcionado, sino en un artículo no mencionado (187), y no responde la pregunta original."
+        }
+      }
+    },
+    {
+      "id": "tb-092",
+      "question": "Si me quitan el permiso de aprendizaje por no seguir las reglas, ¿puedo volver a obtenerlo después de un año?",
+      "expected_article": "reglamento:38",
+      "conditions": {
+        "vialbot": {
+          "answer": "Sí, si te lo quieren revocar, puedes solicitar uno nuevo dentro de un año. (Reglamento de Tránsito, Artículo 38).",
+          "sources": [
+            "reglamento:38",
+            "reglamento:32",
+            "reglamento:35",
+            "reglamento:30"
+          ],
+          "latency_ms": 1210,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa, concisa y coincide con el artículo oficial proporcionado."
+        }
+      }
+    },
+    {
+      "id": "tb-095",
+      "question": "¿Puedo poner una tamalera amarilla en mi camioneta?",
+      "expected_article": "reglamento:20",
+      "conditions": {
+        "vialbot": {
+          "answer": "No, no se permite. Solo los vehículos de emergencia pueden usarlas. (Reglamento de Tránsito, Artículo 20).",
+          "sources": [
+            "reglamento:20",
+            "reglamento:50",
+            "reglamento:7",
+            "reglamento:174"
+          ],
+          "latency_ms": 1703,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es precisa, directa y coincide con el artículo oficial proporcionado."
+        }
+      }
+    },
+    {
+      "id": "tb-096",
+      "question": "¿Este reglamento se aplica a todos los caminos y calles de Guatemala?",
+      "expected_article": "reglamento:6",
+      "conditions": {
+        "vialbot": {
+          "answer": "Sí, este reglamento se aplica a todas las vías públicas del país. Es decir, si estás en una carretera nacional o municipal, el Departamento de Tránsito te puede ayudar con la señalización. (Reglamento de Tránsito, Artículo 83).",
+          "sources": [
+            "reglamento:6",
+            "ley:28",
+            "ley:11",
+            "reglamento:83"
+          ],
+          "latency_ms": 1608,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es clara y relevante, pero no es completamente fidedigna ya que el Artículo 6, no el 83, es el que define el ámbito de aplicación del reglamento."
+        }
+      }
+    },
+    {
+      "id": "tb-097",
+      "question": "¿Tengo que dejar las luces prendidas si estoy manejando entre las 6 de la mañana y las 6 de la tarde?",
+      "expected_article": "reglamento:158",
+      "conditions": {
+        "vialbot": {
+          "answer": "Sí, tienes que mantener las luces encendidas en ese horario. Es una norma general del Artículo 158. (Reglamento de Tránsito, Artículo 158).",
+          "sources": [
+            "reglamento:158",
+            "reglamento:90",
+            "reglamento:167",
+            "reglamento:85"
+          ],
+          "latency_ms": 1415,
+          "cita_correcta": true,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es clara y relevante, pero no refleja la información precisa del artículo oficial, ya que este especifica que las luces deben estar encendidas entre la puesta y la salida del sol, no necesariamente entre las 6 de la mañana y las 6 de la tarde."
+        }
+      }
+    },
+    {
+      "id": "tb-099",
+      "question": "¿Pueden cerrar una carretera para que los camiones no pasen si hay mucho tráfico?",
+      "expected_article": "reglamento:77",
+      "conditions": {
+        "vialbot": {
+          "answer": "Sí, pueden cerrar la carretera para evitar accidentes. Solo se puede hacer en caso de emergencia. (Reglamento de Tránsito, Artículo 89).",
+          "sources": [
+            "reglamento:89",
+            "ley:24",
+            "reglamento:137",
+            "reglamento:90"
+          ],
+          "latency_ms": 1365,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 2,
+          "claridad": 3,
+          "justificacion": "La respuesta no es fidedigna ya que se refiere al Artículo 89, mientras que la información correcta está en el Artículo 77. Además, no responde directamente la consulta y es un poco confusa en su formulación."
+        }
+      }
+    }
+  ]
+}
