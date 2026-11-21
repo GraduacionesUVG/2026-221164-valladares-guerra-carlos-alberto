@@ -1,0 +1,68 @@
+# Despliegue de producción en la Mac Mini (vialbot.vallague.com).
+# Solo el servicio web se publica, y únicamente en 127.0.0.1: el túnel de
+# Cloudflare lo expone a internet. Los secretos van en .env.production.
+#
+#   docker compose -f docker-compose.prod.yml --env-file .env.production up -d --build
+#
+# El motor de IA corre en el anfitrión (deploy/ai-native.sh, vía launchd) para
+# usar la GPU de Apple Silicon: el reranker tarda ~2 s con GPU y ~18 s en este
+# contenedor, que solo tiene CPU. En un servidor sin Mac se puede usar el
+# contenedor "ai" con --profile ai-docker y AI_SERVICE_URL=http://ai:8000.
+name: vialbot
+
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: trabajograduacion
+      MYSQL_ROOT_PASSWORD: ${DB_PASS:?}
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./Database/schema.sql:/docker-entrypoint-initdb.d/1_schema.sql:ro
+      - ./Database/data.sql:/docker-entrypoint-initdb.d/2_data.sql:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-p${DB_PASS}"]
+      interval: 10s
+      retries: 10
+
+  # Alternativa en contenedor (solo CPU). El LLM propio lo sirve Ollama en la
+  # máquina anfitriona; Colima resuelve host.docker.internal hacia el anfitrión
+  ai:
+    profiles: ["ai-docker"]
+    build: ./AI
+    restart: always
+    environment:
+      OLLAMA_URL: http://host.docker.internal:11434
+      AI_SERVICE_TOKEN: ${AI_SERVICE_TOKEN:?}
+      # El reranker (bge-reranker-v2-m3) se lee de la caché de Hugging Face
+      # del anfitrión; sin conexión para no descargar nada en producción
+      HF_HUB_OFFLINE: "1"
+    volumes:
+      - ${HOME}/.cache/huggingface:/root/.cache/huggingface:ro
+      - ./AI/models:/app/models:ro
+      - ./AI/data/chroma:/app/data/chroma
+      - ./AI/data/runtime_config.json:/app/data/runtime_config.json
+      - ./AI/eval/results:/app/eval/results:ro
+
+  web:
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile.web
+    restart: always
+    environment:
+      APP_ENV: production
+      JWT_SECRET: ${JWT_SECRET:?}
+      CORS_ORIGINS: https://vialbot.vallague.com
+      DB_HOST: db
+      DB_PASS: ${DB_PASS}
+      AI_SERVICE_URL: ${AI_SERVICE_URL:-http://host.docker.internal:8000}
+      AI_SERVICE_TOKEN: ${AI_SERVICE_TOKEN}
+    ports:
+      - "127.0.0.1:8090:80"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  db_data:

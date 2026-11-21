@@ -1,0 +1,302 @@
+[
+  {
+    "n": 1,
+    "id": "tb-049",
+    "condicion": "vialbot",
+    "juez": {
+      "fidelidad": 1,
+      "relevancia": 3,
+      "claridad": 4
+    }
+  },
+  {
+    "n": 2,
+    "id": "tb-023",
+    "condicion": "llm_sin_rag",
+    "juez": {
+      "fidelidad": 3,
+      "relevancia": 4,
+      "claridad": 4
+    }
+  },
+  {
+    "n": 3,
+    "id": "tb-032",
+    "condicion": "llm_sin_rag",
+    "juez": {
+      "fidelidad": 2,
+      "relevancia": 5,
+      "claridad": 4
+    }
+  },
+  {
+    "n": 4,
+    "id": "tb-032",
+    "condicion": "vialbot",
+    "juez": {
+      "fidelidad": 3,
+      "relevancia": 5,
+      "claridad": 5
+    }
+  },
+  {
+    "n": 5,
+    "id": "tb-053",
+    "condicion": "llm_base_rag",
+    "juez": {
+      "fidelidad": 5,
+      "relevancia": 5,
+      "claridad": 5
+    }
+  },
+  {
+    "n": 6,
+    "id": "tb-096",
+    "condicion": "llm_sin_rag",
+    "juez": {
+      "fidelidad": 1,
+      "relevancia": 1,
+      "claridad": 5
+    }
+  },
+  {
+    "n": 7,
+    "id": "tb-095",
+    "condicion": "llm_base_rag",
+    "juez": {
+      "fidelidad": 1,
+      "relevancia": 3,
+      "claridad": 5
+    }
+  },
+  {
+    "n": 8,
+    "id": "tb-009",
+    "condicion": "llm_sin_rag",
+    "juez": {
+      "fidelidad": 2,
+      "relevancia": 3,
+      "claridad": 4
+    }
+  },
+  {
+    "n": 9,
+    "id": "tb-012",
+    "condicion": "llm_sin_rag",
+    "juez": {
+      "fidelidad": 3,
+      "relevancia": 5,
+      "claridad": 4
+    }
+  },
+  {
+    "n": 10,
+    "id": "tb-083",
+    "condicion": "llm_sin_rag",
+    "juez": {
+      "fidelidad": 3,
+      "relevancia": 5,
+      "claridad": 5
+    }
+  },
+  {
+    "n": 11,
+    "id": "tb-067",
+    "condicion": "llm_base_rag",
+    "juez": {
+      "fidelidad": 3,
+      "relevancia": 5,
+      "claridad": 4
+    }
+  },
+  {
+    "n": 12,
+    "id": "tb-085",
+    "condicion": "vialbot",
+    "juez": {
+      "fidelidad": 5,
+      "relevancia": 5,
+      "claridad": 5
+    }
+  },
+  {
+    "n": 13,
+    "id": "tb-078",
+    "condicion": "llm_base_rag",
+    "juez": {
+      "fidelidad": 4,
+      "relevancia": 5,
+      "claridad": 5
+    }
+  },
+  {
+    "n": 14,
+    "id": "tb-001",
+    "condicion": "llm_base_rag",
+    "juez": {
+      "fidelidad": 1,
+      "relevancia": 1,
+      "claridad": 5
+    }
+  },
+  {
+    "n": 15,
+    "id": "tb-074",
+    "condicion": "llm_sin_rag",
+    "juez": {
+      "fidelidad": 3,
+      "relevancia": 5,
+      "claridad": 4
+    }
+  },
+  {
+    "n": 16,
+    "id": "tb-030",
+    "condicion": "vialbot",
+    "juez": {
+      "fidelidad": 2,
+      "relevancia": 3,
+      "claridad": 4
+    }
+  },
+  {
+    "n": 17,
+    "id": "tb-058",
+    "condicion": "llm_sin_rag",
+    "juez": {
+      "fidelidad": 3,
+      "relevancia": 5,
+      "claridad": 5
+    }
+  },
+  {
+    "n": 18,
+    "id": "tb-027",
+    "condicion": "llm_base_rag",
+    "juez": {
+      "fidelidad": 5,
+      "relevancia": 5,
+      "claridad": 5
+    }
+  },
+  {
+    "n": 19,
+    "id": "tb-012",
+    "condicion": "vialbot",
+    "juez": {
+      "fidelidad": 5,
+      "relevancia": 5,
+      "claridad": 5
+    }
+  },
+  {
+    "n": 20,
+    "id": "tb-045",
+    "condicion": "llm_base_rag",
+    "juez": {
+      "fidelidad": 1,
+      "relevancia": 1,
+      "claridad": 3
+    }
+  },
+  {
+    "n": 21,
+    "id": "tb-054",
+    "condicion": "llm_sin_rag",
+    "juez": {
+      "fidelidad": 3,
+      "relevancia": 5,
+      "claridad": 4
+    }
+  },
+  {
+    "n": 22,
+    "id": "tb-008",
+    "condicion": "vialbot",
+    "juez": {
+      "fidelidad": 5,
+      "relevancia": 5,
+      "claridad": 5
+    }
+  },
+  {
+    "n": 23,
+    "id": "tb-049",
+    "condicion": "llm_base_rag",
+    "juez": {
+      "fidelidad": 3,
+      "relevancia": 5,
+      "claridad": 5
+    }
+  },
+  {
+    "n": 24,
+    "id": "tb-009",
+    "condicion": "vialbot",
+    "juez": {
+      "fidelidad": 1,
+      "relevancia": 1,
+      "claridad": 2
+    }
+  },
+  {
+    "n": 25,
+    "id": "tb-018",
+    "condicion": "vialbot",
+    "juez": {
+      "fidelidad": 2,
+      "relevancia": 5,
+      "claridad": 4
+    }
+  },
+  {
+    "n": 26,
+    "id": "tb-001",
+    "condicion": "vialbot",
+    "juez": {
+      "fidelidad": 5,
+      "relevancia": 5,
+      "claridad": 5
+    }
+  },
+  {
+    "n": 27,
+    "id": "tb-053",
+    "condicion": "vialbot",
+    "juez": {
+      "fidelidad": 3,
+      "relevancia": 5,
+      "claridad": 5
+    }
+  },
+  {
+    "n": 28,
+    "id": "tb-066",
+    "condicion": "llm_base_rag",
+    "juez": {
+      "fidelidad": 2,
+      "relevancia": 5,
+      "claridad": 4
+    }
+  },
+  {
+    "n": 29,
+    "id": "tb-078",
+    "condicion": "llm_sin_rag",
+    "juez": {
+      "fidelidad": 1,
+      "relevancia": 1,
+      "claridad": 3
+    }
+  },
+  {
+    "n": 30,
+    "id": "tb-058",
+    "condicion": "llm_base_rag",
+    "juez": {
+      "fidelidad": 1,
+      "relevancia": 3,
+      "claridad": 5
+    }
+  }
+]

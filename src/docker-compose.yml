@@ -1,0 +1,66 @@
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: trabajograduacion
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      # Automatically initialize database with our schemas and initial data
+      - ./Database/schema.sql:/docker-entrypoint-initdb.d/1_schema.sql
+      - ./Database/data.sql:/docker-entrypoint-initdb.d/2_data.sql
+
+  # Motor de IA: embeddings, base vectorial (ChromaDB), clasificador y RAG.
+  # El LLM propio (vialbot) lo sirve Ollama en la máquina anfitriona para
+  # aprovechar la GPU; ver AI/README.md.
+  ai:
+    build:
+      context: ./AI
+      dockerfile: Dockerfile
+    environment:
+      OLLAMA_URL: http://host.docker.internal:11434
+      AI_SERVICE_TOKEN: local-dev-token
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./AI/models:/app/models
+      - ./AI/data/chroma:/app/data/chroma
+      - ./AI/eval/results:/app/eval/results
+    ports:
+      - "8000:8000"
+
+  backend:
+    build:
+      context: ./Backend
+      dockerfile: Dockerfile
+    environment:
+      APP_ENV: local
+      JWT_SECRET: local-dev-jwt-secret-change-me
+      CORS_ORIGINS: http://localhost:5173
+      AI_SERVICE_URL: http://ai:8000
+      AI_SERVICE_TOKEN: local-dev-token
+    ports:
+      - "8080:80"
+    volumes:
+      - ./Backend:/var/www/html
+    depends_on:
+      - db
+      - ai
+
+  frontend:
+    build:
+      context: ./Frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./Frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+
+volumes:
+  db_data:

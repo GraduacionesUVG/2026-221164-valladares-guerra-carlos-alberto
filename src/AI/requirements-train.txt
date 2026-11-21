@@ -1,0 +1,5 @@
+# Entrenamiento y evaluación (Apple Silicon). Incluye las dependencias del servicio.
+-r requirements.txt
+datasets==5.0.1
+accelerate==1.15.0
+mlx-lm==0.31.3

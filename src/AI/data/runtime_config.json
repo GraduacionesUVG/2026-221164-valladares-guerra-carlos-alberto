@@ -1,0 +1,12 @@
+{
+  "top_k": 7,
+  "min_retrieval_score": 0.25,
+  "in_domain_threshold": 0.5,
+  "temperature": 0.1,
+  "prefer_finetuned_generator": true,
+  "system_prompt": null,
+  "retrieval_mode": "dense",
+  "reranker": "bge-m3",
+  "rerank_candidates": 20,
+  "num_ctx": 8192
+}

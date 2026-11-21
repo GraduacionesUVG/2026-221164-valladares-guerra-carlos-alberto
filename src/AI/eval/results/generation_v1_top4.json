@@ -1,0 +1,1732 @@
+{
+  "n": 50,
+  "judge": "qwen2.5:7b",
+  "summary": {
+    "llm_sin_rag": {
+      "fidelidad": 2.4,
+      "relevancia": 4.06,
+      "claridad": 4.2,
+      "cita_correcta": 0.0,
+      "alucinacion_grave": 0.42,
+      "latencia_ms_mediana": 4517
+    },
+    "llm_base_rag": {
+      "fidelidad": 2.4,
+      "relevancia": 3.7,
+      "claridad": 4.64,
+      "cita_correcta": 0.1,
+      "alucinacion_grave": 0.54,
+      "latencia_ms_mediana": 3199
+    },
+    "vialbot": {
+      "fidelidad": 2.08,
+      "relevancia": 3.52,
+      "claridad": 3.82,
+      "cita_correcta": 0.38,
+      "alucinacion_grave": 0.62,
+      "latencia_ms_mediana": 2996
+    }
+  },
+  "rows": [
+    {
+      "id": "tb-018",
+      "question": "¿Puedo ir rápido por aquí si no hay niños cerca?",
+      "expected_article": "reglamento:63",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Sí, puedes ir rápido por aquí si no hay niños cerca.",
+          "latency_ms": 2178,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta no se ajusta a la ley oficial, pero no contiene datos falsos ni contradictorios, y responde directamente a la consulta."
+        },
+        "llm_base_rag": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "latency_ms": 5193,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "No, porque si no hay niños cerca, no puedes ir rápido. Debes reducir la velocidad. (Reglamento de Tránsito, Artículo 114).",
+          "latency_ms": 5435,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-073",
+      "question": "¿Quién decide cómo se ven las tarjetas y placas de circulación?",
+      "expected_article": "ley:19",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Las tarjetas y placas de circulación, como las tarjetas de identidad, pasaportes, y otros documentos de identidad, son diseñados y fabricados por entidades gubernamentales o autoridades de seguridad. Estas entidades tienen la responsabilidad de determinar cómo se verán y funcionarán estos documentos.\n\nEn general, las normas y reglas para la diseño y fabricación de estos documentos son establecidas por las autoridades de seguridad nacional o las autoridades de identidad del país. Estas entidades tienen la responsabilidad de asegurarse de que los documentos estén diseñados de manera segura y legible para la identificación y el reconocimiento.\n\nPor lo tanto, aunque los diseñadores y fabricantes de estos documentos pueden tener ideas sobre cómo se verán, estas ideas deben ser revisadas y aprobadas por las autoridades gubernamentales antes de ser implementadas.",
+          "latency_ms": 22000,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es clara y relevante, pero no es completamente fidel a la información del artículo oficial, ya que no menciona específicamente al Ministerio de Gobernación y su facultad para disponer los diseños de las tarjetas y placas."
+        },
+        "llm_base_rag": {
+          "answer": "El Ministerio de Finanzas Públicas acatara las disposiciones del artículo 19 de la Ley de Tránsito, que establece que las tarjetas y placas de circulación se identificaran con el diseño y sistema de emisión definidos por el Ministerio de Gobernación.",
+          "latency_ms": 3875,
+          "cita_correcta": true,
+          "fidelidad": 4,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "El Ministerio de Finanzas Publicas se encarga de definir el diseño y el uso de las tarjetas y placas. Solo se puede hacer por orden de la autoridad. (Ley de Tránsito, Artículo 19).",
+          "latency_ms": 3208,
+          "cita_correcta": true,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-098",
+      "question": "¿Si hay dos carriles que van en direcciones opuestas, tengo que ir siempre por el carril de la derecha?",
+      "expected_article": "reglamento:106",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "No, no tienes que ir siempre por el carril de la derecha. La dirección de los carriles puede variar dependiendo de la norma de tráfico en tu país o región. En muchos países, la norma general es que los vehículos deben viajar en sentido horario, lo que significa que los carriles de la derecha son los carriles de la derecha en sentido de la circunstancia. Sin embargo, en algunos países, como los países de habla hispanohablante, la norma general es que los vehículos deben viajar en sentido antihorario, lo que significa que los carriles de la derecha son los carriles de la izquierda en sentido de la circunstancia. Por lo tanto, es importante que sigas las normas de tráfico locales o regionales.",
+          "latency_ms": 4185,
+          "cita_correcta": false,
+          "fidelidad": 2,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Sí, tienes que ir siempre por el carril de la derecha cuando hay dos carriles que van en direcciones opuestas. Esto se debe a que el artículo 71 del Reglamento de Tránsito establece que los vehículos de transporte público circularán por los carriles exclusivos prioritarios que estén habilitados para el efecto, y si no los hubiere, en el carril derecho de la calzada, el más alejado del centro de la misma.",
+          "latency_ms": 4190,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 2,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Sí, si hay dos carriles que van en direcciones opuestas, el conductor debe usar el carril más a la derecha. Solo se puede usar el otro si es para cambiar de dirección o para rebasar. (Reglamento de Tránsito, Artículo 101).",
+          "latency_ms": 3012,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es clara y relevante, pero no menciona el Artículo 106 del Reglamento de Tránsito de Guatemala, sino un supuesto Artículo 101 que no existe."
+        }
+      }
+    },
+    {
+      "id": "tb-009",
+      "question": "¿Si me detienen el carro porque está estacionado mal, me tienen que quitar el auto hasta que pague la multa?",
+      "expected_article": "ley:34",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "No, no se te quitará el auto simplemente por estar estacionado mal. La multa por estacionamiento es una infracción administrativa que se paga a través de la vía administrativa, no se puede pagar la multa y luego quitar el auto. Si no puedes pagar la multa, puedes solicitar un pago en cuotas o un acuerdo con la autoridad. Recuerda que la seguridad y el tráfico son importantes, por lo que es importante mantener el auto en buen estado y en un lugar seguro.",
+          "latency_ms": 2917,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "latency_ms": 2519,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 1,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Sí, si te detienen el carro y está estacionado mal, tienes que quitar el auto hasta que pagues la multa. (Ley de Tránsito, Artículo 35).",
+          "latency_ms": 2860,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-033",
+      "question": "¿Puedo llevar mi vaca por la calle si no hay un camino de tierra?",
+      "expected_article": "reglamento:53",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "No, no puedes llevar a tu vaca por la calle si no hay un camino de tierra. Las vacas son animales y no pueden caminar por la calle. Además, las calles son diseñadas para vehículos y no para animales. Si tienes una vaca, es mejor que la lleves en un carrillo o en un vehículo adecuado para transportar a los animales.",
+          "latency_ms": 1940,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "latency_ms": 2391,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 1,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "No, porque el artículo dice que la vía pública solo se puede usar si no hay otro camino y la vaca no se puede pasar por la vía pública. (Reglamento de Tránsito, Artículo 53).",
+          "latency_ms": 2855,
+          "cita_correcta": true,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-016",
+      "question": "¿Tengo que dejar prendida la luz baja si manejo mi moto por la calle?",
+      "expected_article": "reglamento:163",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "No, no tienes que dejar la luz baja encendida si manejas tu moto por la calle. La luz baja es una función que se activa automáticamente cuando la luz del faro de tu moto se apaga, lo que suele suceder cuando estás en la oscuridad. Sin embargo, si decides encenderla por razones de seguridad o para iluminar tu camino, es recomendable hacerlo.",
+          "latency_ms": 2025,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "No, no tienes que dejar prendida la luz baja si manejas tu moto por la calle. La norma se aplica únicamente a vehículos automotores que circulan por túneles y vías urbanas o extraurbanas suficientemente iluminadas, y no a motocicletas.",
+          "latency_ms": 2684,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es relevante y clara, pero contiene información incorrecta según el artículo oficial."
+        },
+        "vialbot": {
+          "answer": "Sí, si te vas a quedar más de 40 km/h, la luz baja se debe estar encendida. Es una de las situaciones que menciona el reglamento. (Reglamento de Tránsito, Artículo 160).",
+          "latency_ms": 2764,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 3,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-064",
+      "question": "¿Qué tengo que hacer cuando estoy adelantando a otro coche?",
+      "expected_article": "reglamento:146",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Cuando estás adelantando a otro coche, es importante seguir ciertos pasos para asegurarte de que la interrupción sea segura y efectiva. Aquí te dejo algunos consejos:\n\n1. Mantén la distancia: Asegúrate de mantener una buena distancia de seguridad entre los dos vehículos. Esto te dará tiempo suficiente para reaccionar si el otro conductor decide adelantarte.\n\n2. Avanza lentamente: Acelera gradualmente para evitar que el otro conductor se sienta amenazado. Esto también te dará tiempo para reaccionar si el otro conductor decide adelantarte.\n\n3. Mantén la mirada en el centro: Mantén la mirada en el centro del camino para evitar que el otro conductor te vea como una amenaza.\n\n4. Avanza con la cabeza alta: Mantén la cabeza alta y la mirada en el centro para evitar que el otro conductor te vea como una amenaza.\n\n5. Avanza con la mano en el volante: Mantén la mano en el volante para evitar que el otro conductor te vea como una amenaza.\n\n6. Avanza con la voz baja: Mantén la voz baja para evitar que el otro conductor te vea como una amenaza.\n\n7. Avanza con la luz verde: Asegúrate de que el otro conductor vea la luz verde antes de adelantarte.\n\n8. Avanza con la luz roja: Si el otro conductor no ve la luz verde, avanza con la luz roja. Esto significa que el otro conductor no ve la luz verde y te está advirtiendo de que no es seguro adelantarte.\n\n9. Avanza con la luz amarilla: Si el otro conductor no ve la luz roja, avanza con la luz amarilla. Esto significa que el otro conductor no ve la luz roja y te está advirtiendo de que no es seguro adelantarte.\n\n10. Avanza con la luz roja y la luz amarilla: Si el otro conductor no ve la luz roja ni la luz amarilla, avanza con la luz roja y la luz amarilla. Esto significa que el otro conductor no ve ninguna luz y te está advirtiendo de que no es seguro adelantarte.\n\nRecuerda siempre que la seguridad es la prioridad. Si no estás seguro de que el",
+          "latency_ms": 10024,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 2,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Para adelantar a otro vehículo, debes seguir estos pasos:\n\n1. Mantén tu velocidad y asegúrate de que estés a una distancia segura del vehículo que está adelante.\n2. Avanza lentamente, manteniendo la posición de adelantamiento.\n3. Si ves que el vehículo que está adelante se acerca, reducirás tu velocidad y mantendrás tu posición de adelantamiento.\n4. Si no puedes mantener tu posición de adelantamiento, debes detenerte y esperar a que el vehículo que está adelante se desvíe.\n5. Si no puedes evitar adelantarte, debes reducir tu velocidad y mantener tu posición de adelantamiento.\n6. Si después de iniciar la maniobra, advienes que se produzcan circunstancias que puedan hacer difícil la finalización de la misma, sin provocar riesgos, reducirás inmediatamente tu marcha y regresará de nuevo a tu posición anterior; esta maniobra la complementará con las señales de rigor.\n\nRecuerda que debes mantener tu posición de adelantamiento siempre que sea posible y evitar adelantarte a vehículos pesados o bicicletas.",
+          "latency_ms": 7364,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Si estás adelantando a otro coche, tienes que llevarlo a una velocidad más alta y usar señales de rigor. Si te pone señales, es porque te pone en contra de la norma. (Reglamento de Tránsito, Artículo 146).",
+          "latency_ms": 3877,
+          "cita_correcta": true,
+          "fidelidad": 2,
+          "relevancia": 4,
+          "claridad": 3,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-058",
+      "question": "¿Puedo organizar una carrera de coches en la calle si tengo el permiso?",
+      "expected_article": "reglamento:119",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Sí, puedes organizar una carrera de coches en la calle si tienes el permiso adecuado. Sin embargo, es importante tener en cuenta varios factores:\n\n1. **Permisos**: Necesitarás permisos locales para organizar una carrera de coches en la calle. Esto puede incluir permisos de tráfico, seguridad, y posiblemente de la policía.\n\n2. **Regulaciones locales**: Consulta las regulaciones locales sobre carreras de coches en la calle. Puede haber restricciones sobre la velocidad, la distancia entre las carreras, y la cantidad de vehículos que pueden participar.\n\n3. **Seguridad**: La seguridad es una prioridad. Debes asegurarte de tener suficiente personal para controlar la seguridad y asegurarte de que todo esté bien equipado.\n\n4. **Aseguramiento**: Considera el seguro de la carrera. Puedes necesitar asegurarte de que todos los participantes estén cubiertos por seguro.\n\n5. **Planificación**: Planifica cuidadosamente la carrera. Esto incluye la ubicación, la organización de los participantes, la preparación de la zona de carrera, y la organización de la seguridad.\n\n6. **Comunicación**: Mantén comunicación clara con los participantes y la policía para asegurarte de que todo esté bien organizado y controlado.\n\n7. **Respeto a la ciudadanía**: Asegúrate de que la carrera no interfiera con la vida diaria de los residentes y de que se respeten las normas de tráfico locales.\n\nSi tienes todas estas consideraciones en cuenta, puedes organizar una carrera de coches en la calle con el permiso adecuado.",
+          "latency_ms": 7386,
+          "cita_correcta": false,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "latency_ms": 3013,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "No, si no tienes el permiso. Solo si es un caso excepcional. (Reglamento de Tránsito, Artículo 119).",
+          "latency_ms": 2610,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-061",
+      "question": "¿Si no estoy presente cuando me ponen la multa, aún me la puedo aplicar?",
+      "expected_article": "reglamento:187",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "No, si no estás presente cuando se te impone la multa, no podrás aplicarla. La multa se impone en tu nombre y solo puedes pagarla si estás presente para hacerlo.",
+          "latency_ms": 1257,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "latency_ms": 3319,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "No, si no estás presente, el conductor debe recibir la boleta en el lugar donde te puso la multa. Si no la recibe, puede haber multa más grave. (Reglamento de Tránsito, Artículo 187).",
+          "latency_ms": 3552,
+          "cita_correcta": true,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-084",
+      "question": "¿Qué documentos necesito para renovar mi licencia?",
+      "expected_article": "reglamento:29",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Para renovar tu licencia, necesitarás los siguientes documentos:\n\n1. Documento de identidad oficial (puede ser pasaporte, cédula de identidad, etc.)\n2. Fotocopia de la tarjeta de identidad\n3. Fotocopia de la cédula de ciudadanía (si es necesario)\n4. Fotocopia del pasaporte (si es necesario)\n5. Fotocopia del acta de nacimiento (si es necesario)\n6. Fotocopia del acta de matrimonio (si es necesario)\n7. Fotocopia del acta de nacimiento de los hijos (si es necesario)\n8. Fotocopia del acta de nacimiento de los padres (si es necesario)\n9. Fotocopia del acta de nacimiento de los hermanos (si es necesario)\n10. Fotocopia del acta de nacimiento de los sobrinos (si es necesario)\n11. Fotocopia del acta de nacimiento de los cuñados (si es necesario)\n12. Fotocopia del acta de nacimiento de los cuñados (si es necesario)\n13. Fotocopia del acta de nacimiento de los cuñados (si es necesario)\n14. Fotocopia del acta de nacimiento de los cuñados (si es necesario)\n15. Fotocopia del acta de nacimiento de los cuñados (si es necesario)\n16. Fotocopia del acta de nacimiento de los cuñados (si es necesario)\n17. Fotocopia del acta de nacimiento de los cuñados (si es necesario)\n18. Fotocopia del acta de nacimiento de los cuñados (si es necesario)\n19. Fotocopia del acta de nacimiento de los cuñados (si es necesario)\n20. Fotocopia del acta de nacimiento de los cuñados (si es necesario)\n21. Fotocopia del acta de nacimiento de los cuñados (si es necesario)\n22. Fotocopia del acta de nacimiento de los cuñados (si es necesario)\n23. Fotocopia del acta de nacimiento de los cuñados (si es necesario)\n24. Fotocopia del acta de nacimiento de los cu",
+          "latency_ms": 9900,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 1,
+          "claridad": 1,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Para renovar tu licencia de conducir, necesitarás los siguientes documentos:\n\na) Presentar solicitud escrita o llenar el formulario correspondiente\nb) Presentarse personalmente\nc) Pagar el valor correspondiente\nd) Estar solvente de multas\ne) Presentar número de fotos que requiera la autoridad, o en su caso, presentarse a la toma de fotos\nf) En caso de renovación, presentar la licencia a renovar\ng) En caso de reposición, presentar declaración jurada ante el Departamento de Tránsito, especificando la razón de la gestión\n\nRecuerda que debes estar listo para cumplir todos los requisitos mencionados en el ConTEXTO para renovar tu licencia de conducir.",
+          "latency_ms": 5581,
+          "cita_correcta": false,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Tienes que presentar la solicitud escrita o el formulario oficial. Debes traerla personalmente. (Reglamento de Tránsito, Artículo 29).",
+          "latency_ms": 2386,
+          "cita_correcta": true,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-049",
+      "question": "¿A dónde van los multas que se recaudan por las infracciones de tránsito?",
+      "expected_article": "ley:44",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Las multas por infracciones de tráfico se recaudan generalmente en un sistema de contabilidad automática. Aquí te explico cómo funciona:\n\n1. Sistema de contabilidad automática: Los vehículos de la policía o las autoridades locales tienen sistemas de contabilidad que registran las infracciones y las multas.\n\n2. Registro de infracciones: Los policías o funcionarios de tráfico registran las infracciones en un sistema de registro.\n\n3. Calculo de multas: Los sistemas de contabilidad utilizan un algoritmo para calcular la cantidad de multa basada en la infracción y la localidad.\n\n4. Pago de multas: Los conductores deben pagar las multas en efectivo o por medio de una tarjeta de crédito o débito.\n\n5. Recolección de dinero: La policía o las autoridades locales recogen las multas de los conductores.\n\n6. Transferencia de dinero: El dinero recaudado se transfiera a un fondo de recaudación de ingresos.\n\n7. Revisión y pago: Los fondos se revisan y luego se pagan a los contribuyentes.\n\nEs importante mencionar que la cantidad exacta de dinero recaudado puede variar dependiendo de la localidad y las políticas específicas de cada área.",
+          "latency_ms": 5720,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Las multas recaudadas por las infracciones de tránsito se destinarán exclusivamente para el diseño, mantenimiento y mejoramiento de las actividades de tránsito, incluyendo obras de infraestructura vial.",
+          "latency_ms": 3033,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Los multas se recaudan por el Departamento de Tránsito o por el Juzgado de Asuntos Municipales de Tránsito. Ellos lo manejan y lo usan para mejorar la vía y el tránsito. (Reglamento de Tránsito, Artículo 186).",
+          "latency_ms": 3754,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-027",
+      "question": "¿Qué tengo que hacer si mi carro fue golpeado o robado en un estacionamiento?",
+      "expected_article": "reglamento:179",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Si tu carro fue golpeado o robado en un estacionamiento, aquí hay algunas acciones que debes tomar:\n\n1. **Reporta el incidente**: Comunica el incidente a la policía y a la empresa de estacionamiento. Si es posible, asegúrate de tomar fotos del lugar del incidente.\n\n2. **Contacta a tu seguro**: Notifica a tu seguro automovilístico sobre el incidente. Si es un seguro de terceros, podrían cobrar por el daño al carro.\n\n3. **Reporta la denuncia a la policía**: Si el incidente es grave o si hay evidencia de un robo, reporta la denuncia a la policía.\n\n4. **Contacta a la empresa de estacionamiento**: Informa a la empresa de estacionamiento sobre el incidente y solicita una declaración oficial.\n\n5. **Reporta la denuncia a la policía**: Si el incidente es grave o si hay evidencia de un robo, reporta la denuncia a la policía.\n\n6. **Contacta a tu seguro automovilístico**: Notifica a tu seguro automovilístico sobre el incidente. Si es un seguro de terceros, podrían cobrar por el daño al carro.\n\n7. **Reporta la denuncia a la policía**: Si el incidente es grave o si hay evidencia de un robo, reporta la denuncia a la policía.\n\n8. **Contacta a tu seguro automovilístico**: Notifica a tu seguro automovilístico sobre el incidente. Si es un seguro de terceros, podrían cobrar por el daño al carro.\n\n9. **Reporta la denuncia a la policía**: Si el incidente es grave o si hay evidencia de un robo, reporta la denuncia a la policía.\n\n10. **Contacta a tu seguro automovilístico**: Notifica a tu seguro automovilístico sobre el incidente. Si es un seguro de terceros, podrían cobrar por el daño al carro.\n\nRecuerda que la seguridad y la protección de tu propiedad son importantes. Siempre es mejor informar sobre cualquier incidente al más alto nivel posible.",
+          "latency_ms": 9608,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "latency_ms": 2872,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Si tu carro sufrió daños en un estacionamiento, pero no se considera un daño grave, el conductor puede hacer una denuncia ante el Ministerio Público. Solo si es grave, se considera un daño. (Reglamento de Tránsito, Artículo 179).",
+          "latency_ms": 2832,
+          "cita_correcta": true,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-013",
+      "question": "¿Cuánto tengo que pagar para renovar mi licencia de conducir?",
+      "expected_article": "ley:16",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Para renovar tu licencia de conducir en España, generalmente tienes que pagar una tarifa que varía según la categoría de la licencia que tienes. Aquí te dejo algunos datos generales:\n\n1. **Licencia de conducir de conducir**: Puedes renovarla por 1 año a partir de la fecha de vencimiento. La tarifa es de 15 euros.\n\n2. **Licencia de conducir de conducir**: Puedes renovarla por 2 años a partir de la fecha de vencimiento. La tarifa es de 25 euros.\n\n3. **Licencia de conducir de conducir**: Puedes renovarla por 3 años a partir de la fecha de vencimiento. La tarifa es de 35 euros.\n\n4. **Licencia de conducir de conducir**: Puedes renovarla por 4 años a partir de la fecha de vencimiento. La tarifa es de 45 euros.\n\n5. **Licencia de conducir de conducir**: Puedes renovarla por 5 años a partir de la fecha de vencimiento. La tarifa es de 55 euros.\n\nRecuerda que estos precios son aproximados y pueden variar dependiendo de la región o la fecha de renovación. También es importante verificar la información en la página web oficial de la DGT (Departamento de Tráfico y Movilidad) de España para obtener la tarifa más actualizada.",
+          "latency_ms": 6552,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 1,
+          "claridad": 3,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "latency_ms": 1864,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Tienes que pagar el valor correspondiente. Es una de las reglas del reglamento. (Reglamento de Tránsito, Artículo 29).",
+          "latency_ms": 1714,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 3,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-063",
+      "question": "¿Quién tiene la autoridad para hacer cambios en las reglas de tránsito en Guatemala?",
+      "expected_article": "ley:48",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "En Guatemala, la autoridad para hacer cambios en las reglas de tránsito es la Secretaría de Transporte y Movilidad (SETRAM). Esta dependencia es parte del Ministerio de la Vivienda, Transporte y Movilidad (MVTM). La SETRAM es responsable de la regulación, control y supervisión de la movilidad en Guatemala, incluyendo la red de carreteras, la movilidad urbana y la movilidad de transporte público.",
+          "latency_ms": 2406,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Según la Ley de Tránsito de Guatemala, el departamento de tránsito de la Dirección General de la Policía Nacional del Ministerio de Gobernación tiene la facultad de:\n\na) Planificar, dirigir, administrar y controlar el tránsito en todo el territorio nacional;\nb) Elaborar el reglamento para la aplicación de la presente ley;\nc) Organizar y dirigir la Policía Nacional de tránsito y controlar el funcionamiento de otras entidades, tanto públicas como privadas autorizadas para cumplir actividades de tránsito;\nd) Emitir, renovar, suspender, cancelar y reponer licencias de conducir;\ne) Organizar, llevar y actualizar el registro de conductores;\nf) Organizar, llevar y actualizar el registro de vehículos;\ng) Diseñar, colocar, habilitar y mantener las señales de tránsito y los semáforos;\nh) Recaudar los ingresos provenientes de la aplicación de esta ley, disponer de ellos conforme a la misma, y aplicar las sanciones previstas en la ley;\ni) Aplicar las sanciones previstas en esta ley;\nj) Organizar, llevar y coordinar el plan y sistema nacional vial;\nk) Diseñar, dirigir y coordinar el plan y sistema nacional vial;\nl) Todas las funciones otorgadas por la ley y las que le asigne el Ministerio de Gobernación en materia de tránsito.\n\nPor lo tanto, el departamento de tránsito de la Dirección General de la Policía Nacional del Ministerio de Gobernación es quien tiene la autoridad para hacer cambios en las reglas de tránsito en Guatemala.",
+          "latency_ms": 9335,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "El ministerio de gobernación, por medio del departamento de tránsito de la policía nacional, es quien tiene la autoridad. Solo se puede hacer cambios en las reglas de tránsito. (Ley de Tránsito, Artículo 4).",
+          "latency_ms": 2879,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 3,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-004",
+      "question": "¿Qué necesito para empezar a sacar mi licencia de manejo?",
+      "expected_article": "reglamento:33",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Para obtener tu licencia de conducir en México, necesitarás:\n\n1. Tener al menos 18 años de edad (dependiendo de la categoría de licencia, puede ser mayor o menor).\n\n2. Tener el permiso para conducir en México, que se obtiene al completar el curso de formación para el manejo de vehículos.\n\n3. Tener un vehículo que cumpla con las normas de seguridad y seguridad del tráfico.\n\n4. Tener un seguro de responsabilidad civil para vehículos.\n\n5. Tener un permiso de conducir válido para el vehículo que quieres conducir.\n\n6. Tener un documento de identidad oficial (pasaporte, pasaporte de extranjero, cédula de identidad, etc.).\n\n7. Tener una tarjeta de identificación de la autoridad de tráfico (en algunos casos).\n\n8. Tener un permiso de conducir válido para el vehículo que quieres conducir.\n\n9. Tener un permiso de conducir válido para el vehículo que quieres conducir.\n\n10. Tener un permiso de conducir válido para el vehículo que quieres conducir.\n\n11. Tener un permiso de conducir válido para el vehículo que quieres conducir.\n\n12. Tener un permiso de conducir válido para el vehículo que quieres conducir.\n\n13. Tener un permiso de conducir válido para el vehículo que quieres conducir.\n\n14. Tener un permiso de conducir válido para el vehículo que quieres conducir.\n\n15. Tener un permiso de conducir válido para el vehículo que quieres conducir.\n\n16. Tener un permiso de conducir válido para el vehículo que quieres conducir.\n\n17. Tener un permiso de conducir válido para el vehículo que quieres conducir.\n\n18. Tener un permiso de conducir válido para el vehículo que quieres conducir.\n\n19. Tener un permiso de conducir válido para el vehículo que quieres conducir.\n\n20. Tener un permiso de conducir válido para el vehículo que quieres conducir.\n\n21. Tener un permiso de conducir válido para el vehículo que quieres conducir.\n\n22. Tener un permiso de conducir válido para el vehículo que quieres conducir.\n\n23. Tener un permiso de conducir válido para el vehículo que quieres conduc",
+          "latency_ms": 10189,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 1,
+          "claridad": 2,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Para empezar a sacar tu licencia de conducir, necesitarás:\n\n1. Llenar la solicitud correspondiente.\n2. Ser mayor de edad, salvo lo establecido en el Artículo 26 de este Reglamento.\n3. Presentar certificación de examen de la vista.\n4. Saber leer y escribir en el idioma oficial que rija en el territorio nacional.\n5. Pagar el valor correspondiente.\n6. Aprobar los exámenes teóricos y prácticos respectivos.\n7. Presentar número de fotos que requiera la autoridad o, en su caso, presentarse para la toma de fotos.\n\nRecuerda que la licencia de conducir tendrá una vigencia de uno a cinco años, según las necesidades del portador y el importe a pagar. Al conducir un vehículo por la vía pública, es obligatorio portar una licencia de conducir vigente, cuyo tipo corresponda o incluya al vehículo en que se circula.",
+          "latency_ms": 6825,
+          "cita_correcta": false,
+          "fidelidad": 2,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Tienes que cumplir con todos los requisitos del Artículo 25 del Reglamento de Tránsito. Debes tener la certificación de examen de la vista, saber leer y escribir en el idioma oficial y aprobar los exámenes teóricos y prácticos. (Reglamento de Tránsito, Artículo 25).",
+          "latency_ms": 3881,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 1,
+          "claridad": 3,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-050",
+      "question": "¿Si estoy saliendo de la autopista y hay un carril de desaceleración, puedo frenar ahí para ir bajando la velocidad antes de entrar a la carretera normal?",
+      "expected_article": "reglamento:137",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Sí, puedes usar el carril de desaceleración para reducir la velocidad antes de entrar a la carretera normal. Esto es una práctica común y segura para evitar la aceleración brusca y mantener la seguridad en la vía. Sin embargo, es importante seguir las señales y las normas de tráfico locales para asegurarte de que estás en el carril correcto y en la velocidad adecuada.",
+          "latency_ms": 2265,
+          "cita_correcta": false,
+          "fidelidad": 4,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "latency_ms": 2928,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "No, no puedes frenar ahí para ir bajando la velocidad. Debes usar el carril de desaceleración si hay. (Reglamento de Tránsito, Artículo 137).",
+          "latency_ms": 2994,
+          "cita_correcta": true,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-056",
+      "question": "¿Puedo tener un amigo que me acompañe mientras aprendo a manejar si no quiero ir a clases?",
+      "expected_article": "reglamento:35",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "¡Por supuesto! Aquí tienes algunas sugerencias para encontrar un amigo que te acompañe mientras aprendes a manejar:\n\n1. Busca a alguien que también esté interesado en aprender a manejar. Puedes buscar en grupos de Facebook, en las redes sociales de amigos o en eventos de educación en tu área.\n\n2. Considera a alguien que ya maneja y te pueda enseñar de manera práctica. Puedes preguntarle si te gustaría practicar juntos.\n\n3. Busca a alguien que te guste mucho y que te inspire. A veces, la motivación para aprender puede venir de la gente que te aprecia.\n\n4. Puedes buscar a alguien que esté interesado en aprender a manejar y que te guste. Puedes preguntarle si te gustaría practicar juntos.\n\n5. Considera a alguien que esté interesado en aprender a manejar y que te guste. Puedes preguntarle si te gustaría practicar juntos.\n\n6. Busca a alguien que esté interesado en aprender a manejar y que te guste. Puedes preguntarle si te gustaría practicar juntos.\n\n7. Considera a alguien que esté interesado en aprender a manejar y que te guste. Puedes preguntarle si te gustaría practicar juntos.\n\nRecuerda que la clave es encontrar a alguien que te guste y que te inspire para aprender a manejar.",
+          "latency_ms": 6686,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "latency_ms": 1887,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 1,
+          "claridad": 3,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "No, el acompañante debe ser un licente y autorizado por el Departamento. Si no lo es, no puede acompañarte. (Reglamento de Tránsito, Artículo 32).",
+          "latency_ms": 2193,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 2,
+          "claridad": 3,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-078",
+      "question": "¿Qué puedo hacer en las aceras?",
+      "expected_article": "ley:2",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "En las aceras puedes hacer muchas cosas. Aquí te dejo algunas ideas:\n\n1. Relajarte: Las aceras son perfectas para relajarte después de un día de trabajo o estudios. Puedes leer un libro, escuchar música o simplemente descansar.\n\n2. Practicar yoga: Si tienes una acera grande, puedes usarla para practicar yoga. Es una excelente manera de mantener tu cuerpo y mente en forma.\n\n3. Caminar: Si tienes un par de zapatos cómodos, puedes caminar por las aceras. Es una excelente manera de moverte y mantenerte activo.\n\n4. Escuchar música: Si tienes un mp3 o un teléfono, puedes escuchar música mientras caminas por las aceras. Es una manera divertida de pasar el tiempo.\n\n5. Hacer ejercicio: Si tienes una acera grande, puedes usarla para hacer ejercicios como saltar, saltar y hacer piruetas.\n\n6. Comer: Si tienes una acera grande, puedes usarla para comer. Es una manera divertida de pasar el tiempo y no tener que salir de casa.\n\n7. Hacer dibujos: Si tienes una acera grande, puedes usarla para hacer dibujos. Es una manera divertida de pasar el tiempo y no tener que salir de casa.\n\n8. Leer: Si tienes una acera grande, puedes usarla para leer. Es una manera divertida de pasar el tiempo y no tener que salir de casa.\n\n9. Hacer yoga: Si tienes una acera grande, puedes usarla para hacer yoga. Es una manera divertida de pasar el tiempo y no tener que salir de casa.\n\n10. Hacer ejercicio: Si tienes una acera grande, puedes usarla para hacer ejercicios como saltar, saltar y hacer piruetas. Es una manera divertida de pasar el tiempo y no tener que salir de casa.",
+          "latency_ms": 8017,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 1,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "En las aceras, deberás mantener tu vehículo paralelamente a la misma, siguiendo las normas de seguridad y respetando las señales y regulaciones locales. Evita parar por más de dos minutos y asegúrate de no obstaculizar la circulación.",
+          "latency_ms": 4150,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "En las aceras se puede parar el vehículo, pero no en lugares no autorizados. Debes usar las paradas establecidas. (Reglamento de Tránsito, Artículo 72).",
+          "latency_ms": 4019,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-001",
+      "question": "¿Tengo que tener seguro de auto para poder conducir por la calle?",
+      "expected_article": "ley:29",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "En general, sí, es necesario tener seguro de auto para poder conducir por la calle. Esto es una norma legal en muchos países y se considera una obligación para todos los conductores. \n\nEl seguro de auto cubre la responsabilidad civil en caso de que alguien resulte herido o muerto en un accidente de tráfico. Además, puede cubrir la reparación de daños a la propiedad de los otros conductores o de los vehículos involucrados en el accidente.\n\nPor lo tanto, aunque no todos los conductores necesitan un seguro de auto, es recomendable tenerlo para proteger a sí mismo y a otros en caso de un accidente.",
+          "latency_ms": 3192,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Sí, es necesario tener seguro de auto para poder conducir por la calle. Según la Ley de Tránsito, Artículo 29, todo propietario de un vehículo autorizado para circular por la vía pública debe contratar como mínimo un seguro de responsabilidad civil contra terceros y ocupantes, conforme las disposiciones reglamentarias de esta ley. Además, el Ministerio de Gobernación podrá acordar la obligatoriedad de cualquier otro seguro para los conductores o los vehículos.",
+          "latency_ms": 4033,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Sí, si estás conduciendo por la vía pública, es necesario que te asegures de tener el seguro obligatorio. Es una requisito del Artículo 15. (Ley de Tránsito, Artículo 15).",
+          "latency_ms": 2866,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 3,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-093",
+      "question": "¿Tengo que pagar algo extra si no tengo el seguro obligatorio para mi carro?",
+      "expected_article": "reglamento:193",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "No, no tienes que pagar algo extra por no tener seguro obligatorio para tu carro. El seguro obligatorio es una obligación legal que requiere que todos los vehículos en circulación en España tengan un seguro. Sin embargo, hay otras formas de aseguramiento que puedes elegir si no quieres tener el seguro obligatorio.",
+          "latency_ms": 1744,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 1,
+          "claridad": 2,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "No, no tienes que pagar algo extra si no tienes el seguro obligatorio para tu carro. La normativa establece que todos los propietarios de vehículos autorizados para circular por la vía pública deben contratar un seguro de responsabilidad civil contra terceros y ocupantes, conforme las disposiciones reglamentarias de la Ley de Tránsito.",
+          "latency_ms": 2081,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Sí, si no tienes el seguro obligatorio, te pueden multar y tienes que pagar los gastos correspondientes. El artículo 42 lo explica. (Ley de Tránsito, Artículo 42).",
+          "latency_ms": 1777,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-035",
+      "question": "¿Qué necesito para que mi carro pueda circular por la calle?",
+      "expected_article": "ley:18",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Para que tu carro pueda circular por la calle, necesitarás:\n\n1. Un vehículo: Debes tener un automóvil o un vehículo que pueda circular en la calle.\n\n2. Licencia de Conducir: Necesitarás una licencia de conducir válida para manejar el vehículo.\n\n3. Seguro: Debes tener un seguro de automóvil para cubrir cualquier accidente que pueda ocurrir.\n\n4. Licencia de Conducir: Necesitarás una licencia de conducir válida para manejar el vehículo.\n\n5. Pasaporte: Si viajas a otro país, necesitarás un pasaporte para poder conducir allí.\n\n6. Tarjeta de conducir: Si viajas a otro país, necesitarás una tarjeta de conducir para poder conducir allí.\n\n7. Pasaporte: Si viajas a otro país, necesitarás un pasaporte para poder conducir allí.\n\n8. Tarjeta de conducir: Si viajas a otro país, necesitarás una tarjeta de conducir para poder conducir allí.\n\n9. Licencia de conducir: Necesitarás una licencia de conducir válida para manejar el vehículo.\n\n10. Seguro: Debes tener un seguro de automóvil para cubrir cualquier accidente que pueda ocurrir.\n\n11. Licencia de conducir: Necesitarás una licencia de conducir válida para manejar el vehículo.\n\n12. Pasaporte: Si viajas a otro país, necesitarás un pasaporte para poder conducir allí.\n\n13. Tarjeta de conducir: Si viajas a otro país, necesitarás una tarjeta de conducir para poder conducir allí.\n\n14. Licencia de conducir: Necesitarás una licencia de conducir válida para manejar el vehículo.\n\n15. Pasaporte: Si viajas a otro país, necesitarás un pasaporte para poder conducir allí.\n\n16. Tarjeta de conducir: Si viajas a otro país, necesitarás una tarjeta de conducir para poder conducir allí.\n\n17. Licencia de conducir: Necesitarás una licencia de conducir válida para manejar el vehículo.\n\n18. Pasaporte: Si viajas a otro país,",
+          "latency_ms": 9782,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 1,
+          "claridad": 2,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Para que tu carro pueda circular por la calle, necesitarás cumplir con los siguientes requisitos:\n\n1. **Tarjeta y Placa de Circulación Vigentes**: Tienes que tener una tarjeta y placa de circulación vigentes para tu vehículo.\n\n2. **Estado de Funcionamiento y Equipamiento**: Tu vehículo debe estar en perfecto estado de funcionamiento y equipado para la seguridad del conductor y todos sus ocupantes, según los reglamentos.\n\n3. **Dispositivos Necesarios para No Producir Contaminación Ambiental**: Tu vehículo debe estar equipado para no producir humo negro ni cualquier otro tipo de contaminación ambiental, conforme las leyes y reglamentos de la materia.\n\n4. **Vehículos Usados por Personas Discapacitadas**: Si tu vehículo es usado por personas discapacitadas, debe estar debidamente adaptado y equipado para ser conducido bajo estrictas condiciones de seguridad.\n\n5. **Cubrellantas, Antellantas o Guardafangos**: Los vehículos de carga deben contar en la parte posterior con cubrellantas, antellantas o guardafangos que eviten proyectar objetos hacia atrás.\n\nRecuerda que estos requisitos son específicos para vehículos automotores y no aplican a vehículos de carga o remolques.",
+          "latency_ms": 8016,
+          "cita_correcta": false,
+          "fidelidad": 4,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Tienes que asegurarte de que tu carro cumpla con el peso y dimensiones permitidos. Además, si es de carga, debes tener el peso bruto autorizado. (Reglamento de Tránsito, Artículo 100).",
+          "latency_ms": 3025,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 1,
+          "claridad": 2,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-030",
+      "question": "¿Cuándo puedo cruzar una calle o un río sin preocuparme por los vehículos?",
+      "expected_article": "ley:12",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "En la mayoría de los lugares, puedes cruzar una calle o un río sin preocuparte por los vehículos cuando estás en tu zona de seguridad. Esto suele ser cuando estás en tu zona de seguridad, que generalmente es la zona donde no hay vehículos circulando. Sin embargo, es importante recordar que siempre debes ser consciente de tu entorno y estar preparado para cualquier situación.",
+          "latency_ms": 1997,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Para cruzar una calle o un río sin preocuparte por los vehículos, debes cumplir con las siguientes condiciones:\n\n1. **No debes cruzar en una vía férrea**: Debes asegurarte de que no estás cruzando en una vía férrea, ya que debes hacerlo de manera segura y sin riesgo.\n\n2. **No debes cruzar en una vía o río con vehículos en movimiento**: Debes asegurarte de que no estás cruzando en una vía o río donde haya vehículos en movimiento, ya que debes hacerlo de manera segura y sin riesgo.\n\n3. **No debes cruzar en una vía o río con vehículos en movimiento en una intersección**: Debes asegurarte de que no estás cruzando en una vía o río donde haya vehículos en movimiento en una intersección, ya que debes hacerlo de manera segura y sin riesgo.\n\n4. **No debes cruzar en una vía o río con vehículos en movimiento en una intersección en donde la vía transversal está dividida por uno o más camellones**: Debes asegurarte de que no estás cruzando en una vía o río donde haya vehículos en movimiento en una intersección en donde la vía transversal está dividida por uno o más camellones, ya que debes hacerlo de manera segura y sin riesgo.\n\n5. **No debes cruzar en una vía o río con vehículos en movimiento en una intersección en donde la vía transversal está dividida por uno o más camellones en donde la vía transversal está dividida por uno o más camellones**: Debes asegurarte de que no estás cruzando en una vía o río donde haya vehículos en movimiento en una intersección en donde la vía transversal está dividida por uno o más camellones en donde la vía transversal está dividida por uno o más camellones, ya que debes hacerlo de manera segura y sin riesgo.\n\n6. **No debes cruzar en una vía o río con vehículos en movimiento en una intersección en donde la vía transversal está dividida por",
+          "latency_ms": 12697,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Sí, si la vía está dividida por un camellón y hay caniles, puedes cruzar con calzada, pero ten cuidado de no sobresalga en planta del camellón. (Reglamento de Tránsito, Artículo 121).",
+          "latency_ms": 3440,
+          "cita_correcta": false,
+          "fidelidad": 2,
+          "relevancia": 4,
+          "claridad": 3,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-076",
+      "question": "¿Puedo usar la bocina en mi coche si estoy pasando por mi barrio por la noche?",
+      "expected_article": "reglamento:44",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Sí, puedes usar la bocina en tu coche si estás pasando por tu barrio por la noche. Sin embargo, es importante tener en cuenta que:\n\n1. No uses la bocina en áreas residenciales o comerciales, ya que puede ser molesto para los vecinos o clientes.\n\n2. Mantén un tono moderado y no utilízalo de manera constante, especialmente si estás en un área tranquila.\n\n3. Siempre asegúrate de que no estés en un área de prohibición para la música o la música alta.\n\n4. Considera usar un altavoces de calidad para controlar la música y evitar que sea tan fuerte como la bocina.\n\n5. Siempre respeta las normas de tu comunidad y las leyes locales.\n\nRecuerda que la música y la música alta pueden ser molestas para los vecinos, por lo que es importante ser consciente de tu entorno y adaptar tu comportamiento según sea necesario.",
+          "latency_ms": 4599,
+          "cita_correcta": false,
+          "fidelidad": 2,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "No, no puedes usar la bocina en tu coche si estás pasando por tu barrio por la noche. (Reglamento de Tránsito, Artículo 172)",
+          "latency_ms": 3024,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "No, no puedes usar la bocina en tu coche si estás en una área urbana. Solo si es un accidente o una emergencia. (Reglamento de Tránsito, Artículo 172).",
+          "latency_ms": 2780,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": "La respuesta no menciona el Artículo 44 específico y contiene un error al referirse al Artículo 172, pero responde que no se puede usar la bocina en áreas urbanas y en casos de emergencia, lo cual es relevante."
+        }
+      }
+    },
+    {
+      "id": "tb-014",
+      "question": "¿Qué significa que los vehículos tengan que estar en 'óptimas condiciones de funcionamiento'? ¿Hay que arreglar todo lo que esté un poco roto?",
+      "expected_article": "reglamento:11",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "La frase \"estar en óptimas condiciones de funcionamiento\" implica que los vehículos deben estar en buen estado de funcionamiento general, sin problemas significativos. Esto significa que:\n\n1. El motor y los componentes mecánicos deben estar en buen estado.\n2. Los sistemas de seguridad (como los frenos, el acelerador, etc.) deben estar funcionando correctamente.\n3. Los sistemas de confort (como el aire acondicionado, el climatizador, etc.) deben estar en buen estado.\n4. Los sistemas de seguridad (como el sistema de frenos, el sistema de frenos de emergencia, etc.) deben estar en buen estado.\n5. Los sistemas de comunicación (como el GPS, el sistema de navegación, etc.) deben estar en buen estado.\n\nNo necesariamente significa que todos los componentes deben estar perfectamente funcionando, pero sí que deben estar en buen estado para que el vehículo pueda operar de manera segura y eficiente.\n\nEn cuanto a si hay que arreglar todo lo que esté un poco roto, la respuesta es que depende de la situación. Si el problema es un simple desgaste natural del uso del vehículo, puede ser suficiente mantenerlo en óptimas condiciones de funcionamiento. Sin embargo, si el problema es un problema de seguridad o de seguridad, como un problema de frenos o de frenos de emergencia, entonces es necesario arreglarlo para asegurar la seguridad del vehículo y del conductor.\n\nEn general, mantener un vehículo en óptimas condiciones de funcionamiento es una buena práctica para asegurar su seguridad y eficiencia.",
+          "latency_ms": 6883,
+          "cita_correcta": false,
+          "fidelidad": 4,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Lo que se refiere a que los vehículos tengan que estar en óptimas condiciones de funcionamiento es que deben estar en buen estado de operación, sin problemas ni defectos que puedan afectar la seguridad del conductor o del resto de los usuarios de la vía pública. Esto implica que los vehículos deben estar en perfectas condiciones de mecánica, eléctrica, y de seguridad, como por ejemplo:\n\n1. Motor y transmisión funcionando correctamente.\n2. Reparaciones mínimas necesarias, como el cambio de llanta o la limpieza del parabrisas.\n3. Llamada de repuesto suficiente para las piezas que se requieren para el funcionamiento normal del vehículo.\n4. Equipamiento reglamentario completo y en buen estado, como el velocímetro, las luces y las llamas de repuesto.\n5. Sistema de seguridad adecuado, como los cinturones de seguridad y la lupa de repuesto.\n\nNo se requiere que todos los componentes del vehículo estén perfectamente funcionando, solo que estén en buen estado para garantizar la seguridad. Por lo tanto, no se requiere arreglar todo lo que esté un poco roto, solo que el vehículo esté en óptimas condiciones de funcionamiento.",
+          "latency_ms": 8424,
+          "cita_correcta": false,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Sí, si el vehículo está en óptimas condiciones de funcionamiento, significa que no se puede arreglar nada que esté roto ni dañado. Solo se puede hacer reparaciones en emergencia. (Reglamento de Tránsito, Artículo 11).",
+          "latency_ms": 3893,
+          "cita_correcta": true,
+          "fidelidad": 1,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-041",
+      "question": "¿Puedo cruzar la vía si no veo trenes acercándose?",
+      "expected_article": "reglamento:156",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "No, no puedes cruzar la vía si no ves trenes acercándose. Es importante seguir las normas de seguridad y evitar riesgos. Si no ves trenes, es posible que no haya trenes en la vía. Si no ves trenes y no ves señales de trenes, es posible que no haya trenes en la vía. Si no ves trenes y no ves señales de trenes, es posible que no haya trenes en la vía. Si no ves trenes y no ves señales de trenes, es posible que no haya trenes en la vía.",
+          "latency_ms": 2871,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "latency_ms": 2442,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "No, no puedes cruzar la vía sin asegurarte de que no hay riesgo. El conductor debe asegurarse de que no haya riesgo. (Reglamento de Tránsito, Artículo 156).",
+          "latency_ms": 2269,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-086",
+      "question": "¿Puedo dejar la puerta del auto abierta mientras estoy estacionado?",
+      "expected_article": "reglamento:89",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "No, es recomendable cerrar la puerta del auto mientras estás estacionado. Esto es especialmente importante si estás en un lugar público o si alguien puede entrar a tu vehículo sin darte cuenta. Además, cerrar la puerta puede ayudar a prevenir robos o otros incidentes.",
+          "latency_ms": 1734,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "latency_ms": 2995,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 1,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "No, no puedes dejar la puerta abierta mientras estés estacionado. Solo se te permite si es una emergencia. (Reglamento de Tránsito, Artículo 153).",
+          "latency_ms": 3373,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-003",
+      "question": "¿Puedo pasar por delante de un carro si lo hago por el lado izquierdo?",
+      "expected_article": "reglamento:141",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Sí, puedes pasar por delante de un carro si lo haces por el lado izquierdo. En muchos países, incluyendo Estados Unidos, México y algunos países de Europa, la norma general es que los vehículos deben pasar a la derecha. Sin embargo, en otros lugares, como en algunos países de América Latina, la norma es pasar a la izquierda. \n\nEn general, es importante tener en cuenta las normas locales y las señales de tráfico locales. Si no estás seguro de la norma local, es mejor que sigas las señales de tráfico y las normas de la mayoría de la gente.",
+          "latency_ms": 3245,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "latency_ms": 2938,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "No, si el tramo es estrecho y no hay señalización, el que entra por el lado izquierdo no tiene preferencia. Debes pasar por el lado derecho. (Reglamento de Tránsito, Artículo 123).",
+          "latency_ms": 3015,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 2,
+          "claridad": 3,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-075",
+      "question": "¿Qué necesito hacer para que la municipalidad donde vivo asuma el control del tránsito?",
+      "expected_article": "reglamento:5",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Para que la municipalidad donde vive asuma el control del tránsito, puedes seguir estos pasos:\n\n1. **Realizar un análisis de la situación actual**: Antes de hacer cualquier solicitud, es importante entender la situación actual del tráfico en tu área. Esto puede incluir:\n   - Análisis de la congestión de la vía\n   - Información sobre la velocidad media de los vehículos\n   - Análisis de la calidad del aire y la contaminación del agua\n\n2. **Identificar necesidades específicas**: Basándote en el análisis anterior, identifica las necesidades específicas que requiere tu área para mejorar la seguridad y la eficiencia del tráfico. Esto puede incluir:\n   - Mejoras en la señalización\n   - Implementación de sistemas de control de tráfico inteligente\n   - Mejoras en la infraestructura de la vía\n   - Mejoras en la calidad del aire y el agua\n\n3. **Formular una solicitud formal**: Una vez que hayas identificado las necesidades, puedes formular una solicitud formal a la municipalidad. Esto puede ser una carta o una solicitud en línea, dependiendo de la política de la ciudad. En tu solicitud, debes:\n   - Explicar la situación actual\n   - Explicar las necesidades específicas\n   - Proporcionar datos adicionales si es necesario\n\n4. **Enviar la solicitud**: Una vez que has formulado tu solicitud, es importante enviarla a la municipalidad. Puedes hacerlo por correo, por teléfono, o a través de la web de la municipalidad.\n\n5. **Revisar la respuesta**: Una vez que la municipalidad ha recibido tu solicitud, espera una respuesta. Esta puede ser una solicitud de información adicional, una propuesta de solución, o incluso una rechazo. Si la respuesta es negativa, puedes considerar la posibilidad de buscar ayuda de otros recursos, como asociaciones locales o grupos de ciudadanos.\n\n6. **Implementar las soluciones propuestas**: Si la municipalidad acepta tu solicitud, puedes trabajar en la implementación de las soluciones propuestas. Esto puede implicar:\n   - Realizar la inversión necesaria para implementar las soluciones\n   - Recopilar datos para evaluar la eficacia de las soluciones\n   - Mantener la comunicación con la ciudadanía",
+          "latency_ms": 10105,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 4,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Para que la municipalidad donde vive asuma el control del tránsito, necesitarás comunicarte con la autoridad municipal y solicitar formalmente la asunción de la autoridad de transito. Aquí tienes un ejemplo de cómo podrías hacerlo:\n\n\"Me gustaría que la municipalidad donde vivo asuma el control del tránsito. ¿Cómo puedo hacerlo?\"\n\nEsta consulta se basa en el artículo 11 de la Ley de Tránsito, que establece que el ministerio de gobernación, por medio del departamento de transito de la Dirección General de la Policía Nacional, ejercerá la autoridad de transito en todas las carreteras nacionales y departamentales, así como en las carreteras municipales y en los caminos de herradura y vecinales, cuya administración no haya sido trasladada a las municipalidades.",
+          "latency_ms": 5043,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Tienes que que la municipalidad asuma el control del tránsito en las áreas urbanas. Esto es importante porque es una función que se encarga de eso en el gobierno. (Reglamento de Tránsito, Artículo 151).",
+          "latency_ms": 2269,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 2,
+          "claridad": 3,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-070",
+      "question": "¿Puedo poner un cartel publicitario en un semáforo?",
+      "expected_article": "ley:23",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "No, no puedes poner un cartel publicitario en un semáforo. Los semáforos son instalaciones de seguridad diseñadas para controlar la fluencia de tráfico en vías públicas. Estos dispositivos están diseñados para ser utilizados por los conductores y no por otros vehículos o dispositivos externos. Poner un cartel publicitario en un semáforo podría ser ilegal y podría ser considerado una violación de las normas de seguridad y uso del semáforo.",
+          "latency_ms": 2460,
+          "cita_correcta": false,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "latency_ms": 2377,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "No, no puedes. El artículo dice que está prohibido poner carteles ni publicidades en semáforos. Solo si es para prevenir confusión. (Reglamento de Tránsito, Artículo 87).",
+          "latency_ms": 2932,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es clara y relevante, pero no es completamente fidedigna ya que la información se extrae de un reglamento no mencionado en el artículo oficial."
+        }
+      }
+    },
+    {
+      "id": "tb-002",
+      "question": "¿Puedo estacion mi coche donde quiera en la calle si la municipalidad lo permite?",
+      "expected_article": "reglamento:151",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Sí, en muchas ciudades y ciudades, la mayoría de las áreas urbanas, la mayoría de las ciudades permiten que las personas estacionen su vehículo en la calle. Sin embargo, la política puede variar dependiendo de la ciudad o la región. \n\nEn general, las ciudades tienen reglas y regulaciones para mantener la seguridad y el orden en las calles. Estas pueden incluir:\n\n1. **Estacionamiento de vehículos**: Las ciudades pueden tener límites de estacionamiento, especialmente en áreas residenciales o comerciales.\n2. **Características de la calle**: Las calles pueden tener límites de velocidad, áreas de tráfico y áreas de parqueo.\n3. **Tiempo de estacionamiento**: Las ciudades pueden tener límites de tiempo para estacionar, especialmente en áreas de tráfico.\n4. **Regulaciones de tráfico**: Las ciudades pueden tener regulaciones específicas para la circulación de vehículos, como semáforos, carriles de tráfico y líneas de tráfico.\n\nSi estás en una ciudad, puedes consultar la página web oficial de la municipalidad o llamar al servicio de tráfico para obtener información específica sobre las regulaciones locales.",
+          "latency_ms": 5566,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 4,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "No, no puedes estacionar tu coche donde quiera en la calle si la municipalidad lo permite. Según el Reglamento de Tránsito, Artículo 151, las disposiciones municipales no pueden oponerse, alterar, desvirtuar o inducir a confusión en relación con las normas del presente Reglamento. Por lo tanto, si la municipalidad ha establecido reglas para el estacionamiento, debes seguirlas.",
+          "latency_ms": 3775,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "No, no puedes estacionar donde quiera, incluso si la municipalidad lo permite. Solo se permite en ciertos casos como en calles y parqueados por el gobierno. (Reglamento de Tránsito, Artículo 153).",
+          "latency_ms": 2865,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 2,
+          "claridad": 3,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-090",
+      "question": "¿Qué tengo que hacer como conductor de un camión para no causar problemas?",
+      "expected_article": "reglamento:75",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Como conductor de un camión, hay varias cosas que puedes hacer para minimizar los posibles problemas:\n\n1. Mantén el vehículo en buen estado: Asegúrate de que el vehículo esté bien mantenido, con buenos neumáticos, frenos funcionales y un motor en buen estado.\n\n2. Evita el sobrecalentamiento: Mantén el vehículo en buen estado de refrigeración y asegúrate de que el motor no sobrecalentado.\n\n3. Mantén la seguridad: Mantén la distancia suficiente de los demás vehículos, evita el alcohol y drogas, y asegúrate de que estés bien preparado para cualquier emergencia.\n\n4. Mantén el control: Mantén el control del vehículo, evita el nerviosismo y el estrés, y asegúrate de que estés bien preparado para cualquier situación.\n\n5. Mantén la comunicación: Mantén la comunicación con los demás conductores y los pasajeros, y asegúrate de que estés bien preparado para cualquier emergencia.\n\n6. Mantén la calma: Mantén la calma en cualquier situación y asegúrate de que estés bien preparado para cualquier emergencia.\n\n7. Mantén la seguridad: Mantén la seguridad de los pasajeros y los demás conductores, y asegúrate de que estés bien preparado para cualquier situación.\n\n8. Mantén la limpieza: Mantén la limpieza del vehículo, especialmente después de las largas distancias.\n\n9. Mantén la seguridad: Mantén la seguridad de los pasajeros y los demás conductores, y asegúrate de que estés bien preparado para cualquier situación.\n\n10. Mantén la calma: Mantén la calma en cualquier situación y asegúrate de que estés bien preparado para cualquier emergencia.",
+          "latency_ms": 7797,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Como conductor de un camión, tienes varias obligaciones para evitar problemas y cumplir con las normas de tránsito. Aquí tienes una guía:\n\n1. **Seguridad de la Carga**: Velará por la carga y su correcta sujeción. Mantén la carga bien sujetada para evitar colisiones.\n\n2. **Normas Generales de Tránsito**: \n   - **No sacudir ni moverse bruscamente**: Evita movimientos bruscos que puedan distraer a los pasajeros.\n   - **No realizar actos que distraigan**: Evita distracciones durante las paradas y las marchas.\n\n3. **Normas de Transporte Colectivo**:\n   - **No sacudir ni moverse bruscamente**: Similar a lo anterior, pero específicamente para los vehículos de transporte colectivo.\n   - **Velar por la seguridad de los viajeros**: Mantén la seguridad de los pasajeros durante las paradas y las marchas.\n\n4. **Responsabilidad Legal**: \n   - **Exento de responsabilidad en caso de atropello**: Si un vehículo atropella a una persona en la vía pública, el conductor estará exento de responsabilidad si está conduciendo conforme las leyes aplicables.\n\n5. **Obligaciones de los Usuarios de la Vía**: \n   - **Seguir las normas de tránsito**: Velar por la seguridad de los demás usuarios de la vía pública.\n\n6. **Normas de Tránsito General**: \n   - **Velar por la circulación y evitar peligros**: Mantén la vía libre de peligros y daños a los demás usuarios de la vía.\n\nEn resumen, la clave para no causar problemas es seguir las normas de tránsito y velar por la seguridad de todos los usuarios de la vía pública.",
+          "latency_ms": 9581,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Tienes que conducir y hacer las paradas y arranques sin sacudidas ni movimientos bruscos. No te distraigas durante la marcha. (Reglamento de Tránsito, Artículo 75).",
+          "latency_ms": 2436,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-028",
+      "question": "¿Si me quitan el carro por una multa, cómo se asegura que no lo dañen al llevarlo al depósito?",
+      "expected_article": "reglamento:178",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Si tienes que llevar tu vehículo al depósito después de pagar una multa, es importante asegurarte de que el vehículo no sea dañado durante el trayecto. Aquí hay algunas recomendaciones:\n\n1. **Transporte seguro**: Usa un vehículo seguro y de confianza para transportar tu vehículo. Si no puedes conducir, considera contratar un servicio de transporte profesional.\n\n2. **Transporte en un lugar seguro**: Si puedes, lleva tu vehículo a un lugar seguro antes de que se te entregue la multa. Esto puede ser un depósito o un lugar donde el vehículo esté protegido.\n\n3. **Transporte en un lugar conocido**: Si no puedes llevar tu vehículo a un lugar seguro, considera contratar un servicio de transporte profesional que sepa cómo manejar vehículos de confianza.\n\n4. **Transporte en un lugar conocido**: Si no puedes llevar tu vehículo a un lugar seguro, considera contratar un servicio de transporte profesional que sepa cómo manejar vehículos de confianza.\n\n5. **Transporte en un lugar seguro**: Si puedes, lleva tu vehículo a un lugar seguro antes de que se te entregue la multa. Esto puede ser un depósito o un lugar donde el vehículo esté protegido.\n\n6. **Transporte en un lugar seguro**: Si puedes, lleva tu vehículo a un lugar seguro antes de que se te entregue la multa. Esto puede ser un depósito o un lugar donde el vehículo esté protegido.\n\n7. **Transporte en un lugar seguro**: Si puedes, lleva tu vehículo a un lugar seguro antes de que se te entregue la multa. Esto puede ser un depósito o un lugar donde el vehículo esté protegido.\n\n8. **Transporte en un lugar seguro**: Si puedes, lleva tu vehículo a un lugar seguro antes de que se te entregue la multa. Esto puede ser un depósito o un lugar donde el vehículo esté protegido.\n\n9. **Transporte en un lugar seguro**: Si puedes, lleva tu vehículo a un lugar seguro antes de que se te entregue la multa. Esto puede ser un depósito o un lugar donde el vehículo esté protegido.\n\n10. **Transporte en un lugar seguro**: Si puedes, lleva tu vehículo a un lugar seguro antes de que se te entregue la mult",
+          "latency_ms": 9863,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Para asegurarte de que tu vehículo no sea dañado al llevarlo al depósito, la autoridad de tránsito asume la responsabilidad por los daños que puedan ocasionar durante el trayecto. Sin embargo, te recomiendo que:\n\n1. **Comprende el procedimiento**: Antes de llevar tu vehículo al depósito, asegúrate de entender completamente el procedimiento y los pasos que seguirás.\n\n2. **Lleva documentación**: Lleva tu licencia de conducir, la multa impuesta y cualquier otro documento que pueda ser necesario.\n\n3. **Pide una cita**: Si es posible, llama a la autoridad de tránsito para hacer una cita previa. Esto puede ayudar a evitar el tráfico y asegurarte de que el vehículo esté listo para el traslado.\n\n4. **Asistente**: Siempre puedes contar con un asistente o amigo para ayudarte a llevar el vehículo al depósito.\n\n5. **Formulario**: Lleva el formulario autorizado por el Departamento de Tránsito o el Juzgado de Asuntos Municipales correspondiente, que te proporcionarán para registrar el vehículo en el depósito.\n\nRecuerda que la responsabilidad por los daños ocurre mientras el vehículo está en el camino, por lo que debes ser consciente de tu seguridad durante el trayecto.",
+          "latency_ms": 8625,
+          "cita_correcta": false,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "El artículo dice que si te quitan el carro, el vehículo se considera abandonado y se lo llevan al depósito. El vehículo no se puede llevar más de 36 horas. (Ley de Tránsito, Artículo 35).",
+          "latency_ms": 3173,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 2,
+          "claridad": 3,
+          "justificacion": "La respuesta no responde directamente la pregunta y contiene información incorrecta sobre el tiempo de traslado."
+        }
+      }
+    },
+    {
+      "id": "tb-055",
+      "question": "¿Puedo caminar por la calle si no hay aceras, pero tengo que tener cuidado de no hacer el tráfico más lento?",
+      "expected_article": "reglamento:59",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Sí, puedes caminar por la calle si no hay aceras. Sin embargo, es importante tener en cuenta que si hay tráfico más lento, debes ser consciente de que los vehículos están deteniendo su movimiento. Esto puede implicar que debas esperar en la intersección o tomar la precaución de no cruzar la calle si no es necesario. Además, es recomendable seguir las señales de tráfico y las indicaciones de las señales de luz para mantener la seguridad en la calle.",
+          "latency_ms": 2846,
+          "cita_correcta": false,
+          "fidelidad": 4,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es relevante y clara, pero no menciona explícitamente que los peatones pueden circular en sentido contrario a la circulación de los vehículos si es necesario para su seguridad, como lo indica el artículo oficial."
+        },
+        "llm_base_rag": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "latency_ms": 3487,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 2,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Sí, si no hay aceras, tienes que caminar en un espacio que te permita mantener una velocidad similar a la mínima. Solo si no hay otra vía, puedes caminar en autopistas o vías rápidas. (Reglamento de Tránsito, Artículo 114).",
+          "latency_ms": 3803,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 2,
+          "claridad": 3,
+          "justificacion": "La respuesta contiene datos inventados (Artículo 114 no existe en el Reglamento de Tránsito de Guatemala) y no responde directamente la consulta, además de ser confusa en su estructura y contenido."
+        }
+      }
+    },
+    {
+      "id": "tb-099",
+      "question": "¿Pueden cerrar una carretera para que los camiones no pasen si hay mucho tráfico?",
+      "expected_article": "reglamento:77",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Sí, es posible que se pueda cerrar una carretera para que los camiones no pasen si hay mucho tráfico. Esto se puede hacer para proteger la seguridad de los conductores y evitar accidentes. También puede ser necesario que se implementen medidas adicionales como semáforos inteligentes o sistemas de detección de tráfico para ayudar a los conductores a tomar decisiones informadas.",
+          "latency_ms": 2199,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "latency_ms": 1912,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Sí, si hay mucho tráfico, la carretera debe estar cerrada. Solo se puede abrir si es una emergencia. (Reglamento de Tránsito, Artículo 89).",
+          "latency_ms": 2418,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 2,
+          "claridad": 3,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-029",
+      "question": "¿A dónde van los dineros que recaudan las municipalidades por la transito?",
+      "expected_article": "ley:45",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Los fondos recaudados por las municipalidades a través de la transición de tráfico se utilizan para financiar diversas obras y proyectos urbanos. Estas son generalmente llamadas \"fondos de transición de tráfico\" o \"Fondos de Transición\". Aquí hay algunos ejemplos de cómo se utilizan estos fondos:\n\n1. Mejora de la infraestructura: Se pueden invertir en mejorar la red de carreteras, calles y parques urbanos.\n\n2. Creación de espacios públicos: Se pueden construir zonas de recreación, parques y áreas verdes.\n\n3. Mejora de la calidad del aire: Se pueden invertir en proyectos de limpieza urbana y eliminación de contaminantes.\n\n4. Mejora del servicio de transporte público: Se pueden invertir en mejorar la calidad del servicio de transporte público, como autobuses y trenes.\n\n5. Mejora de la seguridad: Se pueden invertir en proyectos de seguridad ciudadana, como cámaras de seguridad y sistemas de alerta.\n\n6. Mejora del servicio de agua y saneamiento: Se pueden invertir en mejorar la calidad del agua y el saneamiento en las ciudades.\n\n7. Mejora del servicio de saneamiento: Se pueden invertir en mejorar la calidad del agua y el saneamiento en las ciudades.\n\n8. Mejora del servicio de saneamiento: Se pueden invertir en mejorar la calidad del agua y el saneamiento en las ciudades.\n\n9. Mejora del servicio de saneamiento: Se pueden invertir en mejorar la calidad del agua y el saneamiento en las ciudades.\n\n10. Mejora del servicio de saneamiento: Se pueden invertir en mejorar la calidad del agua y el saneamiento en las ciudades.\n\nEs importante notar que estos fondos son gestionados por las municipalidades y se utilizan para proyectos que benefician directamente a la ciudadanía.",
+          "latency_ms": 8260,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 4,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Los ingresos recaudados por las municipalidades para el diseño, mantenimiento y mejoramiento de las actividades de tránsito, incluyendo obras de infraestructura vial, tendrán el carácter de fondos privativos del municipio. Este dinero será destinado exclusivamente para el diseño, mantenimiento y mejoramiento de las actividades de tránsito, incluyendo obras de infraestructura vial.",
+          "latency_ms": 3198,
+          "cita_correcta": false,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Los dineros que recaudan las municipalidades van a los municipios, donde se lo puede usar para mejorar el tránsito y las carreteras. No se puede usar para otro tema. (Ley de Tránsito, Artículo 45).",
+          "latency_ms": 2848,
+          "cita_correcta": true,
+          "fidelidad": 4,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-057",
+      "question": "¿Quién es responsable de hacer cumplir las reglas de tránsito en Guatemala?",
+      "expected_article": "ley:6",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "En Guatemala, la autoridad responsable de hacer cumplir las reglas de tránsito es la Dirección General de Tránsito (DGT). Esta entidad es parte del Ministerio de Transporte y Comunicaciones y tiene la responsabilidad de supervisar y regular la movilidad vehicular en el país.",
+          "latency_ms": 1724,
+          "cita_correcta": false,
+          "fidelidad": 2,
+          "relevancia": 4,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Según la Ley de Tránsito de Guatemala, el departamento de tránsito de la Dirección General de la Policía Nacional del Ministerio de Gobernación es responsable de hacer cumplir las reglas de tránsito en todo el territorio nacional.",
+          "latency_ms": 2102,
+          "cita_correcta": false,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "El ministerio de gobernación, por medio del departamento de tránsito de la policía nacional, es quien se encarga de hacer cumplir las reglas de tránsito. (Ley de Tránsito, Artículo 11).",
+          "latency_ms": 2271,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-094",
+      "question": "¿Tengo que poner las luces de emergencia cuando estoy en un túnel?",
+      "expected_article": "reglamento:159",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "No necesariamente tienes que poner las luces de emergencia cuando estés en un túnel. Las luces de emergencia son diseñadas para utilizarse en situaciones de emergencia, como cuando no hay luz suficiente para conducir. En un túnel, la luz artificial proporcionada por las luces de la carretera es suficiente para la visibilidad.\n\nSin embargo, si estás en un túnel y no ves ninguna luz artificial, puedes considerar encender las luces de tu vehículo para aumentar la visibilidad. Esto es especialmente importante si estás en un túnel de larga duración o si el túnel está lleno de niebla o lluvia.\n\nAdemás, es importante recordar que las luces de emergencia son para uso en situaciones de emergencia y no para conducir en condiciones normales. Siempre es mejor tener precaución y evitar conducir en condiciones de visibilidad limitada.",
+          "latency_ms": 4436,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es clara y relevante, aunque no menciona explícitamente las luces de gálibo como lo requiere el artículo oficial."
+        },
+        "llm_base_rag": {
+          "answer": "Sí, debes encender las luces de emergencia cuando estés en un túnel. (Reglamento de Tránsito, Artículo 95, Item b)",
+          "latency_ms": 2917,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Sí, si estás en un túnel o en un lugar con poca visibilidad, tienes que usar las sirenas y las señales de emergencia. Es una norma de seguridad. (Reglamento de Tránsito, Artículo 174).",
+          "latency_ms": 3216,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 2,
+          "claridad": 3,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-036",
+      "question": "¿Qué luces necesito tener en mi moto para circular por la calle?",
+      "expected_article": "reglamento:13",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Para circular por la calle con seguridad, necesitarías tener luces de seguridad en tu moto. Estas luces son fundamentales para:\n\n1. **Luz de posición**: Permite que la moto esté visible para los demás conductores y ciclistas.\n\n2. **Luz de dirección**: Ayuda a los otros vehículos a identificar la dirección de tu moto.\n\n3. **Luz de freno**: Permite que los otros conductores vean que estás frenando y puedan tomar precauciones.\n\n4. **Luz de emergencia**: Siempre es útil tener una luz de emergencia en tu moto, especialmente si viajas por la noche o en condiciones de visibilidad limitada.\n\n5. **Luz de faros**: Siempre es recomendable tener luces de faros para que la moto esté visible en la noche.\n\n6. **Luz de indicador de cambio de marchas**: Siempre es útil tener una luz de indicador de cambio de marchas para que los demás conductores puedan ver que estás cambiando de marcha.\n\nRecuerda que la seguridad en la carretera es una prioridad, por lo que es importante tener todas estas luces en tu moto para poder circular de manera segura.",
+          "latency_ms": 5514,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta incluye información relevante y útil, pero contiene datos inventados sobre luces de emergencia y de indicador de cambio de marchas, que no están mencionadas en el artículo oficial."
+        },
+        "llm_base_rag": {
+          "answer": "Para circular por la calle, necesitarás las siguientes luces:\n\na) Luz alta y baja adelante.\nb) Luz de posición atrás.\nc) Luces direccionales adelante y atrás.\nd) Luz de freno con su reflejante.\n\nAdemás, si tu moto es un remolque, deberás llevar adicionalmente la placa de circulación posterior iluminada.",
+          "latency_ms": 2837,
+          "cita_correcta": false,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Tienes que tener luces alta y baja delante, y también luces de posición atrás. (Reglamento de Tránsito, Artículo 13).",
+          "latency_ms": 1848,
+          "cita_correcta": true,
+          "fidelidad": 4,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-015",
+      "question": "¿Puedo usar pitidos si estoy conduciendo por un camino estrecho y sinuoso?",
+      "expected_article": "reglamento:173",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "No, no puedes usar pitidos para conducir. Los pitidos son un tipo de sonido que se usa en la industria automovilística para indicar que un vehículo está en marcha. En el contexto de la conducción, no se debe usar este sonido para indicar que un vehículo está en marcha.",
+          "latency_ms": 1741,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "(Reglamento de Tránsito, Artículo 173) Sí, puedes usar pitidos para evitar un posible accidente, de modo especial, en vías extraurbanas estrechas con muchas curvas.",
+          "latency_ms": 3148,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Sí, si estás en un camino estrecho o en una intersección, puedes usar pitidos para evitar accidentes. Solo en áreas con mucho tráfico. (Reglamento de Tránsito, Artículo 117).",
+          "latency_ms": 3334,
+          "cita_correcta": false,
+          "fidelidad": 2,
+          "relevancia": 3,
+          "claridad": 3,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-023",
+      "question": "¿Puedo conducir un coche con el volante a la derecha si me autorizan?",
+      "expected_article": "reglamento:21",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Sí, puedes conducir un coche con el volante a la derecha si te autorizan a hacerlo. En muchos países, la dirección del volante puede cambiar de izquierda a derecha, dependiendo de la normativa local. Sin embargo, es importante recordar que el uso de la dirección incorrecta puede ser peligroso y puede ser ilegal en algunos lugares. Por lo tanto, es recomendable siempre seguir las normas locales y las leyes de tráfico.",
+          "latency_ms": 2379,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es clara y relevante, pero no es completamente fidel a la información oficial ya que no menciona que la autorización debe ser por parte del Departamento de Tránsito."
+        },
+        "llm_base_rag": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "latency_ms": 2479,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "No, porque el Artículo 21 dice que solo se puede usar en casos especiales. Si te autorizan, debes conducir con el volante a la derecha. (Reglamento de Tránsito, Artículo 21).",
+          "latency_ms": 2888,
+          "cita_correcta": true,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-062",
+      "question": "¿Dónde puedo hacer los exámenes para sacar mi licencia de conducir?",
+      "expected_article": "reglamento:27",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Para obtener la licencia de conducir en México, puedes hacer los exámenes en las siguientes lugares:\n\n1. **Centros de Inspección de Automóviles (CIA)**: Estos son los lugares donde se realizan los exámenes de conducir. Puedes encontrarlos en las ciudades principales de México.\n\n2. **Centros de Inspección de Automóviles (CIA)**: Estos son los lugares donde se realizan los exámenes de conducir. Puedes encontrarlos en las ciudades principales de México.\n\n3. **Centros de Inspección de Automóviles (CIA)**: Estos son los lugares donde se realizan los exámenes de conducir. Puedes encontrarlos en las ciudades principales de México.\n\n4. **Centros de Inspección de Automóviles (CIA)**: Estos son los lugares donde se realizan los exámenes de conducir. Puedes encontrarlos en las ciudades principales de México.\n\n5. **Centros de Inspección de Automóviles (CIA)**: Estos son los lugares donde se realizan los exámenes de conducir. Puedes encontrarlos en las ciudades principales de México.\n\n6. **Centros de Inspección de Automóviles (CIA)**: Estos son los lugares donde se realizan los exámenes de conducir. Puedes encontrarlos en las ciudades principales de México.\n\n7. **Centros de Inspección de Automóviles (CIA)**: Estos son los lugares donde se realizan los exámenes de conducir. Puedes encontrarlos en las ciudades principales de México.\n\n8. **Centros de Inspección de Automóviles (CIA)**: Estos son los lugares donde se realizan los exámenes de conducir. Puedes encontrarlos en las ciudades principales de México.\n\n9. **Centros de Inspección de Automóviles (CIA)**: Estos son los lugares donde se realizan los exámenes de conducir. Puedes encontrarlos en las ciudades principales de México.\n\n10. **Centros de Inspección de Automóviles (CIA)**: Estos son los lugares donde se",
+          "latency_ms": 9976,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Para obtener la información específica sobre dónde puedes hacer los exámenes para sacar tu licencia de conducir, te sugiero que consultes directamente con la Autoridad de Tránsito de Guatemala. Este departamento administrará y administrará la información precisa y actualizada sobre las instalaciones y horarios de los exámenes de tránsito.",
+          "latency_ms": 3200,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Tienes que acudir a la autoridad o a una entidad pública o privada que te de la autoridad. El lugar y el tiempo de los exámenes dependen de la autoridad o de la que te de la autoridad. (Reglamento de Tránsito, Artículo 27).",
+          "latency_ms": 3132,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-044",
+      "question": "¿Se puede poner pegatinas en el parabrisas si me estorban a mí para ver?",
+      "expected_article": "reglamento:19",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "No, no se puede poner pegatinas en el parabrisas de un vehículo. Esto es ilegal y puede ser peligroso. Además, la mayoría de las autoridades de tráfico recomiendan evitar el uso de pegatinas en el parabrisas para evitar accidentes.",
+          "latency_ms": 1527,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "latency_ms": 2633,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 1,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "No, no se puede. El artículo dice que se prohíbe poner pegatinas en el parabrisas ni en el parabrisas. Solo se puede si es una cosa que no se quede en el lugar. (Reglamento de Tránsito, Artículo 19).",
+          "latency_ms": 3285,
+          "cita_correcta": true,
+          "fidelidad": 2,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-060",
+      "question": "¿Tengo que llevar siempre conmigo la tarjeta de circulación cuando conduzco mi bicicleta?",
+      "expected_article": "reglamento:10",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "En general, no necesitas llevar una tarjeta de circulación cuando conduces una bicicleta. Sin embargo, depende de la legislación local de tu país o región. En algunos lugares, las bicicletas pueden ser consideradas vehículos y requieren de permisos o tarjetas de circulación. \n\nSi tienes dudas sobre qué necesitas llevar, es mejor consultar con la autoridad local o la policía local. También puedes verificar la legislación local en línea o con un consejero legal.",
+          "latency_ms": 2629,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "No, no necesitas llevar siempre la tarjeta de circulación cuando conduzcas tu bicicleta. La normativa específica para bicicletas es diferente a la de vehículos automotores. Según el contexto proporcionado, la tarjeta de circulación es requerida para vehículos automotores, pero no para bicicletas. Por lo tanto, la respuesta es: No necesitas llevar la tarjeta de circulación cuando conduzcas tu bicicleta.",
+          "latency_ms": 4909,
+          "cita_correcta": false,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Sí, si estás en bicicleta, la tarjeta de circulación es obligatoria. Es una de las reglas del artículo 18. (Ley de Tránsito, Artículo 18).",
+          "latency_ms": 3300,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 1,
+          "claridad": 2,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-072",
+      "question": "¿Puedo llevar a mis amigos en la parte trasera de mi camioneta si están de pie?",
+      "expected_article": "reglamento:69",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Sí, puedes llevar a tus amigos en la parte trasera de tu camioneta si están de pie. Sin embargo, es importante tener en cuenta algunos factores:\n\n1. **Espacio**: Asegúrate de que la parte trasera de tu camioneta tenga suficiente espacio para que todos puedan sentarse cómodamente.\n\n2. **Elevación**: Si tu camioneta tiene un asiento elevable, asegúrate de que esté en su posición más baja para que puedan sentarse cómodamente.\n\n3. **Estrés**: Si están de pie, podrían sentirse más cómodos si se sentan en un asiento elevable o si se colocan en una silla o banco.\n\n4. **Seguridad**: Siempre es recomendable que los niños y los adultos mayores se sienten cómodos y seguros. Si tienes niños pequeños, podrías considerar un sistema de seguridad para niños o un asiento elevable.\n\n5. **Comodidad**: Si están de pie, podrían preferir sentarse en una silla o banco para evitar el estrés de estar de pie durante todo el viaje.\n\nEn resumen, si están de pie, puedes llevarlos en la parte trasera de tu camioneta, pero asegúrate de que estén cómodos y seguros.",
+          "latency_ms": 5962,
+          "cita_correcta": false,
+          "fidelidad": 2,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "latency_ms": 2929,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "No, porque el vehículo de transporte debe tener protección adecuada. Solo se puede llevar a personas que cumplan con eso. (Reglamento de Tránsito, Artículo 60).",
+          "latency_ms": 2771,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 2,
+          "claridad": 3,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-079",
+      "question": "¿Quién puede contratar policías de tránsito?",
+      "expected_article": "ley:10",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "En general, solo las autoridades locales o las autoridades estatales pueden contratar a policías de tránsito. Esto puede variar dependiendo de la jurisdicción y las leyes locales. En algunos casos, las empresas de seguridad privada pueden ofrecer servicios de policía de tránsito, pero esto también debe ser autorizado por las autoridades locales o estatales.",
+          "latency_ms": 2160,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es clara y relevante, aunque no es completamente fidel a la ley ya que no menciona específicamente el Artículo 10 de la Ley de Tránsito de Guatemala."
+        },
+        "llm_base_rag": {
+          "answer": "Según el ConTEXTO, las personas que pueden contratar policías de tránsito son:\n\n- El Ministerio de Gobernación\n- Las Municipalidades\n- Las personas individuales o jurídicas, públicas o privadas, autorizadas para cumplir actividades de tránsito\n\nEs importante notar que el ConTEXTO no menciona específicamente a qué entidades o organismos puede contratar el Ministerio de Gobernación o las Municipalidades, por lo que se recomienda consultar directamente con el Ministerio de Gobernación o las Municipalidades locales para obtener información más precisa sobre la contratación de policías de tránsito.",
+          "latency_ms": 5313,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "El ministerio de gobernación o las municipalidades pueden contratar servicios de policía y de tránsito. Solo se puede hacer con servicios y funciones que requieran este tipo de servicio. (Ley de Tránsito, Artículo 10).",
+          "latency_ms": 2998,
+          "cita_correcta": true,
+          "fidelidad": 5,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-019",
+      "question": "¿Qué hago si no estoy de acuerdo con una multa que me dieron por una infracción de tránsito?",
+      "expected_article": "ley:47",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Si no estás de acuerdo con una multa por infracción de tráfico, puedes intentar resolver el problema de la siguiente manera:\n\n1. **Comunicar tu Deseo de Revisión**: Lleva tu carnet de conducir y la multa a la policía para comunicarte tu deseo de revisar la multa. Puedes hacerlo en persona o por teléfono.\n\n2. **Revisión de la Multa**: La policía revisará tu caso y podrían considerar varias cosas:\n   - **Factibilidad de la infracción**: Si la multa se basa en una suposición o una supuesta infracción, la policía puede revisar la situación.\n   - **Error en la medida**: Si la multa se basa en una medida incorrecta, la policía puede revisar la situación.\n   - **Doble o Triplicidad de la multa**: Si la multa se basa en una infracción que se repitió, la policía puede revisar la situación.\n   - **Infracción no identificada**: Si la infracción no se identificó correctamente, la policía puede revisar la situación.\n\n3. **Revisión de la Conducta**: La policía también puede revisar tu comportamiento general para determinar si la multa se basa en una conducta no deseada.\n\n4. **Revisión de la Causa de la Multa**: Si la multa se basa en una causa de la multa, la policía puede revisar la situación.\n\n5. **Revisión de la Justificación de la Multa**: Si la policía no puede revisar la situación, puede revisar la justificación de la multa.\n\n6. **Revisión de la Sanción**: Si la policía no puede revisar la situación, puede revisar la sanción.\n\n7. **Revisión de la Condiciones de la Multa**: Si la policía no puede revisar la situación, puede revisar las condiciones de la multa.\n\n8. **Revisión de la Condiciones de la Multa**: Si la policía no puede revisar la situación, puede revisar las condiciones de la multa.\n\n9. **Revisión de la Condiciones de la Multa**: Si la policía no puede revisar la situación, puede revisar las condiciones de la multa.\n\n1",
+          "latency_ms": 10243,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Para resolver el conflicto con una multa por infracción de tránsito, sigue estos pasos:\n\n1. **Comunicación**: Contacta con la autoridad de Tránsito responsable de la infracción. Puedes hacerlo por teléfono, correo electrónico o en persona.\n\n2. **Explicación**: Explica tu punto de vista y la razón por la cual crees que la infracción no fue correcta. Puedes mencionar que la infracción no está contemplada en la Ley de Tránsito o en el Reglamento de Tránsito.\n\n3. **Documentación**: Asegúrate de tener la documentación que respalde tu argumento. Esto podría incluir fotos o videos de la infracción, la licencia de conducir, y cualquier otra evidencia relevante.\n\n4. **Revisión**: La autoridad de Tránsito revisará tu caso. Puede tomar tiempo para hacerlo, pero asegúrate de mantener tu calma y ser respetuoso.\n\n5. **Respuesta**: Si la autoridad de Tránsito no acepta tu argumento, te informará sobre la multa que te corresponde. Si la acepta, te informará sobre la multa que te corresponde y te dará la opción de pagarla o presentar un recurso.\n\n6. **Recurso**: Si no estás de acuerdo con la multa, puedes presentar un recurso. Esto implica que debes presentar una denuncia formal ante la autoridad competente, como el juez de Asuntos Municipales o el juez de Tránsito.\n\nRecuerda que la Ley de Tránsito establece que la multa no puede ser mayor a cuatrocientos quetzales, por lo que si la multa es superior a esa cantidad, debes presentar un recurso para que se revise la decisión.",
+          "latency_ms": 10942,
+          "cita_correcta": false,
+          "fidelidad": 4,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Si te dieron una multa, puedes contestar si no estás de acuerdo. Si no te están de acuerdo, puedes contestar si no estás de acuerdo. (Ley de Tránsito, Artículo 33).",
+          "latency_ms": 3229,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 2,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-071",
+      "question": "¿Puedo transportar muebles en mi camioneta si son grandes y salen de la caja?",
+      "expected_article": "reglamento:51",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "Sí, puedes transportar muebles grandes y pesados en tu camioneta, pero debes tener en cuenta algunos factores importantes:\n\n1. **Dimensiones y peso**: Si los muebles salen de la caja, asegúrate de que no superen las dimensiones y peso permitidos por tu camioneta.\n\n2. **Caja de carga**: Si la caja de carga está diseñada para transportar muebles, es probable que sea adecuada para tu carga. Sin embargo, si la caja está diseñada para carga de vehículos más pequeños, puede no ser suficiente para transportar muebles grandes.\n\n3. **Caja de carga adecuada**: Si la caja de carga no es adecuada, considera usar una caja de carga especializada diseñada para carga de muebles. Esto puede ser más caro, pero es seguro y protege tu carga.\n\n4. **Seguridad**: Asegúrate de que la caja de carga esté bien cerrada y protegida para evitar que los muebles salgan. También asegúrate de que la caja esté bien apoyada en la parte trasera de tu camioneta.\n\n5. **Transporte seguro**: Siempre es mejor tener un asistente o un compañero de viaje para ayudarte a cargar y descargar la carga. Esto puede ser especialmente importante si el peso de la carga es significativo.\n\n6. **Permisos**: Si tu camioneta no tiene permiso para transportar carga, asegúrate de que esté en condiciones y que esté listo para la carga.\n\nRecuerda siempre que la seguridad es la prioridad. Si tienes dudas, es mejor buscar asesoramiento profesional o contratar un servicio de transporte especializado.",
+          "latency_ms": 7632,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 5,
+          "justificacion": "La respuesta es relevante y clara, pero no es completamente fidel a la ley oficial ya que no menciona la necesidad de cumplir con el Acuerdo Gubernativo Número 1054-92 y las dimensiones específicas para cargas indivisibles."
+        },
+        "llm_base_rag": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "latency_ms": 3592,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 1,
+          "claridad": 3,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "No, porque el artículo dice que solo se puede transportar en la caja. Si te llevan en otra, te pueden multar. (Reglamento de Tránsito, Artículo 51).",
+          "latency_ms": 3378,
+          "cita_correcta": true,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-089",
+      "question": "¿Si me lesionó el instructor en mi curso de manejo, ¿yo y él seríamos responsables de los gastos?",
+      "expected_article": "reglamento:34",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "En general, si alguien te da una lesión en un curso de manejo, la responsabilidad por los gastos derivados de la lesión puede depender de varios factores, incluyendo:\n\n1. **Contrato del curso**: Si el curso tiene un contrato específico sobre responsabilidad, puede establecer claramente quién debe asumir las responsabilidades.\n\n2. **Normativa local**: Dependiendo de la normativa local, puede haber leyes o reglamentos que establecen responsabilidades en caso de lesiones en cursos de manejo.\n\n3. **Acciones previas**: Si el instructor tuvo antecedentes de maltrato o negligencia en el pasado, puede aumentar la responsabilidad.\n\n4. **Negligencia del instructor**: Si el instructor no cumplió con las normas de seguridad o no tomó medidas adecuadas para prevenir lesiones, puede ser responsable.\n\n5. **Responsabilidad civil**: En muchos casos, la responsabilidad civil puede ser asumida por el instructor, pero también puede ser asumida por el instructor si el curso está bajo la responsabilidad de un organismo o entidad.\n\nEn general, es recomendable que:\n- **Comprenda el contrato del curso**: Si el curso tiene un contrato específico, asegúrese de que comprende bien las responsabilidades.\n- **Consulte a un abogado**: Si tienes dudas sobre quién debe asumir las responsabilidades, es recomendable que consultes a un abogado familiarizado con la materia.\n- **Comuníquese con el instructor**: Si tienes dudas sobre cómo actuar, comuníquese con el instructor para entender su responsabilidad y cómo puede ayudarte.\n\nRecuerda que la responsabilidad puede ser compleja y puede requerir la asistencia de un profesional legal.",
+          "latency_ms": 8003,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 4,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "latency_ms": 2734,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 5,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Sí, si el conductor y tú cumplen con las leyes, no se le puede hacer responsabilidad. Solo si el conductor no cumple con las leyes. (Ley de Tránsito, Artículo 13).",
+          "latency_ms": 2709,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 2,
+          "claridad": 3,
+          "justificacion": ""
+        }
+      }
+    },
+    {
+      "id": "tb-087",
+      "question": "¿Si me multan varias veces en un año, ¿pueden quitarme mi licencia?",
+      "expected_article": "ley:40",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "No, no puedes perder tu licencia simplemente por multar varias veces en un año. La multa es un castigo por un acto específico, no por la frecuencia de los mismos. Sin embargo, si tu multa es muy alta o si tienes un historial de multas, podrían considerar que tu comportamiento es inapropiado y podrían tomar medidas adicionales, como una suspensión temporal de tu licencia. Es importante mantener una buena conducta y evitar multas para mantener tu licencia.",
+          "latency_ms": 2688,
+          "cita_correcta": false,
+          "fidelidad": 2,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Sí, si te multan varias veces en un año, podrías ser sancionado por cancelación de la licencia de conducir. Según el artículo 40 de la Ley de Tránsito, la multa administrativa de suspensión de licencia se fija de uno a seis meses. Si te multan tres veces en un año, podrías ser sancionado por cancelación de la licencia de conducir. Recuerda que la duración de la sanción administrativa de cancelación de licencia puede acordarse desde los seis meses hasta un año, y la judicial, conforme las normas penales correspondientes.",
+          "latency_ms": 4930,
+          "cita_correcta": true,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Sí, si te multan cinco veces en un año, se te cancela la licencia. Solo se puede multar hasta seis meses. (Ley de Tránsito, Artículo 40).",
+          "latency_ms": 3056,
+          "cita_correcta": true,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": "La respuesta es clara y relevante, pero contiene un dato incorrecto sobre el número de multas necesarias para la suspensión de la licencia."
+        }
+      }
+    },
+    {
+      "id": "tb-042",
+      "question": "¿Si estoy esperando un semáforo en rojo y otro auto está en la calle principal, ¿tengo que parar completamente hasta que se vea que el otro auto no va a cambiar de carril?",
+      "expected_article": "reglamento:120",
+      "conditions": {
+        "llm_sin_rag": {
+          "answer": "No necesariamente tienes que parar completamente hasta que se vea que el otro auto no va a cambiar de carril. En muchos casos, puedes esperar hasta que el semáforo cambie a verde, lo que significa que el carril principal estará libre para el tráfico. \n\nSin embargo, es importante tener en cuenta que:\n\n1. Las normas específicas pueden variar dependiendo de la ciudad o país.\n2. En algunos lugares, el semáforo puede cambiar a rojo antes de que el carril principal esté libre.\n3. En ciertos casos, el semáforo puede cambiar a rojo incluso si el carril principal está vacío.\n4. Si el semáforo está en rojo, es probable que el carril principal esté ocupado, lo que significa que no puedes cruzar sin esperar.\n\nEn general, es mejor esperar hasta que el semáforo cambie a verde antes de cruzar la calle. Si el semáforo está en rojo, es mejor esperar hasta que cambie a verde o hasta que el carril principal esté libre.",
+          "latency_ms": 5719,
+          "cita_correcta": false,
+          "fidelidad": 3,
+          "relevancia": 5,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "llm_base_rag": {
+          "answer": "Lo siento, la normativa de tránsito proporcionada no menciona información sobre ese tema.",
+          "latency_ms": 3201,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 3,
+          "claridad": 4,
+          "justificacion": ""
+        },
+        "vialbot": {
+          "answer": "Sí, si estás en una intersección y el semáforo está en rojo, tienes que parar y ceder el paso. Es una de las situaciones que se prohíbe. (Reglamento de Tránsito, Artículo 138).",
+          "latency_ms": 3380,
+          "cita_correcta": false,
+          "fidelidad": 1,
+          "relevancia": 1,
+          "claridad": 2,
+          "justificacion": ""
+        }
+      }
+    }
+  ]
+}

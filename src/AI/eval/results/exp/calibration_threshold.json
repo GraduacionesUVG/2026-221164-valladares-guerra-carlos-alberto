@@ -1,0 +1,864 @@
+{
+  "n_fuera_de_dominio": 50,
+  "n_control": 50,
+  "criterio_max_falsos_rechazos": 0.05,
+  "tabla": [
+    {
+      "umbral": 0.5,
+      "rechazo_fuera_de_dominio": 0.54,
+      "falsos_rechazos": 0.04
+    },
+    {
+      "umbral": 0.55,
+      "rechazo_fuera_de_dominio": 0.58,
+      "falsos_rechazos": 0.04
+    },
+    {
+      "umbral": 0.6,
+      "rechazo_fuera_de_dominio": 0.6,
+      "falsos_rechazos": 0.04
+    },
+    {
+      "umbral": 0.65,
+      "rechazo_fuera_de_dominio": 0.62,
+      "falsos_rechazos": 0.06
+    },
+    {
+      "umbral": 0.7,
+      "rechazo_fuera_de_dominio": 0.68,
+      "falsos_rechazos": 0.1
+    },
+    {
+      "umbral": 0.75,
+      "rechazo_fuera_de_dominio": 0.7,
+      "falsos_rechazos": 0.12
+    },
+    {
+      "umbral": 0.8,
+      "rechazo_fuera_de_dominio": 0.7,
+      "falsos_rechazos": 0.14
+    },
+    {
+      "umbral": 0.85,
+      "rechazo_fuera_de_dominio": 0.72,
+      "falsos_rechazos": 0.16
+    },
+    {
+      "umbral": 0.9,
+      "rechazo_fuera_de_dominio": 0.8,
+      "falsos_rechazos": 0.24
+    },
+    {
+      "umbral": 0.95,
+      "rechazo_fuera_de_dominio": 0.9,
+      "falsos_rechazos": 0.42
+    }
+  ],
+  "elegido": {
+    "umbral": 0.6,
+    "rechazo_fuera_de_dominio": 0.6,
+    "falsos_rechazos": 0.04
+  },
+  "filas": [
+    {
+      "id": "cal-ood-01",
+      "type": "fuera_de_dominio",
+      "question": "¿Cuántos días de vacaciones me corresponden al año en mi trabajo?",
+      "p_in_domain": 0.2206,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-02",
+      "type": "fuera_de_dominio",
+      "question": "Mi jefe no me quiere pagar el aguinaldo, ¿qué hago?",
+      "p_in_domain": 0.3462,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-03",
+      "type": "fuera_de_dominio",
+      "question": "¿Cuánto es el salario mínimo este año?",
+      "p_in_domain": 0.0624,
+      "safety": false,
+      "low_retrieval": true
+    },
+    {
+      "id": "cal-ood-04",
+      "type": "fuera_de_dominio",
+      "question": "¿Qué requisitos pide la embajada para la visa de turista?",
+      "p_in_domain": 0.6678,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-05",
+      "type": "fuera_de_dominio",
+      "question": "¿Qué necesito para renovar mi DPI en el RENAP?",
+      "p_in_domain": 0.3095,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-06",
+      "type": "fuera_de_dominio",
+      "question": "¿Cómo inscribo a mi hijo recién nacido en el RENAP?",
+      "p_in_domain": 0.2065,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-07",
+      "type": "fuera_de_dominio",
+      "question": "¿Cuánto tiempo de cárcel dan por estafa?",
+      "p_in_domain": 0.946,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-08",
+      "type": "fuera_de_dominio",
+      "question": "¿Qué hago si me demandan por pensión alimenticia?",
+      "p_in_domain": 0.0867,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-09",
+      "type": "fuera_de_dominio",
+      "question": "¿Cómo me divorcio si mi pareja no quiere firmar?",
+      "p_in_domain": 0.1271,
+      "safety": false,
+      "low_retrieval": true
+    },
+    {
+      "id": "cal-ood-10",
+      "type": "fuera_de_dominio",
+      "question": "¿Cómo pongo una denuncia por violencia intrafamiliar?",
+      "p_in_domain": 0.7242,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-11",
+      "type": "fuera_de_dominio",
+      "question": "¿Qué impuestos paga un negocio pequeño en la SAT?",
+      "p_in_domain": 0.3137,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-12",
+      "type": "fuera_de_dominio",
+      "question": "¿Cómo saco mi NIT por internet?",
+      "p_in_domain": 0.1964,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-13",
+      "type": "fuera_de_dominio",
+      "question": "¿Qué dice la Constitución sobre la libertad de expresión?",
+      "p_in_domain": 0.8755,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-14",
+      "type": "fuera_de_dominio",
+      "question": "¿Cómo registro una marca para mi empresa?",
+      "p_in_domain": 0.5557,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-15",
+      "type": "fuera_de_dominio",
+      "question": "¿Qué necesito para afiliarme al IGSS?",
+      "p_in_domain": 0.6943,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-16",
+      "type": "fuera_de_dominio",
+      "question": "¿Me pueden desalojar de mi casa si no pago la renta un mes?",
+      "p_in_domain": 0.1641,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-17",
+      "type": "fuera_de_dominio",
+      "question": "¿Cómo hago un testamento?",
+      "p_in_domain": 0.6374,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-18",
+      "type": "fuera_de_dominio",
+      "question": "¿Cuántos años hay que tener para votar en Guatemala?",
+      "p_in_domain": 0.1389,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-19",
+      "type": "fuera_de_dominio",
+      "question": "¿Qué me recomiendas para el dolor de cabeza?",
+      "p_in_domain": 0.0912,
+      "safety": false,
+      "low_retrieval": true
+    },
+    {
+      "id": "cal-ood-20",
+      "type": "fuera_de_dominio",
+      "question": "¿Cómo le bajo la fiebre a mi bebé?",
+      "p_in_domain": 0.0629,
+      "safety": false,
+      "low_retrieval": true
+    },
+    {
+      "id": "cal-ood-21",
+      "type": "fuera_de_dominio",
+      "question": "¿Qué puedo cocinar con arroz, frijol y huevos?",
+      "p_in_domain": 0.0296,
+      "safety": false,
+      "low_retrieval": true
+    },
+    {
+      "id": "cal-ood-22",
+      "type": "fuera_de_dominio",
+      "question": "¿Cómo se prepara el atol de elote?",
+      "p_in_domain": 0.4458,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-23",
+      "type": "fuera_de_dominio",
+      "question": "¿Quién ganó el mundial de 2022?",
+      "p_in_domain": 0.1123,
+      "safety": false,
+      "low_retrieval": true
+    },
+    {
+      "id": "cal-ood-24",
+      "type": "fuera_de_dominio",
+      "question": "¿A qué hora juega hoy la selección de Guatemala?",
+      "p_in_domain": 0.2034,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-25",
+      "type": "fuera_de_dominio",
+      "question": "Mi celular se calienta mucho, ¿es normal?",
+      "p_in_domain": 0.8738,
+      "safety": false,
+      "low_retrieval": true
+    },
+    {
+      "id": "cal-ood-26",
+      "type": "fuera_de_dominio",
+      "question": "¿Cómo recupero mi cuenta de Facebook?",
+      "p_in_domain": 0.0523,
+      "safety": false,
+      "low_retrieval": true
+    },
+    {
+      "id": "cal-ood-27",
+      "type": "fuera_de_dominio",
+      "question": "¿Cuándo empieza la temporada de lluvias?",
+      "p_in_domain": 0.1833,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-28",
+      "type": "fuera_de_dominio",
+      "question": "¿Cómo le enseño a mi perro a no morder?",
+      "p_in_domain": 0.4779,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-29",
+      "type": "fuera_de_dominio",
+      "question": "¿Cada cuánto hay que regar un aguacate?",
+      "p_in_domain": 0.846,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-30",
+      "type": "fuera_de_dominio",
+      "question": "Recomiéndame una serie para ver el fin de semana",
+      "p_in_domain": 0.0228,
+      "safety": false,
+      "low_retrieval": true
+    },
+    {
+      "id": "cal-ood-31",
+      "type": "fuera_de_dominio",
+      "question": "¿Cómo hago una tarea de fracciones de quinto primaria?",
+      "p_in_domain": 0.1649,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-32",
+      "type": "fuera_de_dominio",
+      "question": "¿Cuál es la historia de la ciudad maya de Tikal?",
+      "p_in_domain": 0.4748,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-33",
+      "type": "fuera_de_dominio",
+      "question": "Escríbeme un poema para el día de la madre",
+      "p_in_domain": 0.3179,
+      "safety": false,
+      "low_retrieval": true
+    },
+    {
+      "id": "cal-ood-34",
+      "type": "fuera_de_dominio",
+      "question": "¿Cuál es la capital de Honduras?",
+      "p_in_domain": 0.1725,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-35",
+      "type": "fuera_de_dominio",
+      "question": "¿Cómo invierto mis ahorros?",
+      "p_in_domain": 0.0293,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-36",
+      "type": "fuera_de_dominio",
+      "question": "¿Qué significa que mi carro gaste mucho combustible?",
+      "p_in_domain": 0.9656,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-37",
+      "type": "fuera_de_dominio",
+      "question": "Mi carro hace un ruido raro cuando freno, ¿qué puede ser?",
+      "p_in_domain": 0.9831,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-38",
+      "type": "fuera_de_dominio",
+      "question": "¿Qué carro usado me recomiendas por 40 mil quetzales?",
+      "p_in_domain": 0.9025,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-39",
+      "type": "fuera_de_dominio",
+      "question": "¿Cómo le cambio la llanta a mi moto?",
+      "p_in_domain": 0.9426,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-40",
+      "type": "fuera_de_dominio",
+      "question": "¿Qué marca de batería dura más para un pickup?",
+      "p_in_domain": 0.981,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-41",
+      "type": "fuera_de_dominio",
+      "question": "¿Cuánto cuesta pintar un carro completo?",
+      "p_in_domain": 0.9502,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-42",
+      "type": "fuera_de_dominio",
+      "question": "¿Conviene más un carro automático o de mecánica?",
+      "p_in_domain": 0.9044,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-43",
+      "type": "fuera_de_dominio",
+      "question": "¿Cómo limpio los asientos de tela de mi carro?",
+      "p_in_domain": 0.8775,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-44",
+      "type": "fuera_de_dominio",
+      "question": "¿Por qué se me enciende la luz del check engine?",
+      "p_in_domain": 0.8745,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-45",
+      "type": "fuera_de_dominio",
+      "question": "¿Qué aceite le pongo a una moto de 150 cc?",
+      "p_in_domain": 0.9824,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-46",
+      "type": "fuera_de_dominio",
+      "question": "¿Cómo se calibran las llantas con nitrógeno?",
+      "p_in_domain": 0.5217,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-47",
+      "type": "fuera_de_dominio",
+      "question": "¿Es mejor la gasolina súper o la regular para mi carro?",
+      "p_in_domain": 0.9276,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-48",
+      "type": "fuera_de_dominio",
+      "question": "¿Cuánto cobra un taller por cambiar el clutch?",
+      "p_in_domain": 0.881,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-49",
+      "type": "fuera_de_dominio",
+      "question": "¿Cómo polarizo yo mismo los vidrios de mi carro?",
+      "p_in_domain": 0.6861,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ood-50",
+      "type": "fuera_de_dominio",
+      "question": "¿Dónde venden repuestos baratos para Toyota en la capital?",
+      "p_in_domain": 0.5261,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-01",
+      "type": "control",
+      "question": "¿Cuánto es la multa por pasarme un semáforo en rojo?",
+      "p_in_domain": 0.9517,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-02",
+      "type": "control",
+      "question": "¿Qué documentos tengo que llevar siempre cuando manejo?",
+      "p_in_domain": 0.9394,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-03",
+      "type": "control",
+      "question": "¿A qué edad puedo sacar mi licencia de manejo?",
+      "p_in_domain": 0.9956,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-04",
+      "type": "control",
+      "question": "¿Qué tipo de licencia necesito para manejar una camioneta de pasajeros?",
+      "p_in_domain": 0.9971,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-05",
+      "type": "control",
+      "question": "¿Me pueden multar por no traer la tarjeta de circulación?",
+      "p_in_domain": 0.9927,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-06",
+      "type": "control",
+      "question": "¿Es obligatorio que mi moto tenga placa?",
+      "p_in_domain": 0.9997,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-07",
+      "type": "control",
+      "question": "¿Puedo llevar a mi hijo de 5 años en el asiento de adelante?",
+      "p_in_domain": 0.8687,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-08",
+      "type": "control",
+      "question": "¿Qué hago si choco y el otro conductor se va?",
+      "p_in_domain": 0.865,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-09",
+      "type": "control",
+      "question": "¿Tengo que parar si un bus escolar está bajando niños?",
+      "p_in_domain": 0.9765,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-10",
+      "type": "control",
+      "question": "¿Quién tiene la vía en una rotonda?",
+      "p_in_domain": 0.9554,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-11",
+      "type": "control",
+      "question": "¿Puedo estacionarme frente a un hidrante?",
+      "p_in_domain": 0.9217,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-12",
+      "type": "control",
+      "question": "¿Cuánto tiempo puedo dejar mi carro estacionado en la calle?",
+      "p_in_domain": 0.9854,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-13",
+      "type": "control",
+      "question": "¿Pueden los agentes de la PMT ponerme cepo a mi carro?",
+      "p_in_domain": 0.9972,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-14",
+      "type": "control",
+      "question": "¿Es legal manejar con los vidrios polarizados?",
+      "p_in_domain": 0.9206,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-15",
+      "type": "control",
+      "question": "¿Cuántas personas pueden ir en una moto?",
+      "p_in_domain": 0.7841,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-16",
+      "type": "control",
+      "question": "¿Los ciclistas pueden ir en la acera?",
+      "p_in_domain": 0.9228,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-17",
+      "type": "control",
+      "question": "¿Por dónde deben caminar los peatones si no hay banqueta?",
+      "p_in_domain": 0.4946,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-18",
+      "type": "control",
+      "question": "¿Qué significa una línea amarilla continua en el centro de la calle?",
+      "p_in_domain": 0.9821,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-19",
+      "type": "control",
+      "question": "¿Puedo rebasar en una curva?",
+      "p_in_domain": 0.88,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-20",
+      "type": "control",
+      "question": "¿Qué pasa si no pago una multa de tránsito?",
+      "p_in_domain": 0.9986,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-21",
+      "type": "control",
+      "question": "¿Cómo impugno una multa que me pusieron injustamente?",
+      "p_in_domain": 0.9922,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-22",
+      "type": "control",
+      "question": "¿Me pueden quitar la licencia por acumular multas?",
+      "p_in_domain": 0.9981,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-23",
+      "type": "control",
+      "question": "¿Es obligatorio el seguro contra terceros?",
+      "p_in_domain": 0.7324,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-24",
+      "type": "control",
+      "question": "¿Qué luces debo usar de noche en carretera?",
+      "p_in_domain": 0.9603,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-25",
+      "type": "control",
+      "question": "¿Puedo usar audífonos mientras manejo?",
+      "p_in_domain": 0.9041,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-26",
+      "type": "control",
+      "question": "¿Cuál es el límite de velocidad cerca de un hospital?",
+      "p_in_domain": 0.9352,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-27",
+      "type": "control",
+      "question": "¿Está permitido dar vuelta en U?",
+      "p_in_domain": 0.8027,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-28",
+      "type": "control",
+      "question": "¿Qué debo hacer cuando oigo la sirena de una ambulancia?",
+      "p_in_domain": 0.6435,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-29",
+      "type": "control",
+      "question": "¿Puedo manejar si me tomé dos cervezas?",
+      "p_in_domain": 0.9706,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-30",
+      "type": "control",
+      "question": "¿Qué pasa si manejo sin licencia?",
+      "p_in_domain": 0.9932,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-31",
+      "type": "control",
+      "question": "¿Los taxis pueden parar donde sea para subir pasajeros?",
+      "p_in_domain": 0.9362,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-32",
+      "type": "control",
+      "question": "¿Un camión puede circular por cualquier carril?",
+      "p_in_domain": 0.9957,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-33",
+      "type": "control",
+      "question": "¿Qué hago si mi carro se descompone en plena calle?",
+      "p_in_domain": 0.927,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-34",
+      "type": "control",
+      "question": "¿Puedo remolcar un carro con una cuerda?",
+      "p_in_domain": 0.976,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-35",
+      "type": "control",
+      "question": "¿Cuándo vence mi licencia de conducir?",
+      "p_in_domain": 0.9369,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-36",
+      "type": "control",
+      "question": "¿Qué es un permiso de aprendizaje y para qué sirve?",
+      "p_in_domain": 0.9778,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-37",
+      "type": "control",
+      "question": "¿Puede un menor de edad manejar moto?",
+      "p_in_domain": 0.9508,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-38",
+      "type": "control",
+      "question": "¿Es obligatorio el casco para el pasajero de la moto?",
+      "p_in_domain": 0.9979,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-39",
+      "type": "control",
+      "question": "¿Qué significa la señal de ceda el paso?",
+      "p_in_domain": 0.9535,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-40",
+      "type": "control",
+      "question": "¿Quién pone los semáforos en mi municipio?",
+      "p_in_domain": 0.97,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-41",
+      "type": "control",
+      "question": "¿Pueden las municipalidades cobrar multas de tránsito?",
+      "p_in_domain": 0.9963,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-42",
+      "type": "control",
+      "question": "¿Qué pasa si atropello a alguien?",
+      "p_in_domain": 0.6686,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-43",
+      "type": "control",
+      "question": "¿Me pueden detener por manejar ebrio?",
+      "p_in_domain": 0.4796,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-44",
+      "type": "control",
+      "question": "¿Se puede usar la bocina en la noche?",
+      "p_in_domain": 0.8924,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-45",
+      "type": "control",
+      "question": "¿Cuál es la velocidad máxima en carretera?",
+      "p_in_domain": 0.9618,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-46",
+      "type": "control",
+      "question": "¿Puedo llevar carga que sobresalga de mi pickup?",
+      "p_in_domain": 0.994,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-47",
+      "type": "control",
+      "question": "¿Los buses tienen que parar solo en las paradas?",
+      "p_in_domain": 0.9675,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-48",
+      "type": "control",
+      "question": "¿Qué debo hacer en un cruce de tren?",
+      "p_in_domain": 0.6933,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-49",
+      "type": "control",
+      "question": "¿Es obligatorio que el carro tenga triángulos de emergencia?",
+      "p_in_domain": 0.9916,
+      "safety": false,
+      "low_retrieval": false
+    },
+    {
+      "id": "cal-ctl-50",
+      "type": "control",
+      "question": "¿Puedo circular con una placa provisional?",
+      "p_in_domain": 0.9796,
+      "safety": false,
+      "low_retrieval": false
+    }
+  ]
+}

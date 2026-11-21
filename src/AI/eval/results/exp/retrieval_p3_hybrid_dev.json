@@ -1,0 +1,362 @@
+{
+  "split": "dev",
+  "config": {
+    "mode": "hybrid",
+    "reranker": null,
+    "candidates": 20
+  },
+  "vialbot": {
+    "embedder": "vialbot-embedder (fine-tuning propio)",
+    "n": 50,
+    "precision@1": 0.4,
+    "precision@2": 0.52,
+    "precision@3": 0.6,
+    "precision@4": 0.64,
+    "precision@5": 0.74,
+    "precision@6": 0.76,
+    "precision@7": 0.8,
+    "precision@8": 0.8,
+    "precision@9": 0.82,
+    "precision@10": 0.86,
+    "mrr": 0.5319,
+    "latencia_ms_mediana": 15.1,
+    "mrr_by_category": {
+      "accidentes": 1.0,
+      "circulacion_general": 0.4542,
+      "licencias": 0.9286,
+      "multas": 0.4571
+    },
+    "failures": [
+      {
+        "id": "tb-004",
+        "question": "¿Qué necesito para empezar a sacar mi licencia de manejo?",
+        "expected": "reglamento:25",
+        "rank": 2,
+        "top3": [
+          "ley:14",
+          "reglamento:25",
+          "reglamento:29"
+        ]
+      },
+      {
+        "id": "tb-006",
+        "question": "¿Y si hay alguna regla que no esté escrita y no sé qué hacer?",
+        "expected": "reglamento:195",
+        "rank": 4,
+        "top3": [
+          "ley:7",
+          "ley:23",
+          "reglamento:7"
+        ]
+      },
+      {
+        "id": "tb-011",
+        "question": "¿Si hay obras en la carretera, qué debo hacer para no ponerme en peligro?",
+        "expected": "reglamento:82",
+        "rank": null,
+        "top3": [
+          "reglamento:85",
+          "reglamento:39",
+          "reglamento:115"
+        ]
+      },
+      {
+        "id": "tb-019",
+        "question": "¿Qué hago si no estoy de acuerdo con una multa que me dieron por una infracción de tránsito?",
+        "expected": "ley:47",
+        "rank": null,
+        "top3": [
+          "ley:30",
+          "reglamento:186",
+          "ley:32"
+        ]
+      },
+      {
+        "id": "tb-021",
+        "question": "¿Si dejo cosas tiradas en la calle que me pueden quitar y cuánto me van a cobrar?",
+        "expected": "ley:24",
+        "rank": 2,
+        "top3": [
+          "ley:35",
+          "ley:24",
+          "reglamento:78"
+        ]
+      },
+      {
+        "id": "tb-024",
+        "question": "¿Tengo que poner luces especiales en mi camión?",
+        "expected": "reglamento:15",
+        "rank": null,
+        "top3": [
+          "reglamento:165",
+          "reglamento:159",
+          "reglamento:167"
+        ]
+      },
+      {
+        "id": "tb-026",
+        "question": "Si estoy caminando en la calle y un coche se acerca girando, ¿tengo derecho a cruzar aunque no haya un paso de peatones?",
+        "expected": "reglamento:125",
+        "rank": 5,
+        "top3": [
+          "reglamento:134",
+          "reglamento:123",
+          "reglamento:58"
+        ]
+      },
+      {
+        "id": "tb-033",
+        "question": "¿Puedo llevar mi vaca por la calle si no hay un camino de tierra?",
+        "expected": "reglamento:53",
+        "rank": 2,
+        "top3": [
+          "reglamento:54",
+          "reglamento:53",
+          "reglamento:122"
+        ]
+      },
+      {
+        "id": "tb-034",
+        "question": "Si estoy en una calle con carriles para bicicletas y un camión quiere pasarme, ¿tengo que ceder el paso al camión o puedo seguir usando mi carril?",
+        "expected": "reglamento:67",
+        "rank": 3,
+        "top3": [
+          "reglamento:126",
+          "reglamento:138",
+          "reglamento:67"
+        ]
+      },
+      {
+        "id": "tb-035",
+        "question": "¿Qué necesito para que mi carro pueda circular por la calle?",
+        "expected": "ley:18",
+        "rank": 7,
+        "top3": [
+          "reglamento:166",
+          "reglamento:14",
+          "ley:12"
+        ]
+      },
+      {
+        "id": "tb-036",
+        "question": "¿Qué luces necesito tener en mi moto para circular por la calle?",
+        "expected": "reglamento:13",
+        "rank": 10,
+        "top3": [
+          "reglamento:166",
+          "reglamento:167",
+          "reglamento:164"
+        ]
+      },
+      {
+        "id": "tb-039",
+        "question": "¿Puedo usar mi bocina de mi carro a todo volumen sin que me pongan una multa?",
+        "expected": "reglamento:44",
+        "rank": null,
+        "top3": [
+          "reglamento:41",
+          "ley:34",
+          "reglamento:172"
+        ]
+      },
+      {
+        "id": "tb-042",
+        "question": "Si tengo que ceder el paso para entrar a una calle principal, ¿cuándo puedo arrancar?",
+        "expected": "reglamento:120",
+        "rank": 3,
+        "top3": [
+          "reglamento:122",
+          "reglamento:61",
+          "reglamento:120"
+        ]
+      },
+      {
+        "id": "tb-043",
+        "question": "¿Tengo que avisarle a los demás conductores antes de girar o cambiar de carril?",
+        "expected": "reglamento:168",
+        "rank": 10,
+        "top3": [
+          "reglamento:132",
+          "reglamento:138",
+          "reglamento:134"
+        ]
+      },
+      {
+        "id": "tb-046",
+        "question": "¿Si veo una señal de tráfico rota en la calle, quién tiene que hacer que la quiten?",
+        "expected": "reglamento:86",
+        "rank": 3,
+        "top3": [
+          "ley:25",
+          "reglamento:122",
+          "reglamento:86"
+        ]
+      },
+      {
+        "id": "tb-051",
+        "question": "¿Qué hacen las señales de tránsito?",
+        "expected": "reglamento:80",
+        "rank": 9,
+        "top3": [
+          "ley:28",
+          "reglamento:84",
+          "reglamento:56"
+        ]
+      },
+      {
+        "id": "tb-055",
+        "question": "¿Puedo caminar por la calle si no hay aceras, pero tengo que tener cuidado de no hacer el tráfico más lento?",
+        "expected": "reglamento:59",
+        "rank": null,
+        "top3": [
+          "reglamento:64",
+          "reglamento:58",
+          "reglamento:125"
+        ]
+      },
+      {
+        "id": "tb-061",
+        "question": "¿Si no estoy presente cuando me ponen la multa, aún me la puedo aplicar?",
+        "expected": "reglamento:187",
+        "rank": 5,
+        "top3": [
+          "reglamento:189",
+          "ley:33",
+          "reglamento:182"
+        ]
+      },
+      {
+        "id": "tb-063",
+        "question": "¿Quién se encarga de hacer el reglamento de la Ley de Tránsito?",
+        "expected": "ley:48",
+        "rank": null,
+        "top3": [
+          "ley:5",
+          "ley:4",
+          "ley:6"
+        ]
+      },
+      {
+        "id": "tb-064",
+        "question": "¿Qué tengo que hacer cuando estoy adelantando a otro coche?",
+        "expected": "reglamento:146",
+        "rank": 7,
+        "top3": [
+          "reglamento:147",
+          "reglamento:95",
+          "reglamento:123"
+        ]
+      },
+      {
+        "id": "tb-070",
+        "question": "¿Puedo poner un cartel publicitario en un semáforo?",
+        "expected": "ley:23",
+        "rank": 5,
+        "top3": [
+          "reglamento:87",
+          "reglamento:144",
+          "reglamento:88"
+        ]
+      },
+      {
+        "id": "tb-071",
+        "question": "¿Puedo transportar muebles en mi camioneta si son grandes y salen de la caja?",
+        "expected": "reglamento:51",
+        "rank": 2,
+        "top3": [
+          "reglamento:69",
+          "reglamento:51",
+          "reglamento:62"
+        ]
+      },
+      {
+        "id": "tb-075",
+        "question": "¿Qué necesito hacer para que la municipalidad donde vivo asuma el control del tránsito?",
+        "expected": "reglamento:5",
+        "rank": 4,
+        "top3": [
+          "reglamento:118",
+          "ley:45",
+          "ley:7"
+        ]
+      },
+      {
+        "id": "tb-076",
+        "question": "¿Puedo usar la bocina en mi coche si estoy pasando por mi barrio por la noche?",
+        "expected": "reglamento:44",
+        "rank": 2,
+        "top3": [
+          "reglamento:172",
+          "reglamento:44",
+          "reglamento:94"
+        ]
+      },
+      {
+        "id": "tb-081",
+        "question": "¿Puedo estacionar mi carro en la calle?",
+        "expected": "ley:26",
+        "rank": 5,
+        "top3": [
+          "reglamento:7",
+          "reglamento:62",
+          "reglamento:152"
+        ]
+      },
+      {
+        "id": "tb-086",
+        "question": "¿Puedo dejar la puerta del auto abierta mientras estoy estacionado?",
+        "expected": "reglamento:89",
+        "rank": 3,
+        "top3": [
+          "reglamento:150",
+          "reglamento:153",
+          "reglamento:89"
+        ]
+      },
+      {
+        "id": "tb-087",
+        "question": "Si me multan varias veces en un año, ¿pueden quitarme mi licencia?",
+        "expected": "ley:40",
+        "rank": 2,
+        "top3": [
+          "ley:41",
+          "ley:40",
+          "reglamento:192"
+        ]
+      },
+      {
+        "id": "tb-091",
+        "question": "¿Puedo usar un camión por un carril reversible si no hay semáforo?",
+        "expected": "reglamento:104",
+        "rank": 6,
+        "top3": [
+          "reglamento:163",
+          "reglamento:7",
+          "reglamento:101"
+        ]
+      },
+      {
+        "id": "tb-094",
+        "question": "¿Tengo que poner las luces de emergencia cuando estoy en un túnel?",
+        "expected": "reglamento:159",
+        "rank": 5,
+        "top3": [
+          "reglamento:95",
+          "reglamento:90",
+          "reglamento:20"
+        ]
+      },
+      {
+        "id": "tb-098",
+        "question": "¿Si hay dos carriles que van en direcciones opuestas, tengo que ir siempre por el carril de la derecha?",
+        "expected": "reglamento:100",
+        "rank": null,
+        "top3": [
+          "reglamento:102",
+          "reglamento:135",
+          "reglamento:101"
+        ]
+      }
+    ]
+  }
+}

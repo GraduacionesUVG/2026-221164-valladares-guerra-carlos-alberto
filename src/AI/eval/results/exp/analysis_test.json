@@ -1,0 +1,974 @@
+{
+  "n": 50,
+  "bootstrap": 10000,
+  "retrieval": {
+    "embedder_base_denso": {
+      "P@1": {
+        "value": 0.32,
+        "ci95": [
+          0.2,
+          0.46
+        ]
+      },
+      "P@2": {
+        "value": 0.54,
+        "ci95": [
+          0.4,
+          0.68
+        ]
+      },
+      "P@3": {
+        "value": 0.56,
+        "ci95": [
+          0.42,
+          0.7
+        ]
+      },
+      "P@4": {
+        "value": 0.62,
+        "ci95": [
+          0.48,
+          0.76
+        ]
+      },
+      "P@5": {
+        "value": 0.64,
+        "ci95": [
+          0.5,
+          0.78
+        ]
+      },
+      "P@6": {
+        "value": 0.68,
+        "ci95": [
+          0.54,
+          0.8
+        ]
+      },
+      "P@7": {
+        "value": 0.68,
+        "ci95": [
+          0.54,
+          0.8
+        ]
+      },
+      "P@8": {
+        "value": 0.68,
+        "ci95": [
+          0.54,
+          0.8
+        ]
+      },
+      "P@9": {
+        "value": 0.7,
+        "ci95": [
+          0.56,
+          0.82
+        ]
+      },
+      "P@10": {
+        "value": 0.7,
+        "ci95": [
+          0.58,
+          0.82
+        ]
+      },
+      "MRR": {
+        "value": 0.4646,
+        "ci95": [
+          0.3536,
+          0.5797
+        ]
+      }
+    },
+    "embedder_propio_denso": {
+      "P@1": {
+        "value": 0.58,
+        "ci95": [
+          0.44,
+          0.72
+        ]
+      },
+      "P@2": {
+        "value": 0.68,
+        "ci95": [
+          0.54,
+          0.8
+        ]
+      },
+      "P@3": {
+        "value": 0.68,
+        "ci95": [
+          0.54,
+          0.8
+        ]
+      },
+      "P@4": {
+        "value": 0.76,
+        "ci95": [
+          0.64,
+          0.88
+        ]
+      },
+      "P@5": {
+        "value": 0.8,
+        "ci95": [
+          0.68,
+          0.9
+        ]
+      },
+      "P@6": {
+        "value": 0.8,
+        "ci95": [
+          0.68,
+          0.9
+        ]
+      },
+      "P@7": {
+        "value": 0.86,
+        "ci95": [
+          0.76,
+          0.94
+        ]
+      },
+      "P@8": {
+        "value": 0.86,
+        "ci95": [
+          0.76,
+          0.94
+        ]
+      },
+      "P@9": {
+        "value": 0.86,
+        "ci95": [
+          0.76,
+          0.94
+        ]
+      },
+      "P@10": {
+        "value": 0.88,
+        "ci95": [
+          0.78,
+          0.96
+        ]
+      },
+      "MRR": {
+        "value": 0.6686,
+        "ci95": [
+          0.5536,
+          0.7806
+        ]
+      }
+    },
+    "embedder_propio_bge": {
+      "P@1": {
+        "value": 0.66,
+        "ci95": [
+          0.52,
+          0.8
+        ]
+      },
+      "P@2": {
+        "value": 0.74,
+        "ci95": [
+          0.62,
+          0.86
+        ]
+      },
+      "P@3": {
+        "value": 0.86,
+        "ci95": [
+          0.76,
+          0.94
+        ]
+      },
+      "P@4": {
+        "value": 0.86,
+        "ci95": [
+          0.76,
+          0.94
+        ]
+      },
+      "P@5": {
+        "value": 0.88,
+        "ci95": [
+          0.78,
+          0.96
+        ]
+      },
+      "P@6": {
+        "value": 0.92,
+        "ci95": [
+          0.84,
+          0.98
+        ]
+      },
+      "P@7": {
+        "value": 0.92,
+        "ci95": [
+          0.84,
+          0.98
+        ]
+      },
+      "P@8": {
+        "value": 0.92,
+        "ci95": [
+          0.84,
+          0.98
+        ]
+      },
+      "P@9": {
+        "value": 0.92,
+        "ci95": [
+          0.84,
+          0.98
+        ]
+      },
+      "P@10": {
+        "value": 0.92,
+        "ci95": [
+          0.84,
+          0.98
+        ]
+      },
+      "MRR": {
+        "value": 0.7507,
+        "ci95": [
+          0.6473,
+          0.8473
+        ]
+      }
+    }
+  },
+  "retrieval_tests": {
+    "P@7 base→propio": {
+      "solo_primera": 2,
+      "solo_segunda": 11,
+      "p": 0.0225
+    },
+    "P@7 propio→propio+bge": {
+      "solo_primera": 0,
+      "solo_segunda": 3,
+      "p": 0.25
+    }
+  },
+  "generation": {
+    "A": {
+      "fidelidad": {
+        "value": 2.18,
+        "ci95": [
+          1.9,
+          2.46
+        ]
+      },
+      "relevancia": {
+        "value": 3.86,
+        "ci95": [
+          3.48,
+          4.2
+        ]
+      },
+      "claridad": {
+        "value": 4.06,
+        "ci95": [
+          3.82,
+          4.28
+        ]
+      },
+      "cita_correcta": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "alucinacion_grave": {
+        "value": 0.46,
+        "ci95": [
+          0.32,
+          0.6
+        ]
+      },
+      "latencia_ms_mediana": 3751
+    },
+    "B": {
+      "fidelidad": {
+        "value": 2.48,
+        "ci95": [
+          2.02,
+          2.96
+        ]
+      },
+      "relevancia": {
+        "value": 3.48,
+        "ci95": [
+          3.06,
+          3.9
+        ]
+      },
+      "claridad": {
+        "value": 4.6,
+        "ci95": [
+          4.36,
+          4.8
+        ]
+      },
+      "cita_correcta": {
+        "value": 0.16,
+        "ci95": [
+          0.06,
+          0.26
+        ]
+      },
+      "alucinacion_grave": {
+        "value": 0.56,
+        "ci95": [
+          0.42,
+          0.7
+        ]
+      },
+      "latencia_ms_mediana": 4273
+    },
+    "C0": {
+      "fidelidad": {
+        "value": 3.04,
+        "ci95": [
+          2.6,
+          3.48
+        ]
+      },
+      "relevancia": {
+        "value": 3.92,
+        "ci95": [
+          3.5,
+          4.34
+        ]
+      },
+      "claridad": {
+        "value": 4.32,
+        "ci95": [
+          4.02,
+          4.6
+        ]
+      },
+      "cita_correcta": {
+        "value": 0.5,
+        "ci95": [
+          0.36,
+          0.64
+        ]
+      },
+      "alucinacion_grave": {
+        "value": 0.36,
+        "ci95": [
+          0.24,
+          0.5
+        ]
+      },
+      "latencia_ms_mediana": 1515
+    },
+    "C": {
+      "fidelidad": {
+        "value": 3.04,
+        "ci95": [
+          2.58,
+          3.5
+        ]
+      },
+      "relevancia": {
+        "value": 3.98,
+        "ci95": [
+          3.6,
+          4.34
+        ]
+      },
+      "claridad": {
+        "value": 4.18,
+        "ci95": [
+          3.88,
+          4.44
+        ]
+      },
+      "cita_correcta": {
+        "value": 0.58,
+        "ci95": [
+          0.44,
+          0.72
+        ]
+      },
+      "alucinacion_grave": {
+        "value": 0.42,
+        "ci95": [
+          0.28,
+          0.56
+        ]
+      },
+      "latencia_ms_mediana": 4142
+    }
+  },
+  "generation_tests": {
+    "A→C": {
+      "fidelidad": {
+        "dif_media": 0.86,
+        "mejor": 26,
+        "igual": 13,
+        "peor": 11,
+        "p": 0.0039
+      },
+      "relevancia": {
+        "dif_media": 0.12,
+        "mejor": 15,
+        "igual": 22,
+        "peor": 13,
+        "p": 0.6358
+      },
+      "claridad": {
+        "dif_media": 0.12,
+        "mejor": 18,
+        "igual": 19,
+        "peor": 13,
+        "p": 0.6187
+      },
+      "cita_correcta": {
+        "solo_primera": 0,
+        "solo_segunda": 29,
+        "p": 0.0
+      },
+      "alucinacion_grave": {
+        "solo_primera": 12,
+        "solo_segunda": 10,
+        "p": 0.8318
+      }
+    },
+    "B→C": {
+      "fidelidad": {
+        "dif_media": 0.56,
+        "mejor": 21,
+        "igual": 13,
+        "peor": 16,
+        "p": 0.0863
+      },
+      "relevancia": {
+        "dif_media": 0.5,
+        "mejor": 19,
+        "igual": 20,
+        "peor": 11,
+        "p": 0.0559
+      },
+      "claridad": {
+        "dif_media": -0.42,
+        "mejor": 6,
+        "igual": 25,
+        "peor": 19,
+        "p": 0.0112
+      },
+      "cita_correcta": {
+        "solo_primera": 3,
+        "solo_segunda": 24,
+        "p": 0.0
+      },
+      "alucinacion_grave": {
+        "solo_primera": 17,
+        "solo_segunda": 10,
+        "p": 0.2478
+      }
+    },
+    "C0→C": {
+      "fidelidad": {
+        "dif_media": 0.0,
+        "mejor": 11,
+        "igual": 29,
+        "peor": 10,
+        "p": 0.9578
+      },
+      "relevancia": {
+        "dif_media": 0.06,
+        "mejor": 11,
+        "igual": 33,
+        "peor": 6,
+        "p": 0.8652
+      },
+      "claridad": {
+        "dif_media": -0.14,
+        "mejor": 9,
+        "igual": 30,
+        "peor": 11,
+        "p": 0.2751
+      },
+      "cita_correcta": {
+        "solo_primera": 5,
+        "solo_segunda": 9,
+        "p": 0.424
+      },
+      "alucinacion_grave": {
+        "solo_primera": 5,
+        "solo_segunda": 8,
+        "p": 0.5811
+      }
+    },
+    "A→B": {
+      "fidelidad": {
+        "dif_media": 0.3,
+        "mejor": 19,
+        "igual": 14,
+        "peor": 17,
+        "p": 0.2389
+      },
+      "relevancia": {
+        "dif_media": -0.38,
+        "mejor": 11,
+        "igual": 21,
+        "peor": 18,
+        "p": 0.1473
+      },
+      "claridad": {
+        "dif_media": 0.54,
+        "mejor": 28,
+        "igual": 13,
+        "peor": 9,
+        "p": 0.0015
+      },
+      "cita_correcta": {
+        "solo_primera": 0,
+        "solo_segunda": 8,
+        "p": 0.0078
+      },
+      "alucinacion_grave": {
+        "solo_primera": 9,
+        "solo_segunda": 14,
+        "p": 0.4049
+      }
+    }
+  },
+  "taxonomy_C": {
+    "correcta": {
+      "n": 20,
+      "pct": 0.4,
+      "casos": [
+        {
+          "id": "tb-001",
+          "question": "¿Tengo que tener seguro de auto para poder conducir por la calle?",
+          "expected": "ley:29",
+          "fidelidad": 5,
+          "cita_correcta": true,
+          "answer": "Sí, tienes que contratar un seguro obligatorio contra daños a terceros y ocupantes. Es obligatorio según el Artículo 29 de la Ley de Tránsito. (Ley de Tránsito, Artículo 29)."
+        },
+        {
+          "id": "tb-007",
+          "question": "¿Quién es responsable de poner las señales de tráfico en las calles?",
+          "expected": "reglamento:84",
+          "fidelidad": 5,
+          "cita_correcta": true,
+          "answer": "Es responsabilidad del Departamento o de las Municipalidades que administren el tránsito. Si no lo hacen, pueden ser multados. (Reglamento de Tránsito, Artículo 84)."
+        },
+        {
+          "id": "tb-008",
+          "question": "¿Qué tengo que hacer antes de girar a la derecha o a la izquierda para no poner en riesgo a otros conductores?",
+          "expected": "reglamento:132",
+          "fidelidad": 5,
+          "cita_correcta": true,
+          "answer": "Debes avisar con suficiente anticipación y asegurarte de que hay espacio y velocidad. Si no, no debes girar. (Reglamento de Tránsito, Artículo 132)."
+        },
+        {
+          "id": "tb-012",
+          "question": "Si manejo un bus de transporte público y no hay carril exclusivo, ¿por qué carril tengo que ir?",
+          "expected": "reglamento:71",
+          "fidelidad": 5,
+          "cita_correcta": true,
+          "answer": "Si no hay carril exclusivo para tu vehículo, debes usar el carril derecho. Solo puedes usar los otros si es necesario para rebasar o cambiar de dirección. (Reglamento de Tránsito, Artículo 71)."
+        },
+        {
+          "id": "tb-015",
+          "question": "¿Puedo usar pitidos si estoy conduciendo por un camino estrecho y sinuoso?",
+          "expected": "reglamento:173",
+          "fidelidad": 5,
+          "cita_correcta": true,
+          "answer": "Sí, pero solo si es para evitar accidentes. No se puede usar exageradamente. (Reglamento de Tránsito, Artículo 173)."
+        },
+        {
+          "id": "tb-017",
+          "question": "¿Puedo arrastrar mi carro averiado por la calle si no hay una grúa disponible?",
+          "expected": "reglamento:98",
+          "fidelidad": 5,
+          "cita_correcta": true,
+          "answer": "Sí, pero solo hasta el lugar más cercano donde pueda quedarse quieto sin molestar a los demás. Si es necesario, puedes llevarlo hasta un taller para repararlo. (Reglamento de Tránsito, Artículo 98)."
+        },
+        {
+          "id": "tb-023",
+          "question": "¿Puedo conducir un coche con el volante a la derecha si me autorizan?",
+          "expected": "reglamento:21",
+          "fidelidad": 5,
+          "cita_correcta": true,
+          "answer": "Sí, pero solo si tienes permiso para hacerlo. Si no lo tienes, estás en contra de las normas. (Reglamento de Tránsito, Artículo 21)."
+        },
+        {
+          "id": "tb-027",
+          "question": "¿Qué tengo que hacer si mi carro fue golpeado o robado en un estacionamiento?",
+          "expected": "reglamento:179",
+          "fidelidad": 5,
+          "cita_correcta": true,
+          "answer": "Si tu carro fue golpeado o robado, debes denunciarlo al Ministerio Público. (Reglamento de Tránsito, Artículo 179)."
+        },
+        {
+          "id": "tb-028",
+          "question": "¿Si me quitan el carro por una multa, cómo se asegura que no lo dañen al llevarlo al depósito?",
+          "expected": "reglamento:178",
+          "fidelidad": 4,
+          "cita_correcta": true,
+          "answer": "El administrador del depósito debe usar grúas y otros medios adecuados para trasladar tu vehículo. Además, tiene la responsabilidad de sellarlo con los medios necesarios para evitar el robo. (Reglamento de Tránsito, Artículo 178)."
+        },
+        {
+          "id": "tb-029",
+          "question": "¿A dónde van los dineros que recaudan las municipalidades por la transito?",
+          "expected": "ley:45",
+          "fidelidad": 5,
+          "cita_correcta": true,
+          "answer": "Los fondos recaudados por las municipalidades se usan para el diseño, mantenimiento y mejoramiento de las actividades de tránsito, incluyendo obras vía pública. (Ley de Tránsito, Artículo 45)."
+        },
+        {
+          "id": "tb-041",
+          "question": "¿Puedo cruzar la vía si no veo trenes acercándose?",
+          "expected": "reglamento:156",
+          "fidelidad": 5,
+          "cita_correcta": true,
+          "answer": "No, porque el Artículo 156 dice que tienes que asegurarte de que no hay peligro. Si no lo haces, puedes recibir una multa. (Reglamento de Tránsito, Artículo 156)."
+        },
+        {
+          "id": "tb-044",
+          "question": "¿Se puede poner pegatinas en el parabrisas si me estorban a mí para ver?",
+          "expected": "reglamento:19",
+          "fidelidad": 5,
+          "cita_correcta": true,
+          "answer": "No, no se permite. Las calcomanías deben estar ubicadas en lugares que no obstaculicen la visión. (Reglamento de Tránsito, Artículo 19)."
+        },
+        {
+          "id": "tb-058",
+          "question": "¿Puedo organizar una carrera de coches en la calle si tengo el permiso?",
+          "expected": "reglamento:119",
+          "fidelidad": 5,
+          "cita_correcta": true,
+          "answer": "Sí, pero solo si tienes el permiso correspondiente. Si no lo tienes, estás en contra de la norma. (Reglamento de Tránsito, Artículo 119)."
+        },
+        {
+          "id": "tb-074",
+          "question": "¿Si quiero que reduzcan la velocidad de un tramo de calle donde vivo, tengo que pedir permiso a quién y qué más necesito?",
+          "expected": "reglamento:118",
+          "fidelidad": 5,
+          "cita_correcta": true,
+          "answer": "Tienes que pedirle al Departamento o Municipalidad que administre el tránsito que te de la autorización. Además, tienes que adjuntar la constancia de pago correspondiente. (Reglamento de Tránsito, Artículo 118)."
+        },
+        {
+          "id": "tb-082",
+          "question": "¿Puedo usar cualquier carril en la ciudad si hay varios?",
+          "expected": "reglamento:102",
+          "fidelidad": 5,
+          "cita_correcta": true,
+          "answer": "Sí, pero solo puedes usar el que mejor convenga a tu destino. No puedes abandonarlo más que para cambiar de dirección, rebasar o estacionar. (Reglamento de Tránsito, Artículo 102)."
+        },
+        {
+          "id": "tb-084",
+          "question": "¿Qué documentos necesito para renovar mi licencia?",
+          "expected": "reglamento:29",
+          "fidelidad": 4,
+          "cita_correcta": true,
+          "answer": "Para renovar tu licencia, debes presentar la solicitud escrita, llenar el formulario correspondiente, pagar el valor, estar solvente de multas y tener fotos o ser tomado a las fotos. (Reglamento de Tránsito, Artículo 29)."
+        },
+        {
+          "id": "tb-085",
+          "question": "¿Pueden varias municipalidades trabajar juntas para controlar el tránsito en sus ciudades?",
+          "expected": "ley:9",
+          "fidelidad": 5,
+          "cita_correcta": true,
+          "answer": "Sí, si dos o más municipales quieren, pueden firmar un convenio y luego pedirle al Ministerio de Gobernación que les traslade funciones. (Ley de Tránsito, Artículo 9)."
+        },
+        {
+          "id": "tb-092",
+          "question": "Si me quitan el permiso de aprendizaje por no seguir las reglas, ¿puedo volver a obtenerlo después de un año?",
+          "expected": "reglamento:38",
+          "fidelidad": 5,
+          "cita_correcta": true,
+          "answer": "Sí, si te lo revocaron inmediatamente, tienes que esperar un año para poder solicitar uno nuevo. (Reglamento de Tránsito, Artículo 38)."
+        },
+        {
+          "id": "tb-095",
+          "question": "¿Puedo poner una tamalera amarilla en mi camioneta?",
+          "expected": "reglamento:20",
+          "fidelidad": 5,
+          "cita_correcta": true,
+          "answer": "No, no se permite. Solo los vehículos policiales, de emergencia y mantenimiento vial pueden usarlas. (Reglamento de Tránsito, Artículo 20)."
+        },
+        {
+          "id": "tb-096",
+          "question": "¿Este reglamento se aplica a todos los caminos y calles de Guatemala?",
+          "expected": "reglamento:6",
+          "fidelidad": 5,
+          "cita_correcta": true,
+          "answer": "Sí, este reglamento aplica a todas las vías públicas del país. (Reglamento de Tránsito, Artículo 6)."
+        }
+      ]
+    },
+    "parcial": {
+      "n": 9,
+      "pct": 0.18,
+      "casos": [
+        {
+          "id": "tb-002",
+          "question": "¿Puedo estacionar mi coche donde quiera en la calle si la municipalidad lo permite?",
+          "expected": "reglamento:151",
+          "fidelidad": 3,
+          "cita_correcta": false,
+          "answer": "Sí, pero solo si es permitido por la municipalidad. No se puede estacionar en lugares prohibidos. (Reglamento de Tránsito, Artículo 153)."
+        },
+        {
+          "id": "tb-005",
+          "question": "¿Puedo pasar por delante de otros autos si estoy llevando a una persona herida en una ambulancia?",
+          "expected": "ley:21",
+          "fidelidad": 3,
+          "cita_correcta": false,
+          "answer": "Sí, pero ten cuidado y apartarte o detenerte para facilitar su paso. Siempre en la parle central. (Reglamento de Tránsito, Artículo 127)."
+        },
+        {
+          "id": "tb-031",
+          "question": "¿Si mi bicicleta está un poco vieja y no tiene todas las cosas nuevas que dicen, me van a multar?",
+          "expected": "reglamento:180",
+          "fidelidad": 3,
+          "cita_correcta": false,
+          "answer": "Sí, si tu bicicleta no cumple con el equipamiento básico, te pueden multar. Es importante tener todo en buen estado para circular sin problemas. (Reglamento de Tránsito, Artículo 12)."
+        },
+        {
+          "id": "tb-032",
+          "question": "Si me suspendieron mi licencia de conducir y después de dos años la recupero, ¿puedo volver a tomar la licencia inmediatamente o necesito pasar por algo más?",
+          "expected": "ley:41",
+          "fidelidad": 3,
+          "cita_correcta": false,
+          "answer": "Sí, puedes volver a solicitar una nueva licencia. Solo tienes que cumplir con los requisitos de primera vez y contratar un seguro especial. (Reglamento de Tránsito, Artículo 192)."
+        },
+        {
+          "id": "tb-037",
+          "question": "¿Quién puede emitir mi licencia de conducir?",
+          "expected": "ley:5",
+          "fidelidad": 3,
+          "cita_correcta": true,
+          "answer": "El departamento de tránsito de la policía nacional del ministerio de gobernación es quien se encarga de aplicar esta ley y tiene facultad para hacer todo lo que dice. (Ley de Tránsito, Artículo 5)."
+        },
+        {
+          "id": "tb-053",
+          "question": "¿Cómo se sabe qué vehículos están registrados en el país?",
+          "expected": "ley:22",
+          "fidelidad": 3,
+          "cita_correcta": true,
+          "answer": "Los registros son un archivo que el Departamento de Tránsito maneja. Si quieres saber si tu vehículo está registrado, puedes preguntarle a ellos. (Ley de Tránsito, Artículo 22)."
+        },
+        {
+          "id": "tb-054",
+          "question": "¿Cuánto tengo que dejar de distancia entre mi coche y el que va delante?",
+          "expected": "reglamento:116",
+          "fidelidad": 3,
+          "cita_correcta": true,
+          "answer": "Debes mantener una distancia mínima de 50 metros. Si no tienes esa distancia, estás en un área prohibida. (Reglamento de Tránsito, Artículo 116)."
+        },
+        {
+          "id": "tb-056",
+          "question": "¿Puedo tener un amigo que me acompañe mientras aprendo a manejar si no quiero ir a clases?",
+          "expected": "reglamento:35",
+          "fidelidad": 3,
+          "cita_correcta": true,
+          "answer": "Sí, pero el acompañante debe ser autorizado por el Departamento. Además, tiene que cumplir con los requisitos de edad y haber sido sancionado en los últimos cinco años. (Reglamento de Tránsito, Artículo 35)."
+        },
+        {
+          "id": "tb-067",
+          "question": "Si el Ministerio de Gobernación contrata a una empresa para hacer funciones del Departamento de Tránsito, ¿esa empresa tiene que cumplir con las leyes de tránsito?",
+          "expected": "ley:7",
+          "fidelidad": 3,
+          "cita_correcta": true,
+          "answer": "Sí, la empresa contratada debe seguir las normas y reglamentos de tránsito. Si no lo hace, puede haber problemas. (Ley de Tránsito, Artículo 7)."
+        }
+      ]
+    },
+    "rechazo_indebido": {
+      "n": 0,
+      "pct": 0.0,
+      "casos": []
+    },
+    "fallo_recuperacion": {
+      "n": 4,
+      "pct": 0.08,
+      "casos": [
+        {
+          "id": "tb-003",
+          "question": "¿Puedo pasar por delante de un carro si lo hago por el lado izquierdo?",
+          "expected": "reglamento:141",
+          "fidelidad": 1,
+          "cita_correcta": false,
+          "answer": "No, no puedes. Solo debes hacerlo por el derecho. (Reglamento de Tránsito, Artículo 123)."
+        },
+        {
+          "id": "tb-030",
+          "question": "¿Cuándo puedo cruzar una calle o un río sin preocuparme por los vehículos?",
+          "expected": "ley:12",
+          "fidelidad": 2,
+          "cita_correcta": false,
+          "answer": "En las cañadas y pasos debidamente señalizados tienes prioridad. Si ves animales, también puedes pasar con cuidado. (Reglamento de Tránsito, Artículo 124)."
+        },
+        {
+          "id": "tb-048",
+          "question": "¿Puedo pasarle al carro de enfrente si no me están siguiendo muy de cerca?",
+          "expected": "reglamento:144",
+          "fidelidad": 1,
+          "cita_correcta": false,
+          "answer": "Sí, pero ten cuidado. Si estás en un tramo estrecho y el otro vehículo está esperando, debes estar detrás de él. (Reglamento de Tránsito, Artículo 123)."
+        },
+        {
+          "id": "tb-088",
+          "question": "¿Qué tengo que hacer cuando veo a un policía en la calle?",
+          "expected": "reglamento:82",
+          "fidelidad": 1,
+          "cita_correcta": false,
+          "answer": "Si ves a un policía visible del vehículo, elija una boleta y colócala. Esto es para que sepa que estás allí. (Reglamento de Tránsito, Artículo 187)."
+        }
+      ]
+    },
+    "alucinacion_con_articulo": {
+      "n": 17,
+      "pct": 0.34,
+      "casos": [
+        {
+          "id": "tb-009",
+          "question": "¿Si me detienen el carro porque está estacionado mal, me tienen que quitar el auto hasta que pague la multa?",
+          "expected": "ley:34",
+          "fidelidad": 1,
+          "cita_correcta": false,
+          "answer": "Sí, si te detienen por un problema mecánico o caída de carga y tu vehículo está obstaculizando la calzada, debes retirarlo en el menor tiempo posible. (Reglamento de Tránsito, Artículo 96)."
+        },
+        {
+          "id": "tb-013",
+          "question": "¿Cuánto tengo que pagar para renovar mi licencia de conducir?",
+          "expected": "ley:16",
+          "fidelidad": 2,
+          "cita_correcta": false,
+          "answer": "Para renovar tu licencia, debes presentar una solicitud escrita o llenar el formulario correspondiente. Además, tienes que pagar el valor que te indiquen y estás obligado a estar solvente de multas. (Reglamento de Tránsito, Artículo 29)."
+        },
+        {
+          "id": "tb-014",
+          "question": "¿Qué significa que los vehículos tengan que estar en 'óptimas condiciones de funcionamiento'? ¿Hay que arreglar todo lo que esté un poco roto?",
+          "expected": "reglamento:11",
+          "fidelidad": 2,
+          "cita_correcta": false,
+          "answer": "Sí, es importante que el vehículo esté en buen estado y con todos los documentos reglamentarios. No se permite tener llantas lisas o roturas. (Reglamento de Tránsito, Artículo 18)."
+        },
+        {
+          "id": "tb-016",
+          "question": "¿Tengo que dejar prendida la luz baja si manejo mi moto por la calle?",
+          "expected": "reglamento:163",
+          "fidelidad": 1,
+          "cita_correcta": false,
+          "answer": "Sí, tienes que encender la luz baja o población en túneles y vías urbanas. Es una norma para no deslumbrar a otros conductores. (Reglamento de Tránsito, Artículo 161)."
+        },
+        {
+          "id": "tb-018",
+          "question": "¿Puedo ir rápido en una zona escolar si no hay niños cerca?",
+          "expected": "reglamento:63",
+          "fidelidad": 2,
+          "cita_correcta": true,
+          "answer": "No, porque la norma dice que debes disminuir la velocidad. Si estás en una zona escolar y no hay niños, puedes ir a 90 km/h, pero ten cuidado de no sobrepasar la velocidad hasta salir de esa zona. (Reglamento de Tránsito, Artículo 63)."
+        },
+        {
+          "id": "tb-038",
+          "question": "¿Qué hago si quiero adelantar a un carro que viene justo frente a mí y no estoy seguro de si también quiere pasar?",
+          "expected": "reglamento:145",
+          "fidelidad": 2,
+          "cita_correcta": true,
+          "answer": "Si el vehículo que va en frente te está rebasando, debes respetar su prioridad. Si no puedes hacerlo sin riesgos, puedes iniciar la maniobra con señales reglamentarias. (Reglamento de Tránsito, Artículo 145)."
+        },
+        {
+          "id": "tb-040",
+          "question": "Si no hay ninguna señal, ¿igual tengo que ir por la derecha en una curva?",
+          "expected": "reglamento:100",
+          "fidelidad": 1,
+          "cita_correcta": false,
+          "answer": "Sí, si no hay señal, debes ir por la derecha. Es lo que dice el Artículo 59 del Reglamento de Tránsito. (Reglamento de Tránsito, Artículo 59)."
+        },
+        {
+          "id": "tb-045",
+          "question": "¿Puedo llevar a mi bebé de 1 año en el carro si ya tengo a otra persona sentada?",
+          "expected": "reglamento:46",
+          "fidelidad": 1,
+          "cita_correcta": false,
+          "answer": "No, no puedes. Solo se permite una persona por plazas autorizadas. (Reglamento de Tránsito, Artículo 69)."
+        },
+        {
+          "id": "tb-049",
+          "question": "¿A dónde van los multas que se recaudan por las infracciones de tránsito?",
+          "expected": "ley:44",
+          "fidelidad": 1,
+          "cita_correcta": false,
+          "answer": "Las multas recaudadas van a una cuenta específica del Departamento de Tránsito. (Reglamento de Tránsito, Artículo 188)."
+        },
+        {
+          "id": "tb-050",
+          "question": "¿Si estoy saliendo de la autopista y hay un carril de desaceleración, puedo frenar ahí para ir bajando la velocidad antes de entrar a la carretera normal?",
+          "expected": "reglamento:137",
+          "fidelidad": 1,
+          "cita_correcta": true,
+          "answer": "Sí, pero ten cuidado. Debes acelerar después de entrar al carril de la vía rápida. (Reglamento de Tránsito, Artículo 137)."
+        },
+        {
+          "id": "tb-052",
+          "question": "¿Cuál es la diferencia entre una autopista y una vía rápida?",
+          "expected": "reglamento:7",
+          "fidelidad": 1,
+          "cita_correcta": true,
+          "answer": "Una autopista tiene calzadas separadas para cada sentido, con bordillos o semáforos. Una vía rápida puede tener solo una calzada pero con carriles separados. (Reglamento de Tránsito, Artículo 7)."
+        },
+        {
+          "id": "tb-057",
+          "question": "¿Quién es responsable de hacer cumplir las reglas de tránsito en Guatemala?",
+          "expected": "ley:6",
+          "fidelidad": 1,
+          "cita_correcta": false,
+          "answer": "El Departamento o, si no existe, las Municipalidades deben instalar y mantener las señales. Esto se hace con el apoyo del Ministerio de Gobernación. (Reglamento de Tránsito, Artículo 84)."
+        },
+        {
+          "id": "tb-066",
+          "question": "¿Cuánto peso o tamaño puede tener mi camión para poder circular por la calle?",
+          "expected": "reglamento:17",
+          "fidelidad": 1,
+          "cita_correcta": false,
+          "answer": "El peso y el tamaño de tu camión deben estar autorizados. Si no lo están, te pueden multar. (Reglamento de Tránsito, Artículo 9)."
+        },
+        {
+          "id": "tb-078",
+          "question": "¿Qué puedo hacer en las aceras?",
+          "expected": "reglamento:62",
+          "fidelidad": 1,
+          "cita_correcta": false,
+          "answer": "En las aceras, refugios y pasarelas tienes prioridad. Debes detenerte si es necesario. (Reglamento de Tránsito, Artículo 125)."
+        },
+        {
+          "id": "tb-083",
+          "question": "¿Qué pasa si me escriben una multa y no estoy yo manejando?",
+          "expected": "ley:31",
+          "fidelidad": 1,
+          "cita_correcta": false,
+          "answer": "Si te notifican una multa, es porque alguien más lo hizo. Si no estás involucrado, debes contestar que no tienes responsabilidad. (Reglamento de Tránsito, Artículo 32)."
+        },
+        {
+          "id": "tb-097",
+          "question": "¿Tengo que dejar las luces prendidas si estoy manejando entre las 6 de la mañana y las 6 de la tarde?",
+          "expected": "reglamento:158",
+          "fidelidad": 2,
+          "cita_correcta": false,
+          "answer": "Sí, tienes que encender las luces de posición y del gálibo. Es una norma general. (Reglamento de Tránsito, Artículo 159)."
+        },
+        {
+          "id": "tb-099",
+          "question": "¿Pueden cerrar una carretera para que los camiones no pasen si hay mucho tráfico?",
+          "expected": "reglamento:77",
+          "fidelidad": 1,
+          "cita_correcta": false,
+          "answer": "Sí, pueden cerrar la vía pública si es necesario. Solo se puede hacer con autorización previa y expresa de la autoridad. (Ley de Tránsito, Artículo 23)."
+        }
+      ]
+    }
+  }
+}
